@@ -89,7 +89,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/acconts/login/'
-LOGIN_REDIRECT_URL = '/success'
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'string_theory.wsgi.application'
 
