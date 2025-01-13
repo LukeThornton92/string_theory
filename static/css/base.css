@@ -84,3 +84,36 @@ body {
     padding-top: 164px;
   }
 }
+
+/* -------------------------------- Search Bar */
+
+.search-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.search-box {
+  position: absolute;
+  right: 10px;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.search-box.expanded {
+  width: calc(100% - 50px); /* Adjust dynamically */
+  opacity: 1;
+}
