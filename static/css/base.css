@@ -197,3 +197,7 @@ nav .col {
   padding-bottom: 0px;
   padding-left: 0px;
 }
+
+.cursorhover {
+  cursor: pointer;
+}
