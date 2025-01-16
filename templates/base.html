@@ -104,6 +104,42 @@
           </ul>
         </div>
       </div>
+      <div>
+            <!-- django logic to loop through list
+            <div class="row">
+            {% for title in dropdown_titles %}
+            <div class="col text-center">
+              <div class="dropdown">
+                <a 
+                  href="#" 
+                  class="nav-link dropdown-toggle" 
+                  id="dropdownMenu{{ forloop.counter }}" 
+                  data-toggle="dropdown" 
+                  aria-haspopup="true" 
+                  aria-expanded="false">
+                  {{ title }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu{{ forloop.counter }}">
+                  <a class="dropdown-item" href="#">Option 1</a>
+                  <a class="dropdown-item" href="#">Option 2</a>
+                  <a class="dropdown-item" href="#">Option 3</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+        </div> -->
+        <nav class="row navbar">
+            <div class="col text-center">Menu 1<i class="fa-solid fa-chevron-down"></i></div>
+            <div class="col text-center">Menu 2<i class="fa-solid fa-chevron-down"></i></div>
+            <div class="col text-center">Menu 3<i class="fa-solid fa-chevron-down"></i></div>
+            <div class="col text-center">Menu 4<i class="fa-solid fa-chevron-down"></i></div>
+            <div class="col text-center">Menu 5<i class="fa-solid fa-chevron-down"></i></div>
+            <div class="col text-center">Menu 6<i class="fa-solid fa-chevron-down"></i></div>
+            <div class="col text-center">Menu 7<i class="fa-solid fa-chevron-down"></i></div>
+            <div class="col text-center">Menu 8<i class="fa-solid fa-chevron-down"></i></div>
+        </nav>
+        <hr>
+      </div>
     </header>
     {% if messages%}
     <div class="message-container"></div>
