@@ -110,7 +110,8 @@ body {
   user-select: none;
 }
 
-.button:hover {
+.button:hover,
+.gold:hover {
   transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
