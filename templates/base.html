@@ -108,6 +108,11 @@
     {% include 'includes/mobile-top-header.html' %}
     {% include 'includes/main-nav.html' %}
     <hr>
+    <div class="row text-center" id="delivery-banner">
+        <div class="col bg-black text-white">
+            <h4 class="logo-font my-1">Free delivery on orders over £{{ free-shipping-threshold }}!</h4>
+        </div>    
+    </div>
     </header>
     {% if messages%}
     <div class="message-container"></div>
