@@ -23,13 +23,13 @@ body {
   align-items: center;
   display: inline-flex;
   justify-content: center;
-  height: 1.5rem;
   width: 1.5rem;
 }
 
-.main-logo-link {
+/* .main-logo-link {
   width: fit-content;
 }
+*/
 
 .shop-now-button {
   background: black;
@@ -58,6 +58,13 @@ body {
 
 .border-black {
   border: 1px solid black !important;
+}
+
+.desktop-header .row {
+  display: flex; /* Ensure row is a flex container */
+  align-items: center; /* Vertically center content */
+  width: 100%; /* Important: Make sure the row takes full width of container */
+  max-width: 100%; /* Prevent row from exceeding container width */
 }
 
 /* -------------------------------- Media Queries */
