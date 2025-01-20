@@ -63,7 +63,6 @@ body {
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens  */
-
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
@@ -71,7 +70,6 @@ body {
 }
 
 /* fixed top navbar only on medium and up */
-
 @media (min-width: 992px) {
   .fixed-top-desktop-only {
     position: fixed;
@@ -83,6 +81,24 @@ body {
 
   .header-container {
     padding-top: 164px;
+  }
+}
+
+@media (max-width: 991px) {
+  .desktop-header {
+    display: none; /* Ensure desktop header is hidden */
+  }
+  .mobile-header {
+    display: flex; /* Ensure mobile header is visible */
+  }
+}
+
+@media (min-width: 992px) {
+  .desktop-header {
+    display: flex; /* Ensure desktop header is visible */
+  }
+  .mobile-header {
+    display: none; /* Ensure mobile header is hidden */
   }
 }
 
