@@ -216,29 +216,23 @@ nav .col {
 /* -------------------------------- page divider */
 
 .center-diamond {
-  --diamond-size: 6px;
-  --diamond-color: aqua;
   border: 0;
   height: 1px;
   width: 10%;
   position: relative;
   margin: 30px auto;
-
-  &.center-diamond {
-    background: var(--diamond-color);
-
-    &:before {
-      content: "";
-      width: var(--diamond-size);
-      height: var(--diamond-size);
-      background: var(--diamond-color);
-      display: inline-block;
-      border: 2px solid var(--diamond-color);
-      position: absolute;
-      top: calc(-1 * var(--diamond-size) / 2);
-      left: 50%;
-      margin: 0 0 0 calc(-1 * var(--diamond-size) / 2);
-      transform: rotate(45deg);
-    }
-  }
+  background: aqua;
+}
+.center-diamond:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: aqua;
+  display: inline-block;
+  border: 2px solid aqua;
+  position: absolute;
+  top: -3px; /* -1/2 diamond size */
+  left: 50%;
+  margin-left: -3px; /* -1/2 diamond size */
+  transform: rotate(45deg);
 }
