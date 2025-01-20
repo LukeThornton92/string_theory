@@ -16,7 +16,7 @@ body {
   size: 3rem;
 }
 .header-container {
-  position: relative; /* Ensure header is above the background */
+  position: relative;
 }
 
 .icon {
@@ -86,7 +86,7 @@ body {
     z-index: 1030;
   }
 
-  .header-container {
+  body {
     padding-top: 164px;
   }
 }
@@ -225,18 +225,18 @@ nav .col {
 .center-diamond {
   border: 0;
   height: 1px;
-  width: 10%;
+  width: 55%;
   position: relative;
   margin: 30px auto;
-  background: aqua;
+  background: #bc0500;
 }
 .center-diamond:before {
   content: "";
   width: 6px;
   height: 6px;
-  background: aqua;
+  background: #bc0500;
   display: inline-block;
-  border: 2px solid aqua;
+  border: 2px solid #bc0500;
   position: absolute;
   top: -3px; /* -1/2 diamond size */
   left: 50%;
