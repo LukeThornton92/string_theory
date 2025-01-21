@@ -69,43 +69,59 @@ body {
 
 /* -------------------------------- Media Queries */
 
-/* Slightly larger container on xl screens  */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+  .mobile-header {
+    display: flex;
+  }
+  .desktop-header {
+    display: none;
+  }
+  .main-logo-link h2 {
+    font-size: 1.5rem; /* Smaller font on mobile */
+  }
+  .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .col-4:last-child {
+    margin-bottom: 0;
   }
 }
 
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-  .fixed-top-desktop-only {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+/* Tablet Styles (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .mobile-header {
+    display: flex;
   }
+  .desktop-header {
+    display: none;
+  }
+  .main-logo-link h2 {
+    font-size: 2rem; /* Medium font on tablet */
+  }
+  .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    text-align: center;
+  }
+}
 
+/* Desktop Styles (992px and up) */
+@media (min-width: 992px) {
+  .desktop-header {
+    display: flex;
+  }
+  .mobile-header {
+    display: none;
+  }
   body {
-    padding-top: 164px;
+    padding-top: 164px; /* Important: Adjust if header height changes */
   }
-}
-
-@media (max-width: 991px) {
-  .desktop-header {
-    display: none; /* Ensure desktop header is hidden */
-  }
-  .mobile-header {
-    display: flex; /* Ensure mobile header is visible */
-  }
-}
-
-@media (min-width: 992px) {
-  .desktop-header {
-    display: flex; /* Ensure desktop header is visible */
-  }
-  .mobile-header {
-    display: none; /* Ensure mobile header is hidden */
+  .main-logo-link h2 {
+    font-size: 3rem; /* Larger font on desktop */
   }
 }
 
