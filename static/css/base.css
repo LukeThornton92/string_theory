@@ -61,10 +61,14 @@ body {
 }
 
 .desktop-header .row {
-  display: flex; /* Ensure row is a flex container */
-  align-items: center; /* Vertically center content */
-  width: 100%; /* Important: Make sure the row takes full width of container */
-  max-width: 100%; /* Prevent row from exceeding container width */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.burger {
+  padding-top: 50px;
 }
 
 /* -------------------------------- Media Queries */
@@ -118,7 +122,7 @@ body {
     display: none;
   }
   body {
-    padding-top: 164px; /* Important: Adjust if header height changes */
+    padding-top: 164px;
   }
   .main-logo-link h2 {
     font-size: 3rem; /* Larger font on desktop */
