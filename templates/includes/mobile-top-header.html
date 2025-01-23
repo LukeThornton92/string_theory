@@ -1,8 +1,67 @@
-<header class="container-fluid fixed-top header-container">
-    <div class="row d-flex justify-content-between align-items-center h-100">
-            <div class="align-items-center col">
-                <nav class="navbar-expand-lg navbar-light col-md-1 text-left burger">
-                    <!-- Hamburger Button -->
+<header class="fixed-top header-container w-100">
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="{% url 'home' %}" class="main-logo-link">
+                    <h2 class="my-0 title">String Theory</h2>
+                </a>
+                <div> <ul class="list-inline mb-0">
+                        <li class="list-inline-item icon">
+                            <form action="/user" method="get">
+                                <i class="fas fa-user fa-lg"></i>
+                            </form>
+                        </li>
+                        <li class="list-inline-item icon">
+                            <a href="/cart" class="text-black">
+                                <i class="fas fa-shopping-bag fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse test" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu 1
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdownMenuLink1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu 2
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdownMenuLink2">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu 3
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdownMenuLink3">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--
+    <nav class="navbar-expand-lg navbar-light col-md-1 text-left burger">
                     <button
                     class="navbar-toggler"
                     type="button"
@@ -14,7 +73,6 @@
                     >
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <!-- Collapsible Navigation Menu -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <button
                                 type="button"
@@ -25,7 +83,6 @@
                                 aria-label="Close"
                                 ><i class="fa-solid fa-xmark"></i></button>
                     <ul class="navbar-nav">
-                        <!-- First Dropdown Menu -->
                         <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -37,14 +94,13 @@
                         >
                             Menu 1
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                        <div class="dropdown-menu sub-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink1" >
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                         </li>
                 
-                        <!-- Second Dropdown Menu -->
                         <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle"
@@ -56,13 +112,12 @@
                         >
                             Menu 2
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink2">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                         </li>
-                        <!-- Third Dropdown Menu -->
                         <li class="nav-item dropdown">
                             <a
                                 class="nav-link dropdown-toggle"
@@ -74,13 +129,12 @@
                             >
                                 Menu 3
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink2">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                             </li>
-                        <!-- Fourth Dropdown Menu -->
                         <li class="nav-item dropdown">
                             <a
                                 class="nav-link dropdown-toggle"
@@ -92,13 +146,12 @@
                             >
                                 Menu 4
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink2">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                             </li>
-                        <!-- Fifth Dropdown Menu -->
                         <li class="nav-item dropdown">
                             <a
                                 class="nav-link dropdown-toggle"
@@ -110,37 +163,14 @@
                             >
                                 Menu 5
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink2">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                             </li>                
                     </ul>
+                    <div><hr class="center-diamond"></div>
                     </div>
                 </nav>
-            </div>
-            <!-- Logo -->
-            <div class="text-center mt-2 col"> 
-                <a href="{% url 'home' %}" class="main-logo-link">
-                    <h2 class="my-0 title">String Theory</h2>
-                </a>
-            </div>
-            <!-- Icons -->
-            <div class=" text-right col"> 
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item icon">
-                            <form action="/search" method="get">
-                                <i class="fas fa-search fa-lg"></i>
-                            </form>
-                    </li>
-                    <li class="list-inline-item icon">
-                        <a href="/cart" class="text-black">
-                            <i class="fas fa-shopping-bag fa-lg"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
+-->
