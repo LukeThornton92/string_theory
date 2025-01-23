@@ -245,6 +245,7 @@ nav .col {
   background-color: #fff7ec;
   border-right: 6px solid #1f1f1f;
   border-bottom: 6px solid #1f1f1f;
+  overflow-y: auto;
 }
 
 .navbar-nav {
@@ -266,6 +267,11 @@ nav .col {
   margin-top: 10px;
   margin-left: 10px;
   padding: 0;
+  z-index: 1100;
+}
+
+.dropdown-menu {
+  width: 95%;
 }
 /* -------------------------------- page divider */
 
