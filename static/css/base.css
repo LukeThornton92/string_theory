@@ -6,7 +6,7 @@ body {
   background-color: #fff7ec;
   height: auto;
   font-family: "Lato", Arial, Helvetica;
-  position: relative; /* Important for absolute positioning of background */
+  position: relative;
   color: #1f1f1f;
 }
 
@@ -25,11 +25,6 @@ body {
   justify-content: center;
   width: 1.5rem;
 }
-
-/* .main-logo-link {
-  width: fit-content;
-}
-*/
 
 .shop-now-button {
   background: black;
@@ -106,6 +101,12 @@ body {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     text-align: center;
+  }
+  .dropdown-menu {
+    padding: 0.25rem 3.5rem;
+  }
+  .searchbar-mobile {
+    max-width: 60%;
   }
 }
 
@@ -220,14 +221,14 @@ body {
   overflow-y: auto;
 }
 
-.test {
-  width: 400px !important;
+.dropdown-menu {
+  background-color: #fff7ec;
+  border: none;
 }
 
-.dropdown {
-  width: 200px;
+.btn-outline {
+  color: #1f1f1f;
 }
-
 /* -------------------------------- page divider */
 
 .center-diamond {
