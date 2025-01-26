@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="row navbar text-center d-flex justify-content-between">
-        <div class="dropdown show col">
+        <div class="dropdown show col gold">
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu 1<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
@@ -13,8 +13,8 @@
             <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </div>
-        <div class="dropdown show col">
-            <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="dropdown show col gold">
+            <a class="text-reset text-decoration-none cursor-hover gold" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu 2<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
         
@@ -24,7 +24,7 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </div>
-        <div class="dropdown show col">
+        <div class="dropdown show col gold">
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu 3<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
@@ -32,10 +32,39 @@
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <a class="dropdown-item" href="#">
+                      Submenu &raquo;
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                      <li>
+                        <a class="dropdown-item" href="#">Submenu item 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Submenu item 2</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                        <ul class="dropdown-menu dropdown-submenu">
+                          <li>
+                            <a class="dropdown-item" href="#">Multi level 1</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Multi level 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Submenu item 4</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Submenu item 5</a>
+                      </li>
+                    </ul>
+                  </li>
             </ul>
         </div>
-        <div class="dropdown show col">
+        <div class="dropdown show col gold">
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu 4<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
@@ -46,7 +75,7 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </div>
-        <div class="dropdown show col">
+        <div class="dropdown show col gold">
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu 1<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
@@ -57,7 +86,7 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </div>
-        <div class="dropdown show col">
+        <div class="dropdown show col gold">
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu 2<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
@@ -68,7 +97,7 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </div>
-        <div class="dropdown show col">
+        <div class="dropdown show col gold">
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu 3<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
@@ -78,7 +107,7 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </div>
-        <div class="dropdown show col">
+        <div class="dropdown show col gold">
             <a class="text-reset text-decoration-none dropdown-toggle" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu 4<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
@@ -92,27 +121,3 @@
     </div>
     <hr>
 </div>
-
-            <!-- django logic to loop through list
-            <div class="row">
-            {% for title in dropdown_titles %}
-            <div class="col text-center">
-              <div class="dropdown">
-                <a 
-                  href="#" 
-                  class="nav-link dropdown-toggle" 
-                  id="dropdownMenu{{ forloop.counter }}" 
-                  data-toggle="dropdown" 
-                  aria-haspopup="true" 
-                  aria-expanded="false">
-                  {{ title }}
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu{{ forloop.counter }}">
-                  <a class="dropdown-item" href="#">Option 1</a>
-                  <a class="dropdown-item" href="#">Option 2</a>
-                  <a class="dropdown-item" href="#">Option 3</a>
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-        </div> -->
