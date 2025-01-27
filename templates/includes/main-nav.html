@@ -4,13 +4,14 @@
     <div class="row navbar text-center d-flex justify-content-between">
         <div class="dropdown show col gold">
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Menu 1<i class="fa-solid fa-chevron-down fa-fw"></i>
+            All Products <i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
         
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">By Price</a></li>
+            <li><a class="dropdown-item" href="#">By Rating</a></li>
+            <li><a class="dropdown-item" href="#">By Category</a></li>
+            <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
             </ul>
         </div>
         <div class="dropdown show col gold">
@@ -19,10 +20,11 @@
             </a>
         
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+              <li><a class="dropdown-item" href="#">By Price</a></li>
+              <li><a class="dropdown-item" href="#">By Rating</a></li>
+              <li><a class="dropdown-item" href="#">By Category</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
+              </ul>
         </div>
         <div class="dropdown show col gold">
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
