@@ -27,30 +27,6 @@
     "pk": 4,
     "model": "products.category",
     "fields": {
-      "name": "professional",
-      "friendly_name": "Professional Guitars"
-    }
-  },
-  {
-    "pk": 5,
-    "model": "products.category",
-    "fields": {
-      "name": "beginner",
-      "friendly_name": "Beginner Guitars"
-    }
-  },
-  {
-    "pk": 6,
-    "model": "products.category",
-    "fields": {
-      "name": "limited_edition",
-      "friendly_name": "Limited Edition Guitars"
-    }
-  },
-  {
-    "pk": 7,
-    "model": "products.category",
-    "fields": {
       "name": "accessories",
       "friendly_name": "Accessories"
     }
