@@ -31,9 +31,9 @@
             </a>
         
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Fender</a></li>
-              <li><a class="dropdown-item" href="#">Gibson</a></li>
-              <li><a class="dropdown-item" href="#">All</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=acoustic_guitars&brand=fender">Fender</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=acoustic_guitars&brand=gibson">Gibson</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=acoustic_guitars">All</a></li>
             </ul>
                 <!-- Example of submenus if needed!
                 <li>
@@ -73,13 +73,13 @@
             </a>
         
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Fender</a></li>
-                <li><a class="dropdown-item" href="#">Gibson</a></li>
-                <li><a class="dropdown-item" href="#">All</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=bass_guitars&brand=fender">Fender</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=bass_guitars&brand=gibson">Gibson</a></li>
+              <li><a class="dropdown-item" href="{% url 'products' %}?category=bass_guitars">All</a></li>
             </ul>
         </div>
         <div class="show col gold">
-          <a class="text-reset text-decoration-none cursor-hover" href="" id="#" aria-haspopup="true" aria-expanded="false">
+          <a class="text-reset text-decoration-none cursor-hover" href="{% url 'products' %}?category=accessories" id="#" aria-haspopup="true" aria-expanded="false">
             Accessories
           </a>
         </div>
