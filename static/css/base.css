@@ -66,8 +66,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff7ec;
 }
 .product-card {
+  background-color: #fff7ec;
+}
+
+.mobile-background {
   background-color: #fff7ec;
 }
 /* -------------------------------- Media Queries */
@@ -91,6 +96,10 @@ body {
   }
   .col-4:last-child {
     margin-bottom: 0;
+  }
+
+  body {
+    padding-top: 56px;
   }
 }
 
