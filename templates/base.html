@@ -59,7 +59,7 @@
             <!-- Search bar -->
             <li class="list-inline-item mr-2">
                 <div class="search-container">
-                    <form action="/search" method="get">
+                    <form action="{% url 'products' %}" method="GET">
                       <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
                       <label class="button searchbutton" for="searchright"><i class="fas fa-search fa-lg"></i></label>
                     </form>

@@ -15,9 +15,6 @@ body {
   color: #a67c00 !important;
   size: 3rem;
 }
-.header-container {
-  position: relative;
-}
 
 .icon {
   align-items: center;
@@ -60,6 +57,15 @@ body {
   align-items: center;
   width: 100%;
   max-width: 100%;
+  justify-content: center;
+}
+
+.desktop-header {
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .product-card {
   background-color: #fff7ec;
