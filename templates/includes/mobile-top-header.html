@@ -54,7 +54,7 @@
                         </ul>
                     </li>
                 </ul>
-                    <form class="d-flex searchbar-mobile">
+                    <form class="d-flex searchbar-mobile" action="{% url 'products' %}" method="GET">
                         <input class="form-control mr-1" type="search" placeholder="Type to Search..." aria-label="Search">
                         <button class="btn btn-outline" type="submit"><i class="fas fa-search fa-lg"></i></button>
                     </form>
