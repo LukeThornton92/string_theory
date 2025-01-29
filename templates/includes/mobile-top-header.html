@@ -54,9 +54,9 @@
                         </ul>
                     </li>
                 </ul>
-                    <form class="d-flex searchbar-mobile" action="{% url 'products' %}" method="GET">
-                        <input class="form-control mr-1" type="search" placeholder="Type to Search..." aria-label="Search">
-                        <button class="btn btn-outline" type="submit"><i class="fas fa-search fa-lg"></i></button>
+                    <form action="{% url 'products' %}" method="GET" class="d-flex searchbar-mobile">
+                        <input class="form-control mr-1" id="mobilesearchright" type="search" name="q" placeholder="Type to Search...">
+                        <button class="btn btn-outline" for="mobilesearchright" type="submit"><i class="fas fa-search fa-lg"></i></button>
                     </form>
                     <div><hr class="center-diamond"></div>
             </div>
