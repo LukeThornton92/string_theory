@@ -75,6 +75,22 @@ body {
 .mobile-background {
   background-color: #fff7ec;
 }
+
+.add-to-basket {
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  color: #a67c00;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
 /* -------------------------------- Media Queries */
 
 /* Mobile Styles (up to 767px) */
@@ -141,6 +157,10 @@ body {
   .main-logo-link h2 {
     font-size: 3rem; /* Larger font on desktop */
   }
+}
+
+.gold-font {
+  color: #a67c00;
 }
 
 /* -------------------------------- Search Bar */

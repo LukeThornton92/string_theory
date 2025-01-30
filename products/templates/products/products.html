@@ -11,11 +11,18 @@
 {% endblock %} 
 
 {% block content %}
-    <div class="container-fluid">
+    <!--<div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
-                <hr class="w-50 mb-1">
+                <h2 class="logo-font">Products</h2>-->
+            <div class="col text-center mt-3">
+                    {% if current_categories %}
+                        <p>Currently Viewing: {% if request.GET.brand %}{{ request.GET.brand|capfirst }}{% endif %}
+                            {% for category in current_categories %}
+                                {{ category.friendly_name }}{% if not forloop.last %}, {% endif %}
+                            {% endfor %}
+                        </p>
+                    {% endif %}
             </div>
         </div>
         <div class="row">
