@@ -40,9 +40,9 @@
                             Electric<i class="fa-solid fa-chevron-down fa-fw"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdownMenuLink2">
-                            <li><a class="dropdown-item" href="#">Fender</a></li>
-                            <li><a class="dropdown-item" href="#">Gibson</a></li>
-                            <li><a class="dropdown-item" href="#">All</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=electric_guitars&brand=fender">Fender</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=electric_guitars&brand=gibson">Gibson</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=electric_guitars">All</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -50,9 +50,9 @@
                             Acoustic<i class="fa-solid fa-chevron-down fa-fw"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdownMenuLink3">
-                            <li><a class="dropdown-item" href="#">Fender</a></li>
-                            <li><a class="dropdown-item" href="#">Gibson</a></li>
-                            <li><a class="dropdown-item" href="#">All</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=acoustic_guitars&brand=fender">Fender</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=acoustic_guitars&brand=gibson">Gibson</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=acoustic_guitars">All</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -60,12 +60,21 @@
                             Bass<i class="fa-solid fa-chevron-down fa-fw"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdownMenuLink3">
-                            <li><a class="dropdown-item" href="#">Fender</a></li>
-                            <li><a class="dropdown-item" href="#">Gibson</a></li>
-                            <li><a class="dropdown-item" href="#">All</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=bass_guitars&brand=fender">Fender</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=bass_guitars&brand=gibson">Gibson</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=bass_guitars">All</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link" href="#">Accessories</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Accessories<i class="fa-solid fa-chevron-down fa-fw"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdownMenuLink3">
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories&description=amplifier">Amplifiers</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories&description=pedal">Pendals</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories">All</a></li>
+                        </ul>
+                    </li>
                     <li><a class="nav-link" href="#">Blog</a></li>
                     <li><a class="nav-link" href="#">Contact Us</a></li>
                     <li><a class="nav-link" href="#">About Us</a></li>
