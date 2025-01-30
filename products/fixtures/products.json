@@ -3,7 +3,7 @@
     "model": "products.product",
     "pk": 1,
     "fields": {
-      "category": 1,
+      "category": 3,
       "sku": "FEND-JAZZ-01",
       "name": "Fender American Professional II Jazz Bass",
       "brand": "Fender",
@@ -11,7 +11,6 @@
       "price": 1599.99,
       "colour": "Olympic White",
       "weight": 4.3,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -21,7 +20,7 @@
       "neck_shape": "C",
       "rating": 4.8,
       "image_url": "",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -29,7 +28,7 @@
     "model": "products.product",
     "pk": 2,
     "fields": {
-      "category": 2,
+      "category": 1,
       "sku": "FEND-STRAT-01",
       "name": "Fender Player Stratocaster",
       "brand": "Fender",
@@ -37,7 +36,6 @@
       "price": 799.99,
       "colour": "Sonic Blue",
       "weight": 3.5,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Maple",
@@ -47,7 +45,7 @@
       "neck_shape": "C",
       "rating": 4.7,
       "image_url": "",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -55,7 +53,7 @@
     "model": "products.product",
     "pk": 3,
     "fields": {
-      "category": 3,
+      "category": 1,
       "sku": "GIBS-LES-PRO-01",
       "name": "Gibson Les Paul Standard '50s",
       "brand": "Gibson",
@@ -63,7 +61,6 @@
       "price": 2499.99,
       "colour": "Tobacco Burst",
       "weight": 4.5,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -73,7 +70,7 @@
       "neck_shape": "Rounded",
       "rating": 4.9,
       "image_url": "",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -81,7 +78,7 @@
     "model": "products.product",
     "pk": 4,
     "fields": {
-      "category": 4,
+      "category": 1,
       "sku": "GIBS-335-01",
       "name": "Gibson ES-335",
       "brand": "Gibson",
@@ -89,7 +86,6 @@
       "price": 2799.99,
       "colour": "Cherry Red",
       "weight": 4.2,
-      "type": "Electric",
       "body_material": "Maple",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -99,7 +95,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.8,
       "image_url": "",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -107,7 +103,7 @@
     "model": "products.product",
     "pk": 5,
     "fields": {
-      "category": 5,
+      "category": 4,
       "sku": "GIBS-GT-ACCESSORY-01",
       "name": "Gibson Leather Guitar Strap",
       "brand": "Gibson",
@@ -115,7 +111,6 @@
       "price": 49.99,
       "colour": "Black",
       "weight": 0.5,
-      "type": "Accessory",
       "body_material": "N/A",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -125,7 +120,7 @@
       "neck_shape": null,
       "rating": 4.5,
       "image_url": "https://example.com/gibson-strap.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -133,7 +128,7 @@
     "model": "products.product",
     "pk": 6,
     "fields": {
-      "category": 6,
+      "category": 4,
       "sku": "FEND-AMP-01",
       "name": "Fender Mustang GTX 100 Amplifier",
       "brand": "Fender",
@@ -141,7 +136,6 @@
       "price": 699.99,
       "colour": "Black",
       "weight": 15.5,
-      "type": "Accessory",
       "body_material": "N/A",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -151,7 +145,7 @@
       "neck_shape": null,
       "rating": 4.6,
       "image_url": "https://example.com/fender-amp.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -167,7 +161,6 @@
       "price": 849.99,
       "colour": "Tidepool",
       "weight": 3.6,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Maple",
@@ -177,7 +170,7 @@
       "neck_shape": "C",
       "rating": 4.7,
       "image_url": "https://example.com/fender-strat-hss.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -185,7 +178,7 @@
     "model": "products.product",
     "pk": 8,
     "fields": {
-      "category": 2,
+      "category": 1,
       "sku": "GIBS-LES-PRO-02",
       "name": "Gibson Les Paul Classic '60s",
       "brand": "Gibson",
@@ -193,7 +186,6 @@
       "price": 2199.99,
       "colour": "Pelham Blue",
       "weight": 4.4,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -203,7 +195,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.9,
       "image_url": "https://example.com/gibson-les-paul-60s.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -211,7 +203,7 @@
     "model": "products.product",
     "pk": 9,
     "fields": {
-      "category": 5,
+      "category": 4,
       "sku": "FEND-ACCESSORY-01",
       "name": "Fender Guitar Tuner",
       "brand": "Fender",
@@ -219,7 +211,6 @@
       "price": 19.99,
       "colour": "Black",
       "weight": 0.1,
-      "type": "Accessory",
       "body_material": "N/A",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -229,7 +220,7 @@
       "neck_shape": null,
       "rating": 4.7,
       "image_url": "https://example.com/fender-tuner.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -237,15 +228,14 @@
     "model": "products.product",
     "pk": 10,
     "fields": {
-      "category": 6,
+      "category": 4,
       "sku": "GIBS-AMP-01",
       "name": "Gibson GA-5 Les Paul Amp",
       "brand": "Gibson",
-      "description": "A small but powerful amp with a vintage-inspired design, perfect for practice or recording.",
+      "description": "A small but powerful amplifier with a vintage-inspired design, perfect for practice or recording.",
       "price": 499.99,
       "colour": "Cream",
       "weight": 8.0,
-      "type": "Accessory",
       "body_material": "N/A",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -255,7 +245,7 @@
       "neck_shape": null,
       "rating": 4.5,
       "image_url": "https://example.com/gibson-ga5-amp.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -271,7 +261,6 @@
       "price": 1399.99,
       "colour": "Mystic Surf Green",
       "weight": 3.3,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -281,7 +270,7 @@
       "neck_shape": "C",
       "rating": 4.7,
       "image_url": "https://example.com/fender-jaguar.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -289,7 +278,7 @@
     "model": "products.product",
     "pk": 12,
     "fields": {
-      "category": 2,
+      "category": 1,
       "sku": "GIBS-EXPLORE-01",
       "name": "Gibson Explorer",
       "brand": "Gibson",
@@ -297,7 +286,6 @@
       "price": 1799.99,
       "colour": "Ebony",
       "weight": 5.0,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -307,7 +295,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.8,
       "image_url": "https://example.com/gibson-explorer.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -315,7 +303,7 @@
     "model": "products.product",
     "pk": 13,
     "fields": {
-      "category": 3,
+      "category": 1,
       "sku": "FEND-TEL-01",
       "name": "Fender Telecaster Player",
       "brand": "Fender",
@@ -323,7 +311,6 @@
       "price": 799.99,
       "colour": "Polar White",
       "weight": 3.7,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Maple",
@@ -333,7 +320,7 @@
       "neck_shape": "C",
       "rating": 4.6,
       "image_url": "https://example.com/fender-telecaster.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -341,7 +328,7 @@
     "model": "products.product",
     "pk": 14,
     "fields": {
-      "category": 4,
+      "category": 1,
       "sku": "GIBS-LES-PRO-03",
       "name": "Gibson Les Paul Standard 2020",
       "brand": "Gibson",
@@ -349,7 +336,6 @@
       "price": 2299.99,
       "colour": "Honey Burst",
       "weight": 4.6,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -359,7 +345,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.9,
       "image_url": "https://example.com/gibson-les-paul-2020.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -367,15 +353,14 @@
     "model": "products.product",
     "pk": 15,
     "fields": {
-      "category": 5,
+      "category": 4,
       "sku": "FEND-AMP-02",
       "name": "Fender Hot Rod Deluxe IV Amp",
       "brand": "Fender",
-      "description": "A versatile tube amp known for its powerful sound, perfect for both studio and stage performance.",
+      "description": "A versatile tube amplifier known for its powerful sound, perfect for both studio and stage performance.",
       "price": 849.99,
       "colour": "Black",
       "weight": 15.8,
-      "type": "Accessory",
       "body_material": "N/A",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -385,7 +370,7 @@
       "neck_shape": null,
       "rating": 4.7,
       "image_url": "https://example.com/fender-hotrod-amp.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -401,7 +386,6 @@
       "price": 1499.99,
       "colour": "Mocha Burst",
       "weight": 3.4,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -411,7 +395,7 @@
       "neck_shape": "C",
       "rating": 4.8,
       "image_url": "https://example.com/fender-jaguar-pro.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -419,7 +403,7 @@
     "model": "products.product",
     "pk": 17,
     "fields": {
-      "category": 2,
+      "category": 1,
       "sku": "GIBS-EXPLORE-02",
       "name": "Gibson Explorer 2021",
       "brand": "Gibson",
@@ -427,7 +411,6 @@
       "price": 1899.99,
       "colour": "White",
       "weight": 4.7,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -437,7 +420,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.8,
       "image_url": "https://example.com/gibson-explorer-2021.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -445,15 +428,14 @@
     "model": "products.product",
     "pk": 18,
     "fields": {
-      "category": 6,
+      "category": 4,
       "sku": "FEND-AMP-03",
       "name": "Fender Bassbreaker 15 Amp",
       "brand": "Fender",
-      "description": "A tube amp that delivers both vintage and modern tones, perfect for bass guitar players.",
+      "description": "A tube amplifier that delivers both vintage and modern tones, perfect for bass guitar players.",
       "price": 699.99,
       "colour": "Black",
       "weight": 14.5,
-      "type": "Accessory",
       "body_material": "N/A",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -463,7 +445,7 @@
       "neck_shape": null,
       "rating": 4.6,
       "image_url": "https://example.com/fender-bassbreaker-amp.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -471,7 +453,7 @@
     "model": "products.product",
     "pk": 19,
     "fields": {
-      "category": 3,
+      "category": 1,
       "sku": "GIBS-LES-PRO-04",
       "name": "Gibson Les Paul Junior",
       "brand": "Gibson",
@@ -479,7 +461,6 @@
       "price": 1099.99,
       "colour": "TV Yellow",
       "weight": 3.8,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -489,7 +470,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.6,
       "image_url": "https://example.com/gibson-les-paul-junior.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -497,7 +478,7 @@
     "model": "products.product",
     "pk": 20,
     "fields": {
-      "category": 2,
+      "category": 1,
       "sku": "FEND-TELE-02",
       "name": "Fender Player Telecaster",
       "brand": "Fender",
@@ -505,7 +486,6 @@
       "price": 749.99,
       "colour": "Butterscotch Blonde",
       "weight": 3.4,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Maple",
@@ -515,7 +495,7 @@
       "neck_shape": "C",
       "rating": 4.5,
       "image_url": "https://example.com/fender-player-telecaster.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -531,7 +511,6 @@
       "price": 1999.99,
       "colour": "Ebony",
       "weight": 4.9,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -541,7 +520,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.8,
       "image_url": "https://example.com/gibson-explorer-2020.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -557,7 +536,6 @@
       "price": 1499.99,
       "colour": "Antique Olive",
       "weight": 4.3,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -567,7 +545,7 @@
       "neck_shape": "C",
       "rating": 4.7,
       "image_url": "https://example.com/fender-jazz-bass.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -575,7 +553,7 @@
     "model": "products.product",
     "pk": 23,
     "fields": {
-      "category": 6,
+      "category": 3,
       "sku": "GIBS-BASS-01",
       "name": "Gibson Thunderbird Bass",
       "brand": "Gibson",
@@ -583,7 +561,6 @@
       "price": 1399.99,
       "colour": "Vintage Sunburst",
       "weight": 4.5,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -593,7 +570,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.7,
       "image_url": "https://example.com/gibson-thunderbird-bass.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -601,7 +578,7 @@
     "model": "products.product",
     "pk": 24,
     "fields": {
-      "category": 4,
+      "category": 1,
       "sku": "FEND-JAG-03",
       "name": "Fender Jaguar 1962 Reissue",
       "brand": "Fender",
@@ -609,7 +586,6 @@
       "price": 1699.99,
       "colour": "Fiesta Red",
       "weight": 3.5,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -619,7 +595,7 @@
       "neck_shape": "C",
       "rating": 4.9,
       "image_url": "https://example.com/fender-jaguar-1962.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -635,7 +611,6 @@
       "price": 2499.99,
       "colour": "Goldtop",
       "weight": 4.3,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -645,7 +620,7 @@
       "neck_shape": "Chunky '50s",
       "rating": 4.9,
       "image_url": "https://example.com/gibson-les-paul-50s.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -653,15 +628,14 @@
     "model": "products.product",
     "pk": 26,
     "fields": {
-      "category": 5,
+      "category": 4,
       "sku": "FEND-AMP-04",
       "name": "Fender Mustang GTX100",
       "brand": "Fender",
-      "description": "A powerful, portable modeling amp with built-in effects and amp models, ideal for practice and performance.",
+      "description": "A powerful, portable modeling amplifier with built-in effects and amp models, ideal for practice and performance.",
       "price": 399.99,
       "colour": "Black",
       "weight": 10.0,
-      "type": "Accessory",
       "body_material": "N/A",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -671,7 +645,7 @@
       "neck_shape": null,
       "rating": 4.8,
       "image_url": "https://example.com/fender-mustang-gtx100.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -679,7 +653,7 @@
     "model": "products.product",
     "pk": 27,
     "fields": {
-      "category": 2,
+      "category": 1,
       "sku": "FEND-JAG-04",
       "name": "Fender American Ultra Jaguar",
       "brand": "Fender",
@@ -687,7 +661,6 @@
       "price": 1799.99,
       "colour": "Mocha Burst",
       "weight": 3.6,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -697,7 +670,7 @@
       "neck_shape": "Modern D",
       "rating": 4.8,
       "image_url": "https://example.com/fender-american-ultra-jaguar.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -713,7 +686,6 @@
       "price": 1699.99,
       "colour": "Cherry Red",
       "weight": 3.4,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -723,7 +695,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.7,
       "image_url": "https://example.com/gibson-sg-61-reissue.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -731,7 +703,7 @@
     "model": "products.product",
     "pk": 29,
     "fields": {
-      "category": 2,
+      "category": 1,
       "sku": "FEND-STRAT-02",
       "name": "Fender American Ultra Stratocaster",
       "brand": "Fender",
@@ -739,7 +711,6 @@
       "price": 1899.99,
       "colour": "Mystic Surf Green",
       "weight": 3.7,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -749,7 +720,7 @@
       "neck_shape": "Modern D",
       "rating": 4.9,
       "image_url": "https://example.com/fender-american-ultra-stratocaster.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -757,7 +728,7 @@
     "model": "products.product",
     "pk": 30,
     "fields": {
-      "category": 3,
+      "category": 1,
       "sku": "GIBS-LP-03",
       "name": "Gibson Les Paul Standard '60s",
       "brand": "Gibson",
@@ -765,7 +736,6 @@
       "price": 2499.99,
       "colour": "Cherry Sunburst",
       "weight": 4.3,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -775,7 +745,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.8,
       "image_url": "https://example.com/gibson-les-paul-60s.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -783,7 +753,7 @@
     "model": "products.product",
     "pk": 31,
     "fields": {
-      "category": 5,
+      "category": 4,
       "sku": "FEND-PEDAL-01",
       "name": "Fender Delay Pedal",
       "brand": "Fender",
@@ -791,7 +761,6 @@
       "price": 99.99,
       "colour": "Black",
       "weight": 0.5,
-      "type": "Accessory",
       "body_material": "Metal",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -801,7 +770,7 @@
       "neck_shape": null,
       "rating": 4.6,
       "image_url": "https://example.com/fender-delay-pedal.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -809,7 +778,7 @@
     "model": "products.product",
     "pk": 32,
     "fields": {
-      "category": 4,
+      "category": 1,
       "sku": "GIBS-FIREBIRD-01",
       "name": "Gibson Firebird 2019",
       "brand": "Gibson",
@@ -817,7 +786,6 @@
       "price": 1799.99,
       "colour": "Pelham Blue",
       "weight": 3.9,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -827,7 +795,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.7,
       "image_url": "https://example.com/gibson-firebird-2019.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -835,7 +803,7 @@
     "model": "products.product",
     "pk": 33,
     "fields": {
-      "category": 2,
+      "category": 1,
       "sku": "FEND-STRAT-04",
       "name": "Fender Player Stratocaster HSS",
       "brand": "Fender",
@@ -843,7 +811,6 @@
       "price": 799.99,
       "colour": "Polar White",
       "weight": 3.5,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -853,7 +820,7 @@
       "neck_shape": "Modern C",
       "rating": 4.6,
       "image_url": "https://example.com/fender-player-strat-hss.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -861,7 +828,7 @@
     "model": "products.product",
     "pk": 34,
     "fields": {
-      "category": 3,
+      "category": 1,
       "sku": "GIBS-ES-01",
       "name": "Gibson ES-335 Dot",
       "brand": "Gibson",
@@ -869,7 +836,6 @@
       "price": 2199.99,
       "colour": "Cherry Red",
       "weight": 4.0,
-      "type": "Electric",
       "body_material": "Maple",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -879,7 +845,7 @@
       "neck_shape": "Rounded",
       "rating": 4.8,
       "image_url": "https://example.com/gibson-es-335-dot.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -895,7 +861,6 @@
       "price": 1499.99,
       "colour": "Butterscotch Blonde",
       "weight": 3.4,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Maple",
@@ -905,7 +870,7 @@
       "neck_shape": "U",
       "rating": 4.7,
       "image_url": "https://example.com/fender-original-50s-telecaster.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -913,7 +878,7 @@
     "model": "products.product",
     "pk": 36,
     "fields": {
-      "category": 4,
+      "category": 1,
       "sku": "GIBS-VIPER-01",
       "name": "Gibson Viper 2019",
       "brand": "Gibson",
@@ -921,7 +886,6 @@
       "price": 1999.99,
       "colour": "Satin Ebony",
       "weight": 3.6,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -931,7 +895,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.7,
       "image_url": "https://example.com/gibson-viper-2019.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -947,7 +911,6 @@
       "price": 1299.99,
       "colour": "Natural",
       "weight": 4.5,
-      "type": "Bass",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -957,7 +920,7 @@
       "neck_shape": "Slim C",
       "rating": 4.8,
       "image_url": "https://example.com/fender-jazz-bass-ii.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -965,7 +928,7 @@
     "model": "products.product",
     "pk": 38,
     "fields": {
-      "category": 5,
+      "category": 4,
       "sku": "FEND-PEDAL-02",
       "name": "Fender Overdrive Pedal",
       "brand": "Fender",
@@ -973,7 +936,6 @@
       "price": 99.99,
       "colour": "Black",
       "weight": 0.5,
-      "type": "Accessory",
       "body_material": "Metal",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -983,7 +945,7 @@
       "neck_shape": null,
       "rating": 4.7,
       "image_url": "https://example.com/fender-overdrive-pedal.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -991,7 +953,7 @@
     "model": "products.product",
     "pk": 39,
     "fields": {
-      "category": 4,
+      "category": 1,
       "sku": "GIBS-MEMPHIS-01",
       "name": "Gibson Memphis 335",
       "brand": "Gibson",
@@ -999,7 +961,6 @@
       "price": 2699.99,
       "colour": "Antique Natural",
       "weight": 4.2,
-      "type": "Electric",
       "body_material": "Maple",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -1009,7 +970,7 @@
       "neck_shape": "Rounded",
       "rating": 4.9,
       "image_url": "https://example.com/gibson-memphis-335.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1025,7 +986,6 @@
       "price": 849.99,
       "colour": "Tobacco Sunburst",
       "weight": 3.7,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Maple",
@@ -1035,7 +995,7 @@
       "neck_shape": "Modern C",
       "rating": 4.7,
       "image_url": "https://example.com/fender-player-telecaster.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1043,7 +1003,7 @@
     "model": "products.product",
     "pk": 41,
     "fields": {
-      "category": 2,
+      "category": 4,
       "sku": "FEND-PEDAL-03",
       "name": "Fender Reverb Pedal",
       "brand": "Fender",
@@ -1051,7 +1011,6 @@
       "price": 129.99,
       "colour": "Black",
       "weight": 0.6,
-      "type": "Accessory",
       "body_material": "Metal",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1061,7 +1020,7 @@
       "neck_shape": null,
       "rating": 4.8,
       "image_url": "https://example.com/fender-reverb-pedal.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1077,7 +1036,6 @@
       "price": 2199.99,
       "colour": "Ebony",
       "weight": 4.1,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -1087,7 +1045,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.9,
       "image_url": "https://example.com/gibson-explorer-2019.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1095,7 +1053,7 @@
     "model": "products.product",
     "pk": 43,
     "fields": {
-      "category": 3,
+      "category": 1,
       "sku": "FEND-STRAT-05",
       "name": "Fender Vintera '70s Stratocaster",
       "brand": "Fender",
@@ -1103,7 +1061,6 @@
       "price": 1099.99,
       "colour": "Olympic White",
       "weight": 3.8,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Maple",
@@ -1113,7 +1070,7 @@
       "neck_shape": "Thick U",
       "rating": 4.8,
       "image_url": "https://example.com/fender-vintera-70s-stratocaster.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1121,7 +1078,7 @@
     "model": "products.product",
     "pk": 44,
     "fields": {
-      "category": 2,
+      "category": 1,
       "sku": "GIBS-LES-03",
       "name": "Gibson Les Paul Standard '50s",
       "brand": "Gibson",
@@ -1129,7 +1086,6 @@
       "price": 2399.99,
       "colour": "Goldtop",
       "weight": 4.3,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -1139,7 +1095,7 @@
       "neck_shape": "Chunky C",
       "rating": 4.9,
       "image_url": "https://example.com/gibson-les-paul-50s.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1147,7 +1103,7 @@
     "model": "products.product",
     "pk": 45,
     "fields": {
-      "category": 5,
+      "category": 4,
       "sku": "FEND-PEDAL-04",
       "name": "Fender Delay Pedal",
       "brand": "Fender",
@@ -1155,7 +1111,6 @@
       "price": 119.99,
       "colour": "Black",
       "weight": 0.7,
-      "type": "Accessory",
       "body_material": "Metal",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1165,7 +1120,7 @@
       "neck_shape": null,
       "rating": 4.6,
       "image_url": "https://example.com/fender-delay-pedal.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1181,7 +1136,6 @@
       "price": 1599.99,
       "colour": "Olympic White",
       "weight": 3.9,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -1191,7 +1145,7 @@
       "neck_shape": "Modern C",
       "rating": 4.8,
       "image_url": "https://example.com/fender-pro-stratocaster.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1199,7 +1153,7 @@
     "model": "products.product",
     "pk": 47,
     "fields": {
-      "category": 2,
+      "category": 1,
       "sku": "GIBS-EXPLORER-02",
       "name": "Gibson Explorer 2020",
       "brand": "Gibson",
@@ -1207,7 +1161,6 @@
       "price": 2199.99,
       "colour": "Ebony",
       "weight": 4.0,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -1217,7 +1170,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.7,
       "image_url": "https://example.com/gibson-explorer-2020.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1225,7 +1178,7 @@
     "model": "products.product",
     "pk": 48,
     "fields": {
-      "category": 5,
+      "category": 3,
       "sku": "FEND-BASS-01",
       "name": "Fender Professional Precision Bass",
       "brand": "Fender",
@@ -1233,7 +1186,6 @@
       "price": 1799.99,
       "colour": "Sunburst",
       "weight": 4.2,
-      "type": "Bass",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -1243,7 +1195,7 @@
       "neck_shape": "Modern C",
       "rating": 4.8,
       "image_url": "https://example.com/fender-precision-bass.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1251,7 +1203,7 @@
     "model": "products.product",
     "pk": 49,
     "fields": {
-      "category": 3,
+      "category": 1,
       "sku": "FEND-SQUIER-01",
       "name": "Squier by Fender Affinity Stratocaster",
       "brand": "Fender",
@@ -1259,7 +1211,6 @@
       "price": 299.99,
       "colour": "Black",
       "weight": 3.5,
-      "type": "Electric",
       "body_material": "Agathis",
       "neck_material": "Maple",
       "fretboard_material": "Indian Laurel",
@@ -1269,7 +1220,7 @@
       "neck_shape": "C Shape",
       "rating": 4.3,
       "image_url": "https://example.com/squier-affinity-stratocaster.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1285,7 +1236,6 @@
       "price": 2299.99,
       "colour": "Pelham Blue",
       "weight": 4.1,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -1295,7 +1245,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.8,
       "image_url": "https://example.com/gibson-firebird-2020.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1311,7 +1261,6 @@
       "price": 1899.99,
       "colour": "Cherry Red",
       "weight": 3.2,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -1321,7 +1270,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.9,
       "image_url": "https://example.com/gibson-sg-61-reissue.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1329,7 +1278,7 @@
     "model": "products.product",
     "pk": 52,
     "fields": {
-      "category": 3,
+      "category": 1,
       "sku": "FEND-STRAT-50S",
       "name": "Fender American Professional Stratocaster '50s",
       "brand": "Fender",
@@ -1337,7 +1286,6 @@
       "price": 1499.99,
       "colour": "2-Tone Sunburst",
       "weight": 3.8,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Maple",
@@ -1347,7 +1295,7 @@
       "neck_shape": "V Shape",
       "rating": 4.7,
       "image_url": "https://example.com/fender-american-strat-50s.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1355,7 +1303,7 @@
     "model": "products.product",
     "pk": 53,
     "fields": {
-      "category": 4,
+      "category": 1,
       "sku": "GIBS-JAZZ-01",
       "name": "Gibson ES-335",
       "brand": "Gibson",
@@ -1363,7 +1311,6 @@
       "price": 2699.99,
       "colour": "Vintage Sunburst",
       "weight": 4.5,
-      "type": "Electric",
       "body_material": "Maple",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -1373,7 +1320,7 @@
       "neck_shape": "Rounded",
       "rating": 4.9,
       "image_url": "https://example.com/gibson-es-335.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1389,7 +1336,6 @@
       "price": 1199.99,
       "colour": "Sonic Blue",
       "weight": 3.6,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -1399,7 +1345,7 @@
       "neck_shape": "Modern C",
       "rating": 4.7,
       "image_url": "https://example.com/fender-telecaster-deluxe.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1407,7 +1353,7 @@
     "model": "products.product",
     "pk": 55,
     "fields": {
-      "category": 5,
+      "category": 4,
       "sku": "FEND-PEDAL-02",
       "name": "Fender Overdrive Pedal",
       "brand": "Fender",
@@ -1415,7 +1361,6 @@
       "price": 99.99,
       "colour": "Red",
       "weight": 0.5,
-      "type": "Accessory",
       "body_material": "Metal",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1425,7 +1370,7 @@
       "neck_shape": null,
       "rating": 4.5,
       "image_url": "https://example.com/fender-overdrive-pedal.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1433,7 +1378,7 @@
     "model": "products.product",
     "pk": 56,
     "fields": {
-      "category": 4,
+      "category": 2,
       "sku": "GIBS-ACOUSTIC-02",
       "name": "Gibson J-45 Acoustic Guitar",
       "brand": "Gibson",
@@ -1441,7 +1386,6 @@
       "price": 2299.99,
       "colour": "Natural",
       "weight": 4.0,
-      "type": "Acoustic",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Rosewood",
@@ -1451,7 +1395,7 @@
       "neck_shape": "Slim Taper",
       "rating": 4.8,
       "image_url": "https://example.com/gibson-j-45-acoustic.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1467,7 +1411,6 @@
       "price": 1399.99,
       "colour": "Antique Olive",
       "weight": 3.8,
-      "type": "Electric",
       "body_material": "Alder",
       "neck_material": "Maple",
       "fretboard_material": "Rosewood",
@@ -1477,7 +1420,7 @@
       "neck_shape": "Modern C",
       "rating": 4.9,
       "image_url": "https://example.com/fender-american-stratocaster.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1485,7 +1428,7 @@
     "model": "products.product",
     "pk": 58,
     "fields": {
-      "category": 3,
+      "category": 1,
       "sku": "GIBS-LES-05",
       "name": "Gibson Les Paul Custom",
       "brand": "Gibson",
@@ -1493,7 +1436,6 @@
       "price": 3499.99,
       "colour": "Ebony",
       "weight": 4.5,
-      "type": "Electric",
       "body_material": "Mahogany",
       "neck_material": "Mahogany",
       "fretboard_material": "Ebony",
@@ -1503,7 +1445,7 @@
       "neck_shape": "Slim Taper",
       "rating": 5.0,
       "image_url": "https://example.com/gibson-les-paul-custom.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1511,7 +1453,7 @@
     "model": "products.product",
     "pk": 59,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "FEND-ACCESSORY-59",
       "name": "Fender Heavy Guitar Pick",
       "brand": "Fender",
@@ -1519,7 +1461,6 @@
       "price": 1.99,
       "colour": "Black",
       "weight": 0.05,
-      "type": "Accessory",
       "body_material": "Plastic",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1529,7 +1470,7 @@
       "neck_shape": null,
       "rating": 4.5,
       "image_url": "https://example.com/fender-heavy-guitar-pick.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1537,7 +1478,7 @@
     "model": "products.product",
     "pk": 60,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "GIBS-ACCESSORY-60",
       "name": "Gibson Deluxe Tuner",
       "brand": "Gibson",
@@ -1545,7 +1486,6 @@
       "price": 19.99,
       "colour": "Silver",
       "weight": 0.2,
-      "type": "Accessory",
       "body_material": "Metal",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1555,7 +1495,7 @@
       "neck_shape": null,
       "rating": 4.7,
       "image_url": "https://example.com/gibson-deluxe-tuner.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1563,7 +1503,7 @@
     "model": "products.product",
     "pk": 61,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "FEND-ACCESSORY-61",
       "name": "Fender Guitar Strap - Red",
       "brand": "Fender",
@@ -1571,7 +1511,6 @@
       "price": 24.99,
       "colour": "Red",
       "weight": 0.3,
-      "type": "Accessory",
       "body_material": "Nylon",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1581,7 +1520,7 @@
       "neck_shape": null,
       "rating": 4.6,
       "image_url": "https://example.com/fender-red-guitar-strap.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1589,7 +1528,7 @@
     "model": "products.product",
     "pk": 62,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "GIBS-ACCESSORY-62",
       "name": "Gibson Guitar Stand",
       "brand": "Gibson",
@@ -1597,7 +1536,6 @@
       "price": 29.99,
       "colour": "Black",
       "weight": 1.0,
-      "type": "Accessory",
       "body_material": "Metal",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1607,7 +1545,7 @@
       "neck_shape": null,
       "rating": 4.8,
       "image_url": "https://example.com/gibson-guitar-stand.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1615,7 +1553,7 @@
     "model": "products.product",
     "pk": 63,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "FEND-ACCESSORY-63",
       "name": "Fender Guitar Pick Tin",
       "brand": "Fender",
@@ -1623,7 +1561,6 @@
       "price": 9.99,
       "colour": "Multi-Colour",
       "weight": 0.2,
-      "type": "Accessory",
       "body_material": "Plastic",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1633,7 +1570,7 @@
       "neck_shape": null,
       "rating": 4.5,
       "image_url": "https://example.com/fender-guitar-pick-tin.jpg",
-      "image": null,
+      "image": "products/yellowtele.jpg",
       "in_stock": true
     }
   },
@@ -1641,7 +1578,7 @@
     "model": "products.product",
     "pk": 64,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "GIBS-ACCESSORY-64",
       "name": "Gibson Leather Guitar Strap",
       "brand": "Gibson",
@@ -1649,7 +1586,6 @@
       "price": 49.99,
       "colour": "Brown",
       "weight": 0.4,
-      "type": "Accessory",
       "body_material": "Leather",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1659,7 +1595,7 @@
       "neck_shape": null,
       "rating": 4.7,
       "image_url": "https://example.com/gibson-leather-guitar-strap.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1667,7 +1603,7 @@
     "model": "products.product",
     "pk": 65,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "FEND-ACCESSORY-65",
       "name": "Fender Amplifier Cable",
       "brand": "Fender",
@@ -1675,7 +1611,6 @@
       "price": 29.99,
       "colour": "Black",
       "weight": 0.3,
-      "type": "Accessory",
       "body_material": "Rubber",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1685,7 +1620,7 @@
       "neck_shape": null,
       "rating": 4.6,
       "image_url": "https://example.com/fender-amplifier-cable.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1693,7 +1628,7 @@
     "model": "products.product",
     "pk": 66,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "GIBS-ACCESSORY-66",
       "name": "Gibson Guitar Polish",
       "brand": "Gibson",
@@ -1701,7 +1636,6 @@
       "price": 14.99,
       "colour": "Clear",
       "weight": 0.1,
-      "type": "Accessory",
       "body_material": "Liquid",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1711,7 +1645,7 @@
       "neck_shape": null,
       "rating": 4.8,
       "image_url": "https://example.com/gibson-guitar-polish.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1719,7 +1653,7 @@
     "model": "products.product",
     "pk": 67,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "FEND-ACCESSORY-67",
       "name": "Fender Guitar Cleaning Kit",
       "brand": "Fender",
@@ -1727,7 +1661,6 @@
       "price": 19.99,
       "colour": "Multi-Colour",
       "weight": 0.5,
-      "type": "Accessory",
       "body_material": "Plastic",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1737,7 +1670,7 @@
       "neck_shape": null,
       "rating": 4.7,
       "image_url": "https://example.com/fender-guitar-cleaning-kit.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1745,7 +1678,7 @@
     "model": "products.product",
     "pk": 68,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "GIBS-ACCESSORY-68",
       "name": "Gibson Tuner Pedal",
       "brand": "Gibson",
@@ -1753,7 +1686,6 @@
       "price": 69.99,
       "colour": "Black",
       "weight": 0.6,
-      "type": "Accessory",
       "body_material": "Metal",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1763,7 +1695,7 @@
       "neck_shape": null,
       "rating": 4.8,
       "image_url": "https://example.com/gibson-tuner-pedal.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   },
@@ -1771,7 +1703,7 @@
     "model": "products.product",
     "pk": 69,
     "fields": {
-      "category": 3,
+      "category": 4,
       "sku": "FEND-ACCESSORY-69",
       "name": "Fender Capo",
       "brand": "Fender",
@@ -1779,7 +1711,6 @@
       "price": 15.99,
       "colour": "Silver",
       "weight": 0.1,
-      "type": "Accessory",
       "body_material": "Metal",
       "neck_material": "N/A",
       "fretboard_material": "N/A",
@@ -1789,7 +1720,7 @@
       "neck_shape": null,
       "rating": 4.6,
       "image_url": "https://example.com/fender-capo.jpg",
-      "image": null,
+      "image": "products/bluetele.jpg",
       "in_stock": true
     }
   }

@@ -23,7 +23,6 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     colour = models.CharField(max_length=50, null=True, blank=True)
     weight = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    type = models.CharField(max_length=100, null=True, blank=True)
     body_material = models.CharField(max_length=100, null=True, blank=True)
     neck_material = models.CharField(max_length=100, null=True, blank=True)
     fretboard_material = models.CharField(max_length=100, null=True, blank=True)
