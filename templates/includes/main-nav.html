@@ -78,10 +78,16 @@
               <li><a class="dropdown-item" href="{% url 'products' %}?category=bass_guitars">All</a></li>
             </ul>
         </div>
-        <div class="show col gold">
-          <a class="text-reset text-decoration-none cursor-hover" href="{% url 'products' %}?category=accessories" id="#" aria-haspopup="true" aria-expanded="false">
-            Accessories
+        <div class="dropdown show col gold">
+          <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Accessories<i class="fa-solid fa-chevron-down fa-fw"></i>
           </a>
+      
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories&description=amplifier">Amplifier</a></li>
+            <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories">Gibson</a></li>
+            <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories">All</a></li>
+          </ul>
         </div>
         <div class="show col gold">
           <a class="text-reset text-decoration-none cursor-hover" href="" id="#" aria-haspopup="true" aria-expanded="false">
