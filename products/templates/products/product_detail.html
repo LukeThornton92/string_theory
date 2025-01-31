@@ -24,7 +24,7 @@
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
-                    <div class="add-to-basket text-center"><i class="fa-regular fa-plus fa-fw mr-2"></i>ADD TO BASKET</div>
+                    <a href="{% url 'products' %}" class="add-to-basket text-center"><i class="fa-regular fa-plus fa-fw mr-2"></i>ADD TO BASKET</a>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
