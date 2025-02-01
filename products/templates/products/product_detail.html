@@ -16,40 +16,71 @@
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
-                                <a href="{{ product.image.url }}" target="_blank">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
-                                {% else %}
-                                <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                </a>
-                                {% endif %}
+                        <a href="{{ product.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                    {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
                     <a href="{% url 'products' %}" class="add-to-basket text-center"><i class="fa-regular fa-plus fa-fw mr-2"></i>ADD TO BASKET</a>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
-                    <h1 class="mb-0">{{ product.name }}</h1>
-                    <p class="lead mb-0 text-left font-weight-bold gold-font">£{{ product.price }}</p>
+                    <h1 class="mb-0 mb-md-2">{{ product.name }}</h1>
+                    <p class="lead mb-0 text-left font-weight-bold gold-font mb-md-2">£{{ product.price }}</p>
                     {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                        <small class="text-muted mb-md-2"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                     {% else %}
-                        <small class="text-muted">No Rating</small>
+                        <small class="text-muted mb-md-2">No Rating</small>
                     {% endif %}
                     <h2>Description</h2>
                     <p class="mt-3">{{ product.description }}</p>
                 </div>
             </div>
         </div>
-        <h3>Details</h3>
-        <div class="row text-center">
-                
+        {% if product.category.id == 4 %}
+        <div class="row mt-1 mt-md-3">
                 <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                    <p>AAAAAAAAAAAAAAAAAAAAA</p>
+                    <h3 class="font-weight-bold">Details</h3>
+                    <h4>Colour:</h4>
+                    <p>{{ product.colour }}</p>
+                    <h4>Weight:</h4>
+                    <p>{{ product.weight }}kg</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <p>AAAAAAAAAAAAAAAAAAAAA</p>
+                    <h4>Body Material:</h4>
+                    <p>{{ product.body_material }}</p>
                 </div>
         </div>
+        {% else %}
+        <div class="row mt-1 mt-md-3">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <h3 class="font-weight-bold">Details</h3>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2"></div>
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <h4>Colour:</h4>
+                <p>{{ product.colour }}</p>
+                <h4>Neck Material:</h4>
+                <p>{{ product.neck_material }}</p>
+                <h4>Scale Length:</h4>
+                <p>{{ product.scale_length }}</p>
+                <h4>Pickups:</h4>
+                <p>{{ product.pickups }}</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4>Body Material:</h4>
+                <p>{{ product.body_material }}</p>
+                <h4>Fretboard Material:</h4>
+                <p>{{ product.fretboard_material }}</p>
+                <h4>Number Of Frets:</h4>
+                <p>{{ product.num_of_frets }}</p>
+                <h4>Neck Shape:</h4>
+                <p>{{ product.neck_shape }}</p>
+            </div>
+            {% endif %}
     </div>
 {% endblock %}
