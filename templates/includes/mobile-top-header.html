@@ -29,9 +29,9 @@
                             All Products<i class="fa-solid fa-chevron-down fa-fw"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdownMenuLink1">
-                            <li><a class="dropdown-item" href="#">By Price</a></li>
-                            <li><a class="dropdown-item" href="#">By Rating</a></li>
-                            <li><a class="dropdown-item" href="#">By Category</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">By Category</a></li>
                             <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
                         </ul>
                     </li>
