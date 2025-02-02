@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
-from datetime import date, timedelta
 
 # Create your views here.
 
@@ -57,9 +56,3 @@ def product_detail(request, product_id):
 
 
     return render(request, 'products/product_detail.html', context)
-
-def estimated_shipping(request):
-    """Calculates estimated shipping date, 7 business days"""
-    today = date.today()
-    days_to_add = 7
-    estimated_date = today + timedelta(days=days_to_add)
