@@ -124,6 +124,7 @@
                 <p>{{ product.neck_shape }}</p>
             </div>
             {% endif %}
+            <!--You may also like-->
         <div class="row">
             <div class="col">
                 <h5 class="text-center header mt-5">YOU MAY ALSO LIKE</h5>
@@ -135,7 +136,7 @@
                 <div class="row">
             {% for recommended_product in recommended_products %}
             <!--Logic taken from products page-->
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="recommended-product col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0 product-card">
                                 {% if recommended_product.image %}
                                 <a href="{% url 'product_detail' recommended_product.id %}">
@@ -158,23 +159,8 @@
                                 </div>
                             </div>
                         </div>                   
-                        {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                                <hr class="center-diamond">
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                <hr class="center-diamond">
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
-                                <hr class="center-diamond">
-                            </div>
-                        {% endif %}
             {% endfor %}
-        </div>
+            </div>
         </div>
     </div>
 {% endblock %}
