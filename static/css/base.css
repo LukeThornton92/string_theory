@@ -129,6 +129,10 @@ body {
 .gold-font {
   color: #a67c00;
 }
+
+a:-webkit-any-link {
+  text-decoration: none !important;
+}
 /* -------------------------------- Media Queries */
 
 /* Mobile Styles (up to 767px) */
