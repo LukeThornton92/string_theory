@@ -85,6 +85,7 @@ body {
   color: #a67c00;
   font-size: 28px;
   font-weight: 300;
+  text-decoration: none;
 }
 
 .add-to-basket:hover {
@@ -92,9 +93,32 @@ body {
   text-decoration: none;
 }
 
+.font-weight-bold {
+  font-weight: bold;
+}
 .navbar {
   padding-left: 0;
   padding-right: 0;
+}
+
+.bottom-container {
+  margin-top: auto;
+}
+
+.col-12.col-md-6.col-lg-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.height-align {
+  align-items: stretch;
+}
+
+.accordion-item {
+  --bs-accordion-active-color: #1f1f1f;
+  --bs-accordion-btn-bg: #fff7ec;
+  --bs-accordion-active-bg: #fff7ec;
+  --bs-accordion-bg: #fff7ec;
 }
 /* -------------------------------- Media Queries */
 
