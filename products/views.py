@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
+from random import sample
 
 # Create your views here.
 
@@ -46,12 +47,18 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 def product_detail(request, product_id):
-    """A view to show individual product details"""
+    """A view to show individual product details, also produces a random filtered selection of other products you may like"""
 
     product = get_object_or_404(Product, pk=product_id)
+    product_category = product.category  # Uses pk to get product category
+    product_brand = product.brand  # Uses pk to get product brand
+
+    recommended_products = Product.objects.filter(category=product_category, brand=product_brand).exclude(id=product_id)  # Filters through all products for ideal recommendations
+    random_products = sample(list(recommended_products), 4)
 
     context = {
         'product': product,
+        'recommended_products': random_products,
     }
 
 

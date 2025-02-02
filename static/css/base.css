@@ -120,6 +120,10 @@ body {
   --bs-accordion-active-bg: #fff7ec;
   --bs-accordion-bg: #fff7ec;
 }
+
+.header {
+  letter-spacing: 4px;
+}
 /* -------------------------------- Media Queries */
 
 /* Mobile Styles (up to 767px) */
