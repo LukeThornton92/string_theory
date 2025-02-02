@@ -54,11 +54,11 @@ def product_detail(request, product_id):
     product_brand = product.brand  # Uses pk to get product brand
 
     recommended_products = Product.objects.filter(category=product_category, brand=product_brand).exclude(id=product_id)  # Filters through all products for ideal recommendations
-    random_products = sample(list(recommended_products), 4)
+    
 
     context = {
         'product': product,
-        'recommended_products': random_products,
+        'recommended_products': recommended_products,
     }
 
 
