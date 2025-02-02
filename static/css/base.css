@@ -14,6 +14,7 @@ body {
   font-family: "Lobster", Arial, Helvetica;
   color: #a67c00 !important;
   size: 3rem;
+  text-decoration: none;
 }
 
 .icon {
@@ -124,6 +125,10 @@ body {
 .header {
   letter-spacing: 4px;
 }
+
+.gold-font {
+  color: #a67c00;
+}
 /* -------------------------------- Media Queries */
 
 /* Mobile Styles (up to 767px) */
@@ -146,9 +151,11 @@ body {
   .col-4:last-child {
     margin-bottom: 0;
   }
-
   body {
     padding-top: 56px;
+  }
+  .accordion-desktop {
+    display: none;
   }
 }
 
@@ -174,6 +181,9 @@ body {
   .searchbar-mobile {
     max-width: 60%;
   }
+  .accordion-mobile {
+    display: none;
+  }
 }
 
 /* Desktop Styles (992px and up) */
@@ -190,10 +200,9 @@ body {
   .main-logo-link h2 {
     font-size: 3rem; /* Larger font on desktop */
   }
-}
-
-.gold-font {
-  color: #a67c00;
+  .accordion-mobile {
+    display: none;
+  }
 }
 
 /* -------------------------------- Search Bar */
