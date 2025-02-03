@@ -143,7 +143,9 @@ a:-webkit-any-link {
   bottom: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-link {
   cursor: pointer;
   color: #1f1f1f;
 }
