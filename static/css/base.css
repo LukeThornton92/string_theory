@@ -145,7 +145,7 @@ a:-webkit-any-link {
 
 .btt-link,
 .update-link,
-.remove-link {
+.remove-item {
   cursor: pointer;
   color: #1f1f1f;
 }
