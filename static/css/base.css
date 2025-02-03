@@ -147,6 +147,10 @@ a:-webkit-any-link {
   cursor: pointer;
   color: #1f1f1f;
 }
+
+.table {
+  --bs-table-bg: #fff7ec;
+}
 /* -------------------------------- Media Queries */
 
 /* Mobile Styles (up to 767px) */
