@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
-from products.models import Product
 from django.contrib import messages
+from django.contrib.messages import get_messages
+from products.models import Product
+
 # Create your views here.
 
 def view_bag(request):
@@ -18,11 +20,17 @@ def add_to_bag(request, item_id):
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
+        messages.success(request, f'Added {product.name} to your bag')
     else:
         bag[item_id] = quantity
         messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag
+
+    storage = get_messages(request)
+    for message in storage:
+        print(f"DEBUG MESSAGE: {message}")
+        
     return redirect(redirect_url)
 
 def adjust_bag(request, item_id):
