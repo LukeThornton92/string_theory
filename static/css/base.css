@@ -362,8 +362,8 @@ a:-webkit-any-link {
 }
 .center-diamond:before {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 6px !important;
+  height: 6px !important;
   background: #bc0500;
   display: inline-block;
   border: 2px solid #bc0500;
@@ -372,4 +372,6 @@ a:-webkit-any-link {
   left: 50%;
   margin-left: -3px; /* -1/2 diamond size */
   transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
