@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.contrib import messages
 from django.contrib.messages import get_messages
+
 from products.models import Product
 
 # Create your views here.
@@ -27,10 +28,11 @@ def add_to_bag(request, item_id):
 
     request.session['bag'] = bag
 
-    storage = get_messages(request)
+    '''storage = get_messages(request)
     for message in storage:
         print(f"DEBUG MESSAGE: {message}")
-        
+    storage.used = False'''
+    
     return redirect(redirect_url)
 
 def adjust_bag(request, item_id):
@@ -48,6 +50,7 @@ def adjust_bag(request, item_id):
     return redirect(reverse('view_bag'))
 
 def remove_from_bag(request, item_id):
+
     """ Removes the specific product to the shopping bag"""
 
     bag = request.session.get('bag',{})
