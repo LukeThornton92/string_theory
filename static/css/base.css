@@ -221,6 +221,11 @@ a:-webkit-any-link {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+.custom-select {
+  background-color: #fff7ec;
+  border-color: #fff7ec;
+}
 /* -------------------------------- Media Queries */
 
 /* Mobile Styles (up to 767px) */
