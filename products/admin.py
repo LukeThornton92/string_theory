@@ -17,10 +17,10 @@ class ProductAdmin(admin.ModelAdmin):
         'sku',
     )
 
-    '''readonly_fields = (
+    readonly_fields = (
         'created_at',
         'updated_at'
-    )'''
+    )
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
