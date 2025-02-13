@@ -13,7 +13,14 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
     )
 
-    ordering = ('sku',)
+    ordering = (
+        'sku',
+    )
+
+    '''readonly_fields = (
+        'created_at',
+        'updated_at'
+    )'''
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
