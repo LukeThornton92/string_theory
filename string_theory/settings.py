@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
-    'crispy_forms'
+    'crispy_forms',
+    "crispy_bootstrap5", # Makes crispy work with bootstrap5, otherwise breaks
 ]
 
 MIDDLEWARE = [
@@ -61,6 +62,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'string_theory.urls'
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 TEMPLATES = [
@@ -77,7 +79,8 @@ TEMPLATES = [
                 'django.template.context_processors.request', #required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'products.context_processors.estimated_shipping',
+                'django.template.context_processors.media',
+                'products.context_processors.estimated_shipping', # calculation for delivery date estimate.
                 'bag.contexts.bag_contents',
             ],
             'builtins': [
