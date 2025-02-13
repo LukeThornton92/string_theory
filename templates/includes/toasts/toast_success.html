@@ -12,6 +12,7 @@
         <hr class="mt-1 mb-3">
       </div>
     </div>
+    <!-- if items in basket, provides details -->
     {% if grand_total %}
       <p class="logo-font bg-white text-black py-1">"Your Bag ({{product_count}})</p>
       <div class="bag-notification-wrapper">
@@ -26,6 +27,7 @@
           </div>
         {% endfor%}
       </div>
+      <!-- Free delivery calculations -->
       <div class="row">
         <div class="col">
           <strong><p class="mt-3 mb-1 text-black">
