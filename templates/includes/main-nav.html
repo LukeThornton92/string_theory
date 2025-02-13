@@ -6,7 +6,6 @@
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             All Products <i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
-        
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By Price</a></li>
             <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">By Rating</a></li>
@@ -18,7 +17,6 @@
             <a class="text-reset text-decoration-none cursor-hover gold" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Electric<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
-        
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li><a class="dropdown-item" href="{% url 'products' %}?category=electric_guitars&brand=fender">Fender</a></li>
               <li><a class="dropdown-item" href="{% url 'products' %}?category=electric_guitars&brand=gibson">Gibson</a></li>
@@ -29,49 +27,16 @@
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Acoustic<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
-        
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li><a class="dropdown-item" href="{% url 'products' %}?category=acoustic_guitars&brand=fender">Fender</a></li>
               <li><a class="dropdown-item" href="{% url 'products' %}?category=acoustic_guitars&brand=gibson">Gibson</a></li>
               <li><a class="dropdown-item" href="{% url 'products' %}?category=acoustic_guitars">All</a></li>
             </ul>
-                <!-- Example of submenus if needed!
-                <li>
-                    <a class="dropdown-item" href="#">
-                      Submenu &raquo;
-                    </a>
-                    <ul class="dropdown-menu dropdown-submenu">
-                      <li>
-                        <a class="dropdown-item" href="#">Submenu item 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Submenu item 2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
-                        <ul class="dropdown-menu dropdown-submenu">
-                          <li>
-                            <a class="dropdown-item" href="#">Multi level 1</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Multi level 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Submenu item 4</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Submenu item 5</a>
-                      </li>
-                    </ul>
-                  </li> -->
         </div>
         <div class="dropdown show col gold">
             <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Bass<i class="fa-solid fa-chevron-down fa-fw"></i>
             </a>
-        
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li><a class="dropdown-item" href="{% url 'products' %}?category=bass_guitars&brand=fender">Fender</a></li>
               <li><a class="dropdown-item" href="{% url 'products' %}?category=bass_guitars&brand=gibson">Gibson</a></li>
@@ -82,7 +47,6 @@
           <a class="text-reset text-decoration-none cursor-hover" id="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Accessories<i class="fa-solid fa-chevron-down fa-fw"></i>
           </a>
-      
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories&description=amplifier">Amplifiers</a></li>
             <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories&description=pedal">Pedals</a></li>
