@@ -29,7 +29,10 @@ SECRET_KEY = 'django-insecure-3mt=$yt9azrdwcq8kw_0da*@(e+(r0i3&jmehivwlxv#=7@qfe
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1', # vscode
+    'localhost', # stripe listener
+]
 
 
 # Application definition
@@ -193,3 +196,4 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY','pk_test_51QsQt7HDhKLsgurWGfHnH3elVncPCGRIsbD0qojyeZ21FdczHL6BdvrWvpOnV2wEWzlkUToLRAU6ekAR4UF6c8eO00C08AFutI')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY','')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET','')
