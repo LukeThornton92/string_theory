@@ -1,11 +1,3 @@
-/*
-    Core logic/payment flow for this comes from here:
-    https://stripe.com/docs/payments/accept-a-payment
-
-    CSS from here: 
-    https://stripe.com/docs/stripe-js
-*/
-
 var stripePublicKey = $("#id_stripe_public_key").text().slice(1, -1);
 var clientSecret = $("#id_client_secret").text().slice(1, -1);
 var stripe = Stripe(stripePublicKey);
@@ -47,7 +39,6 @@ card.addEventListener("change", function (event) {
 // Handle form submit
 var form = document.getElementById("payment-form");
 
-// On submit button click, stops form submitting, disables card element, triggers loading overlay.
 form.addEventListener("submit", function (ev) {
   ev.preventDefault();
   card.update({ disabled: true });
@@ -55,7 +46,6 @@ form.addEventListener("submit", function (ev) {
   $("#payment-form").fadeToggle(100);
   $("#loading-overlay").fadeToggle(100);
 
-  // captures form data that cant go into payment intent, posts it to cache checkout view.
   var saveInfo = Boolean($("#id-save-info").attr("checked"));
   // From using {% csrf_token %} in the form
   var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
@@ -65,7 +55,7 @@ form.addEventListener("submit", function (ev) {
     save_info: saveInfo,
   };
   var url = "/checkout/cache_checkout_data/";
-  // if all good form then submitted
+
   $.post(url, postData)
     .done(function () {
       stripe
