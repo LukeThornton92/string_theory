@@ -35,11 +35,24 @@
 
 #payment-form .form-control,
 #card-element {
+  color: #1f1f1f;
+}
+
+.stripe-style-input {
   background-color: #fff7ec;
   border: 0 solid #000;
   border-bottom-width: 1px;
 }
+select,
+select option {
+  background-color: #fff7ec;
+  color: #1f1f1f;
+}
 
+select:invalid,
+select option[value=""] {
+  color: #aab7c4 !important;
+}
 /* -------------------------------- Loading Spinner */
 
 #loading-overlay {
