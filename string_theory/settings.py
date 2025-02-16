@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'crispy_forms',
-    "crispy_bootstrap5", # Makes crispy work with bootstrap5, otherwise breaks
+    'crispy_bootstrap5', # Makes crispy work with bootstrap5, otherwise breaks
+    'profiles',
 ]
 
 MIDDLEWARE = [
