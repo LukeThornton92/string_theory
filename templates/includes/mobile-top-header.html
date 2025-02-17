@@ -11,9 +11,15 @@
                 </a>
                 <div> <ul class="list-inline mb-0">
                         <li class="list-inline-item icon">
-                            <form action="{% url 'profile' %}" method="get">
-                                <i class="fas fa-user fa-lg"></i>
-                            </form>
+                            {% if request.user.is_authenticated %} 
+                                <a href="{% url 'profile' %}" class="text-black">
+                                    <i class="fas fa-user fa-lg"></i>
+                                </a>
+                            {% else %}
+                                <a href="{% url 'account_login' %}" class="text-black">
+                                    <i class="fas fa-user fa-lg"></i>
+                                </a>
+                            {% endif %}
                         </li>
                         <li class="list-inline-item icon">
                             <a href="{% url 'view_bag' %}" class="text-black">
@@ -79,6 +85,14 @@
                     <li><a class="nav-link" href="#">Blog</a></li>
                     <li><a class="nav-link" href="#">Contact Us</a></li>
                     <li><a class="nav-link" href="#">About Us</a></li>
+                    {% if request.user.is_authenticated %} 
+                        <a href="{% url 'account_logout' %}" class="nav-link">Log Out</a>
+                            {% if request.user.is_superuser %}
+                                <li><a class="nav-link" href="{% url 'add_product' %}">Product Management</a></li>
+                            {% endif %}
+                    {% else %}
+                        <a href="{% url 'account_signup' %}" class="nav-link">Register</a>
+                    {% endif %}
                     
                 </ul>
                     <form action="{% url 'products' %}" method="GET" class="d-flex searchbar-mobile">
