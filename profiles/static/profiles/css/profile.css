@@ -19,3 +19,9 @@
   max-height: 416px;
   overflow-y: auto;
 }
+
+.profile-form-input {
+  background-color: #fff7ec;
+  border: 0 solid #000;
+  border-bottom-width: 1px;
+}
