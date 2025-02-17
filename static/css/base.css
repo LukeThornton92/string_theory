@@ -339,6 +339,9 @@ a:-webkit-any-link {
     display: none;
   }
 }
+body {
+  padding-top: 56px;
+}
 
 /* Desktop Styles (992px and up) */
 @media (min-width: 992px) {
