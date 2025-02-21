@@ -14,5 +14,13 @@
   },
   "files.autoSave": "off",
   "workbench.colorTheme": "Tokyo Night Storm",
-  "terminal.integrated.gpuAcceleration": "canvas"
+  "terminal.integrated.gpuAcceleration": "canvas",
+  "cSpell.words": [
+    "Allauth",
+    "csrfmiddlewaretoken",
+    "expandright",
+    "postloadjs",
+    "searchbar",
+    "searchbutton"
+  ]
 }
