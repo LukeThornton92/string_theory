@@ -309,6 +309,13 @@ a:-webkit-any-link {
 
 /* -------------------------------- Media Queries */
 
+/* smallest screen size (up to 767px) */
+@media (max-width: 320px) {
+  .custom-toast {
+    max-width: 296px;
+  }
+}
+
 /* Mobile Styles (up to 767px) */
 @media (max-width: 767px) {
   .mobile-header {
