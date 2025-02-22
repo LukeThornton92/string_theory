@@ -12,71 +12,98 @@ def view_bag(request):
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specific product to the shopping bag"""
-
     
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity',1))
-    #if statement to stop someone ordering more than 100 or less than 1
+    quantity = int(request.POST.get('quantity', 1))
+
+    # Define the session bag first
+    bag = request.session.get('bag', {})
+
+    # Prevent adding more than 99 or less than 1
     if quantity > 99:
         messages.error(request, 'Please stop trying to break my site!')
         quantity = 99
+        bag = request.session.get('bag', {})
+        product = get_object_or_404(Product, pk=item_id)
+        bag[item_id] = quantity
+        request.session['bag'] = bag
+        redirect_url = request.POST.get('redirect_url', '/')
+        return redirect(redirect_url)
     elif quantity < 1:
         messages.error(request, 'Please stop trying to break my site!')
         quantity = 1
-    
-    redirect_url = request.POST.get('redirect_url', '/')
-    bag = request.session.get('bag',{})
-
-    if item_id in list(bag.keys()):
-        bag[item_id] += quantity
-        messages.success(request, f'Updated {product.name} to {bag[item_id]}')
-    else:
+        bag = request.session.get('bag', {})
+        product = get_object_or_404(Product, pk=item_id)
         bag[item_id] = quantity
-        messages.success(request, f'Added {product.name} to your bag')
+        request.session['bag'] = bag
+        redirect_url = request.POST.get('redirect_url', '/')
+        return redirect(redirect_url)
+    else:
+        if item_id in bag:  # Check if item already in the bag
+            bag[item_id] += quantity
+            messages.success(request, f'Updated {product.name} to {bag[item_id]}')
+        else:
+            bag[item_id] = quantity
+            messages.success(request, f'Added {product.name} to your bag')
 
+    # Save the updated bag back to the session
     request.session['bag'] = bag
-    
+
+    # Redirect back to the given URL or fallback
+    redirect_url = request.POST.get('redirect_url', '/')
     return redirect(redirect_url)
 
 def adjust_bag(request, item_id):
-    """ adjust the quantity of the specific product to the shopping bag"""
+    """ Adjust the quantity of the specific product in the shopping bag """
 
-    quantity = int(request.POST.get('quantity',1))
+    product = get_object_or_404(Product, pk=item_id)
+    quantity = int(request.POST.get('quantity', 1))
 
-    #if statement to stop someone ordering more than 100 or less than 1
+    bag = request.session.get('bag', {})
+    
+    # If statement to stop someone from ordering more than 99 or less than 1
     if quantity > 99:
         messages.error(request, 'Please stop trying to break my site!')
         quantity = 99
+        # Directly update the bag and redirect without continuing
+        bag = request.session.get('bag', {})
+        product = get_object_or_404(Product, pk=item_id)
+        bag[item_id] = quantity
+        request.session['bag'] = bag
+        return redirect(reverse('view_bag'))
     elif quantity < 1:
         messages.error(request, 'Please stop trying to break my site!')
         quantity = 1
-
-    bag = request.session.get('bag',{})
-    product = get_object_or_404(Product, pk=item_id)
-
-
-    if quantity > 0:
+        # Directly update the bag and redirect without continuing
+        bag = request.session.get('bag', {})
+        product = get_object_or_404(Product, pk=item_id)
         bag[item_id] = quantity
-        messages.success(request, f'Updated {product.name} to {bag[item_id]}')
+        request.session['bag'] = bag
+        return redirect(reverse('view_bag'))
     else:
-        bag.pop(item_id, None)
-        messages.success(request, f'Removed {product.name} to your bag')
+        if quantity > 0:
+            bag[item_id] = quantity
+            messages.success(request, f'Updated {product.name} to {bag[item_id]}')
+        else:
+            bag.pop(item_id, None)
+            messages.success(request, f'Removed {product.name} from your bag')
 
-
+    # Save the updated bag to the session
     request.session['bag'] = bag
+
     return redirect(reverse('view_bag'))
 
 def remove_from_bag(request, item_id):
-
-    """ Removes the specific product to the shopping bag"""
+    """ Removes the specific product from the shopping bag"""
     product = get_object_or_404(Product, pk=item_id)
 
-
-    bag = request.session.get('bag',{})
+    bag = request.session.get('bag', {})
     try:
+        # Remove the item from the bag
         bag.pop(item_id, None)
-        messages.success(request, f'Removed {product.name} to your bag')
+        messages.success(request, f'Removed {product.name} from your bag')  # Corrected phrasing
 
+        # Save the updated bag to the session
         request.session['bag'] = bag
         return HttpResponse(status=200)
     
