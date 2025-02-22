@@ -19,8 +19,12 @@
     "Allauth",
     "csrfmiddlewaretoken",
     "expandright",
+    "invalidemail",
+    "lineitem",
+    "lineitems",
     "postloadjs",
     "searchbar",
-    "searchbutton"
+    "searchbutton",
+    "testpass"
   ]
 }

@@ -1,7 +1,7 @@
 from django.test import TestCase
-from .forms import OrderForm
+from ..forms import OrderForm
 
-class OrderFormTest(TestCase):
+class CheckoutOrderFormTest(TestCase):
     def test_valid_form(self):
         ''' Checks to see if the form is valid when fields are populated'''
         form_data = {
