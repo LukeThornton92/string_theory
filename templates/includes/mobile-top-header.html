@@ -83,7 +83,7 @@
                             <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories">All</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link" href="#">Blog</a></li>
+                    <li><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
                     <li><a class="nav-link" href="#">Contact Us</a></li>
                     <li><a class="nav-link" href="#">About Us</a></li>
                     {% if request.user.is_authenticated %} 
