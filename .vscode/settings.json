@@ -19,6 +19,7 @@
     "Allauth",
     "blanksearch",
     "csrfmiddlewaretoken",
+    "cust",
     "expandright",
     "fretboard",
     "invalidemail",
