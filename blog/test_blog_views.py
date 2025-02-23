@@ -27,19 +27,27 @@ class BlogViewsTest(TestCase):
         url = reverse('add_blog')
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
-        '''self.assertContains(response, '<form')  # Ensure a form exists on the page
-        self.assertContains(response, 'name="title"')  # Ensure title field is prefilled with post data
-        self.assertContains(response, 'name="content"')'''  # Ensure content field is prefilled
-    
+        # Check if the form contains the content field
+        self.assertContains(response, 'name="title"')
+        # Check if the form contains the content field
+        self.assertContains(response, 'name="content"')
+        # other fields
+        self.assertContains(response, 'name="author"')
+        self.assertContains(response, 'name="tags"')
     '''def test_blog_edit_view(self):
          """Test to see if Blog edit page renders """
         blog_post = BlogPost.objects.create(title="Test Post", content="Test Content", author=self.super_user)
         url = reverse('edit_blog', args=[blog_post.id])
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, '<form')
+        # Check if the form contains the content field
         self.assertContains(response, 'name="title"')
-        self.assertContains(response, 'name="content"') '''
+        # Check if the form contains the content field
+        self.assertContains(response, 'name="content"')
+        # You can also check for other fields like author, tags, and image
+        self.assertContains(response, 'name="author"')
+        self.assertContains(response, 'name="tags"')
+        self.assertContains(response, 'name="image"') '''
     
 class AuthorModelTest(TestCase):
     def test_create_author(self):
