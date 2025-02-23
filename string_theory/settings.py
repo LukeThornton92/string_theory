@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5', # Makes crispy work with bootstrap5, otherwise breaks
     'storages',
+    'blog',
 ]
 
 MIDDLEWARE = [
