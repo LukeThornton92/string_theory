@@ -10,7 +10,7 @@ class BlogPostFormTest(TestCase):
         self.author = Author.objects.create(name="Test Author", bio="Test bio")
     
     def test_blog_post_form_valid(self):
-        """Test the form with valid data."""
+        """Test the form with valid data.""" 
         form_data = {
             'title': 'Valid Blog Post Title',
             'content': 'This is the content of a valid blog post.',

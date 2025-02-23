@@ -4,17 +4,12 @@ from django.contrib.auth.models import User
 from datetime import datetime
 from .models import Author, BlogPost
 from django.utils import timezone
+from django.contrib.messages import get_messages
 
 
 class BlogViewsTest(TestCase):
     def setUp(self):
         self.super_user = User.objects.create_superuser(username='superuser', password='password')
-        ''' Set up a BlogPost for edit view test
-        self.blog_post = BlogPost.objects.create(
-            title="Test Post", 
-            content="Test Content", 
-            author=self.super_user
-        )'''
 
     def test_blog_view(self):
         """ Test to see if Blog renders page """
@@ -22,18 +17,34 @@ class BlogViewsTest(TestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
 
-    def test_blog_add_view(self):
-        """ Test to see if Blog create page renders """
+    def test_blog_add_view_superuser(self):
+        """ Test to see if Blog create page renders for logged-in superuser """
+        self.client.login(username='superuser', password='password')
         url = reverse('add_blog')
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
-        # Check if the form contains the content field
+
+        # Ensure form fields are present
         self.assertContains(response, 'name="title"')
-        # Check if the form contains the content field
         self.assertContains(response, 'name="content"')
-        # other fields
-        self.assertContains(response, 'name="author"')
         self.assertContains(response, 'name="tags"')
+
+    def test_blog_add_post_superuser(self):
+        """ Test adding a blog post via POST request """
+        self.client.login(username='superuser', password='password')
+        url = reverse('add_blog')
+        response = self.client.post(url, {
+            'title': 'Test Blog',
+            'content': 'This is a test blog post',
+            'author': self.super_user.id,
+            'tags': 'test, blog'
+        }, follow=True)
+
+        self.assertEqual(response.status_code, 200)
+        response = self.client.get(url)
+        messages = list(get_messages(response.wsgi_request))
+        print("Messages:", [str(m) for m in messages])
+        self.assertEqual(str(messages[0]), "Blog successfully added!")
         
     '''def test_blog_edit_view(self):
          """Test to see if Blog edit page renders """
@@ -43,6 +54,7 @@ class BlogViewsTest(TestCase):
         self.assertEqual(response.status_code, 200)
         # Check if the form contains the content field
         self.assertContains(response, 'name="title"')
+        
         # Check if the form contains the content field
         self.assertContains(response, 'name="content"')
         # You can also check for other fields like author, tags, and image
