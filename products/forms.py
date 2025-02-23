@@ -7,7 +7,7 @@ class ProductForm(forms.ModelForm):
 
     class Meta:
         model = Product
-        fields = '__all__'
+        exclude = ['created_at']
 
     image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
 
