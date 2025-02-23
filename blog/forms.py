@@ -7,21 +7,25 @@ class BlogPostForm(forms.ModelForm):
         model = BlogPost
         fields = ['title', 'content', 'author', 'tags', 'image']
         
-    
-    def clean_title(self):
-        title = self.cleaned_data.get('title')
-        if not title:
-            messages.error(self.request, "Title is required.")
-        return title
-    
-    def clean_content(self):
-        content = self.cleaned_data.get('content')
-        if not content:
-            messages.error(self.request, "Blog content is required.")
-        return content
-    
-    def clean_tags(self):
-        tags = self.cleaned_data.get('tags')
-        if not tags:
-            raise forms.ValidationError("At least one tag is required.")
-        return tags
+        def __init__(self, *args, **kwargs):
+            """
+            Add placeholders and classes, remove auto-generated
+            labels and set autofocus on first field
+            """
+            super().__init__(*args, **kwargs)
+            placeholders = {
+                'title': 'title',
+                'content': 'content',
+                'tags': 'tags',
+            }
+
+            self.fields['title'].widget.attrs['autofocus'] = True
+            for field in self.fields:
+                if field != 'image':
+                    if self.fields[field].required:
+                        placeholder = f'{placeholders[field]} *'
+                    else:
+                        placeholder = placeholders[field]
+                    self.fields[field].widget.attrs['placeholder'] = placeholder
+                self.fields[field].widget.attrs['class'] = 'IM_IN_FORMS_CHANGE_ME '
+                self.fields[field].label = False
