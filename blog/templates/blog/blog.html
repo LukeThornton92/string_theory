@@ -11,8 +11,26 @@
 {% endblock %} 
 
 {% block content %}
-  <div class="container h-100">
-    <div class="row">
-        <div class="col"><strong>BLOG</strong></div>
-    </div>
+  <div class="overlay"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <h2 class="logo-font mb-4 header">Blog</h2>
+              <h5 class="text-muted">xxxxxxxxxxxxxx</h5>
+              <hr>
+          </div>
+      </div>
+
+    <div class="container h-100">
+      <div class="row">
+          <div class="col">
+            {% if request.user.is_authenticated %}
+              <div class="text-right">
+                <p class="text-muted">Author authenticated, click to add to blog!</p>
+                <a class="btn btn-black rounded-0" href="{% url 'add_blog' %}">Add Blog</a>
+              </div>
+              <hr>
+            {% endif %}
+          </div>
+      </div>
 {% endblock %}
