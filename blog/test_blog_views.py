@@ -34,6 +34,7 @@ class BlogViewsTest(TestCase):
         # other fields
         self.assertContains(response, 'name="author"')
         self.assertContains(response, 'name="tags"')
+        
     '''def test_blog_edit_view(self):
          """Test to see if Blog edit page renders """
         blog_post = BlogPost.objects.create(title="Test Post", content="Test Content", author=self.super_user)
