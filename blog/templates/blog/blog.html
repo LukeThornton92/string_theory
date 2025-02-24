@@ -67,7 +67,12 @@
       </div>
       <div class="row">
         <div class="col-md-4 text-muted">
-          Tags: {{ post.tags }}
+          Tags:
+          {% for tag in post.tags.all %}
+            <a href="{% url 'blog_list_by_tag' tag.slug %}" class="badge bg-primary text-white text-decoration-none">
+              {{ tag.name }}
+            </a>
+          {% endfor %}
         </div>
       </div>
       <hr>
