@@ -5,7 +5,7 @@
     "fields": {
       "title": "How to Clean Your Fender Stratocaster",
       "content": "A clean guitar plays better and lasts longer, but cleaning your Fender Stratocaster the right way can be tricky. First, start with a soft, lint-free cloth to wipe down the entire body, neck, and fretboard after each session. For the strings, use a dedicated string cleaner, which will help maintain their bright tone and keep them from rusting. Avoid harsh chemicals, as they can damage the finish – instead, use a specialized guitar cleaner that’s gentle on your instrument. Also, check the bridge and pickup areas to ensure no dust or grime is building up, which can affect sound quality. When cleaning the hardware, use a cloth to wipe the tuners, bridge, and knobs to keep them looking brand new. By giving your Strat a little TLC after every session, you’ll not only maintain its appearance but also improve its longevity and playability.",
-      "tags": "Fender, Cleaning, Guitar Maintenance",
+      "tags": [1, 2, 3],
       "author": 1,
       "image_url": "",
       "image": null,
@@ -19,7 +19,7 @@
     "fields": {
       "title": "The Best Fender Guitars for Beginners",
       "content": "Fender has long been known for producing guitars that are perfect for beginners. Whether you're starting your musical journey or looking to upgrade, Fender offers some great options that combine great tone and easy playability. One of the best choices for beginners is the Fender Squier Affinity Stratocaster. This model gives you the iconic Stratocaster shape and sound at a much lower price point. With a smooth neck, great tuners, and the classic single-coil tone, it’s a great introduction to Fender guitars. Another excellent option is the Fender Player Telecaster. While the Telecaster is slightly less common for beginners, its simplicity makes it a great choice for new players who are looking for an easy-to-handle, reliable guitar. The Fender Player Series offers fantastic quality at an affordable price, perfect for learning a wide variety of styles. Whether you're leaning towards the Strat or the Tele, both guitars will support your musical growth and offer that signature Fender sound.",
-      "tags": "Fender, Beginner, Guitar Guide",
+      "tags": [1, 4, 5],
       "author": 2,
       "image_url": "",
       "image": null,
@@ -33,7 +33,7 @@
     "fields": {
       "title": "Why You Should Choose a Gibson Les Paul for Rock",
       "content": "The Gibson Les Paul is widely recognized as one of the best guitars for rock music, and it’s easy to see why. From its classic tone to its solid build, the Les Paul has been the weapon of choice for legendary rock guitarists for decades. The solid mahogany body and carved maple top provide a rich, warm sound with plenty of sustain, making it perfect for both rhythm and lead playing. The humbucker pickups produce a thick, full sound with a bit of grit, ideal for high-gain rock styles. Whether you're shredding solos or powering through chunky riffs, the Les Paul excels in every aspect. It also has a set neck design, which contributes to better sustain and smoother tones compared to bolt-on neck guitars. If you're into heavy rock, metal, or hard rock, the Les Paul can provide the tones you crave and the versatility you need to cover a variety of rock subgenres. Simply put, no rock collection is complete without a Les Paul.",
-      "tags": "Gibson, Les Paul, Rock, Guitar Review",
+      "tags": [6, 7],
       "author": 3,
       "image_url": "",
       "image": null,
@@ -47,7 +47,7 @@
     "fields": {
       "title": "Maintaining Your Gibson SG: Tips & Tricks",
       "content": "The Gibson SG is a unique guitar known for its sharp looks and powerful sound, making it a favorite for rock and metal musicians. To keep your SG in top condition, you’ll need to follow a few important maintenance tips. First, clean the body and neck regularly to prevent the buildup of dirt and grime that could affect both the finish and playability. Make sure you use a soft cloth or a microfiber towel to avoid scratching the guitar. Don’t forget the fretboard – a fretboard conditioner can help keep it smooth and prevent it from drying out. As with any guitar, check the tuning pegs regularly to ensure they are properly adjusted. Over time, the tuners can become loose, leading to tuning instability. Tighten them gently if necessary. Additionally, Gibson SGs often have a distinctive vibrato system, so make sure the bridge and tailpiece are properly adjusted to ensure optimal string tension. By keeping these areas clean and maintained, you can ensure that your Gibson SG will continue to provide top-tier performance for years to come.",
-      "tags": "Gibson, SG, Guitar Maintenance",
+      "tags": [8, 15],
       "author": 1,
       "image_url": "",
       "image": null,
@@ -61,7 +61,7 @@
     "fields": {
       "title": "5 Easy Songs to Play on Your Fender Telecaster",
       "content": "The Fender Telecaster is known for its versatility and ease of use, making it the perfect guitar for beginners and intermediate players alike. In this post, we explore five easy songs to help you get the most out of your Telecaster. Start with ‘Twinkle Twinkle Little Star,’ a simple melody that helps you learn basic chord progressions. Once you're comfortable with that, try ‘Smoke on the Water’ by Deep Purple – the iconic riff is simple and fun to play and helps you work on both your fretting and picking technique. Moving on to classic country, ‘Jolene’ by Dolly Parton is a great song to learn for beginners. The Telecaster’s bright tone shines through beautifully in this track. Next, ‘Bad Moon Rising’ by CCR features simple chords and a steady rhythm, which will help you work on timing and accuracy. Lastly, try ‘Sweet Home Alabama’ by Lynyrd Skynyrd. This song gives you a chance to work on your rhythm playing and really makes the Telecaster’s twangy sound come alive.",
-      "tags": "Fender, Telecaster, Beginner Songs",
+      "tags": [9, 1],
       "author": 2,
       "image_url": "",
       "image": null,
@@ -75,7 +75,7 @@
     "fields": {
       "title": "How to Change Strings on a Fender Stratocaster",
       "content": "Changing strings on your Fender Stratocaster is an essential skill every guitarist should master. First, ensure you have the correct string gauge for your guitar – lighter gauges are easier on your fingers and work well for beginners. Start by loosening each string using a string winder or by hand, but be sure to leave the strings on the bridge for now to avoid detuning the guitar. Once the strings are loose, remove them carefully from the headstock and bridge. Then, clean the fretboard using a soft cloth or fretboard cleaner to remove dust and debris. Next, take your new strings and start by placing them on the bridge, then thread them through the tuners, ensuring each string is properly seated in the saddle. Tighten the tuners evenly, stretching the strings slightly as you go, and tune your guitar to pitch. After changing strings, don’t forget to give your Stratocaster a quick tune-up, adjusting the intonation as needed. Regular string changes will keep your guitar in top playing condition and ensure you get the best sound from your instrument.",
-      "tags": "Fender, Guitar Maintenance, Stratocaster",
+      "tags": [1, 3],
       "author": 1,
       "image_url": "",
       "image": null,
@@ -89,7 +89,7 @@
     "fields": {
       "title": "How to Set Up Your Gibson Les Paul for Optimal Tone",
       "content": "A well-setup Gibson Les Paul delivers unmatched tone and playability, but setting it up correctly can make a huge difference in your sound. Start by adjusting the string height at the bridge to ensure the action is low enough to avoid buzz but high enough to allow for a clear tone. A common issue with Les Pauls is neck relief, so use an Allen wrench to adjust the truss rod and ensure the neck has the proper curvature. With the neck setup done, move on to adjusting the pickups. The pickup height controls the output and tonal balance of the guitar. For a balanced sound, adjust the bridge pickup slightly higher than the neck pickup, as the bridge pickup tends to be brighter. Finally, ensure your Les Paul's intonation is set properly so each string plays in tune across the fretboard. By adjusting the action, pickup height, and intonation, you can make sure your Les Paul is perfectly setup for any style of music.",
-      "tags": "Gibson, Les Paul, Guitar Setup",
+      "tags": [15, 7, 10],
       "author": 2,
       "image_url": "",
       "image": null,
@@ -103,7 +103,7 @@
     "fields": {
       "title": "The Advantages of Fender's Hollow Body Guitars",
       "content": "Fender offers several hollow body guitars, like the Fender Jazzmaster and the Fender Telecaster Thinline, that offer a unique blend of tone and playability. Hollow body guitars are known for their warm, resonant sound, making them a great choice for jazz, blues, and rockabilly. The main advantage of a hollow body guitar is its ability to create a natural reverb-like effect, which is a result of the body’s design. This provides a more organic sound with more resonance, especially when played unplugged. The Fender Jazzmaster, with its floating tremolo and offset body, offers a rich, smooth tone and a perfect instrument for smooth jazz or surf rock. Similarly, the Telecaster Thinline combines the Tele’s characteristic twang with the added resonance of a semi-hollow body, making it a great choice for any style that requires clean, vibrant tone. Whether you’re a beginner or seasoned player, hollow body guitars from Fender offer unique tones that can inspire creativity.",
-      "tags": "Fender, Guitar Types, Hollow Body",
+      "tags": [1, 11, 12],
       "author": 3,
       "image_url": "",
       "image": null,
@@ -117,7 +117,7 @@
     "fields": {
       "title": "Gibson vs Fender: Which Guitar is Right for You?",
       "content": "Choosing between a Gibson and a Fender guitar often comes down to personal preference, the sound you want to achieve, and the playing style you prefer. Gibson guitars, like the Les Paul, are known for their thick, warm tones with lots of sustain. They are perfect for genres like rock, metal, and blues, where distortion and heavy tones are a big part of the sound. Fender guitars, on the other hand, like the Stratocaster and Telecaster, offer brighter tones with a more punchy, clear sound that works well across a variety of genres, from country to pop to rock. When it comes to playability, Gibsons often have shorter necks with thicker profiles, which some players find more comfortable, especially for solos. Fenders have longer, slimmer necks that are easier to maneuver, especially for fast playing. Ultimately, the decision between a Fender and Gibson will depend on the style of music you play, your tonal preferences, and how the guitar feels in your hands.",
-      "tags": "Gibson, Fender, Guitar Comparison",
+      "tags": [15, 1],
       "author": 1,
       "image_url": "",
       "image": null,
@@ -131,7 +131,7 @@
     "fields": {
       "title": "How to Choose the Right Guitar Pick for Your Playing Style",
       "content": "Guitar picks, also known as plectrums, come in a variety of shapes, materials, and thicknesses, each suited to different playing styles. If you’re just starting out, it's recommended to use a medium-thickness pick, as it provides a good balance between flexibility and control. Players who prefer a bright, snappy sound may prefer thinner picks, which provide more flexibility for strumming, while those looking for a heavier, more aggressive tone might go for thicker picks. Another important factor is the material. Celluloid picks are a popular choice for their smooth feel and bright tone, while nylon picks tend to be more flexible and durable. Players who perform fast solos might prefer smaller picks with a sharp tip for precision, while those who enjoy rhythm guitar may favor larger picks for easier control. The right pick depends on the type of music you’re playing and the feel you’re going for, so experiment with a few different types to find the best one for you.",
-      "tags": "Guitar Accessories, Picks, Guitar Tips",
+      "tags": [13, 14],
       "author": 2,
       "image_url": "",
       "image": null,
@@ -145,7 +145,7 @@
     "fields": {
       "title": "The Importance of Regularly Cleaning Your Fender Guitar",
       "content": "Regular cleaning of your Fender guitar is essential to maintaining its appearance and prolonging its lifespan. Start by wiping down the body and neck with a soft cloth after every playing session to remove dust and oils that accumulate from your hands. Use a cleaner specifically designed for guitars to remove stubborn fingerprints and grime without damaging the finish. Don’t forget about the fretboard—this area is especially prone to buildup, so use a fretboard cleaner or oil to keep it in good shape. If your Fender guitar has chrome hardware, use a non-abrasive polish to keep it shiny and free from corrosion. Finally, periodically change your strings to maintain optimal sound and playability. Taking the time to clean your guitar not only enhances its appearance but also helps preserve its value and tonal quality.",
-      "tags": "Fender, Guitar Maintenance, Cleaning",
+      "tags": [1, 3, 2],
       "author": 3,
       "image_url": "",
       "image": null,
@@ -159,7 +159,7 @@
     "fields": {
       "title": "Exploring the Differences Between Gibson’s Humbuckers and Fender’s Single-Coils",
       "content": "One of the biggest distinctions between Gibson and Fender guitars is their pickup design, which greatly affects the tone of the instrument. Gibson guitars, particularly the Les Paul, are equipped with humbucker pickups, which use two coils to cancel out interference and produce a thicker, warmer tone. This makes them ideal for rock, metal, and blues, where a heavier, more powerful sound is needed. On the other hand, Fender guitars, such as the Stratocaster and Telecaster, often come with single-coil pickups, which are known for their bright, crisp tones with a sharp attack. Single-coils are perfect for genres like country, pop, and clean rock, where clarity and brightness are key. While humbuckers offer a more powerful output and fuller sound, single-coils provide a more articulate, bell-like tone. Understanding these differences can help you decide which type of pickup suits your playing style and musical preferences.",
-      "tags": "Gibson, Fender, Pickup Types",
+      "tags": [15, 1],
       "author": 2,
       "image_url": "",
       "image": null,

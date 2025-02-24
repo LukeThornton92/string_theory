@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import BlogPostForm
-from. models import BlogPost
+from. models import BlogPost, Author, Tag
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
@@ -14,6 +14,7 @@ def all_blog_posts(request):
     default_page = 1
     page = request.GET.get('page', default_page)
     blog_posts = BlogPost.objects.all().order_by('-created_at')
+    tags = Tag.objects.all()
     paginator = Paginator(blog_posts, 3)  # 3 posts per page
 
     try:
@@ -23,7 +24,7 @@ def all_blog_posts(request):
     except EmptyPage:
         blog_page = paginator.page(paginator.num_pages)  # If page is out of range, show last page
 
-    return render(request, 'blog/blog.html', {'blog_page': blog_page})
+    return render(request, 'blog/blog.html', {'blog_page': blog_page, 'tags': tags})
 
 def blog_detail(request, id):
     """A view to display a single blog post."""
@@ -54,3 +55,23 @@ def add_blog_post(request):
         'form' : form
     }
     return render(request, template, context)
+
+def blog_list_by_tag(request, tag_id):
+    default_page = 1
+    page = request.GET.get('page', default_page)
+    blog_posts = BlogPost.objects.all().order_by('-created_at')
+    tag = get_object_or_404(Tag, id=tag_id)
+    blog_posts = BlogPost.objects.filter(tags=tag)
+    paginator = Paginator(blog_posts, 3)
+
+    try:
+        blog_page = paginator.page(page)
+    except PageNotAnInteger:
+        blog_page = paginator.page(default_page)  # If page is not an integer, show the first page
+    except EmptyPage:
+        blog_page = paginator.page(paginator.num_pages)  # If page is out of range, show last page
+
+    return render(request, 'blog/blog_list.html', {
+        'blog_page': blog_page,
+        'tag': tag
+    })

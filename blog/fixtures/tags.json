@@ -1,0 +1,107 @@
+[
+  {
+    "model": "blog.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Fender"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Cleaning"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Guitar Maintenance"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 4,
+    "fields": {
+      "name": "Beginner"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 5,
+    "fields": {
+      "name": "Guitar Guide"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 6,
+    "fields": {
+      "name": "Rock"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 7,
+    "fields": {
+      "name": "Les Paul"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 8,
+    "fields": {
+      "name": "SG"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 9,
+    "fields": {
+      "name": "Telecaster"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 10,
+    "fields": {
+      "name": "Guitar Setup"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 11,
+    "fields": {
+      "name": "Guitar Types"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 12,
+    "fields": {
+      "name": "Hollow Body"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 13,
+    "fields": {
+      "name": "Picks"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 14,
+    "fields": {
+      "name": "Guitar Accessories"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 15,
+    "fields": {
+      "name": "Gibson"
+    }
+  }
+]
