@@ -178,6 +178,10 @@ a:-webkit-any-link {
   --bs-table-bg: #fff7ec;
 }
 
+.pagination {
+  color: #1f1f1f;
+}
+
 /* -------------------------------- Toasts */
 
 .message-container {

@@ -34,24 +34,64 @@
           </div>
       </div>
 
-      {% for post in blog_page %}
-        <div class="col">
-          <h2>{{ post.title }}</h2>
-          <p>{{ post.content|truncatewords:30 }}</p>
-        </div>
-      {% endfor %}
-  
-      <div class="pagination">
-          {% if blog_page.has_previous %}
-              <a href="?page=1">First</a>
-              <a href="?page={{ blog_page.previous_page_number }}">Previous</a>
-          {% endif %}
-      
-          <span>Page {{ blog_page.number }} of {{ blog_page.paginator.num_pages }}</span>
-      
-          {% if blog_page.has_next %}
-              <a href="?page={{ blog_page.next_page_number }}">Next</a>
-              <a href="?page={{ blog_page.paginator.num_pages }}">Last</a>
-          {% endif %}
+      <div class="container mt-4">
+        {% for post in blog_page %}
+            <div class="row mb-4 align-items-center">
+                <!-- Text Content -->
+                <div class="col-md-8">
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.content|truncatewords:30 }}</p>
+                </div>
+                <!-- Image Preview (Right) -->
+                {% if post.image %}
+                <div class="col-md-4">
+                  <div class="border rounded p-2 text-center" style="max-width: 300px; max-height: 300px; overflow: hidden;">
+                    <a href="{% url 'blog_detail' post.id %}">
+                      <img class="card-img-top img-fluid" src="{{ post.image.url }}" alt="{{ post.name }}">
+                    </a>
+                  </div>
+                </div>
+                {% else %}
+                <div class="col-md-4">
+                  <div class="border rounded p-2 text-center" style="max-width: 300px; max-height: 300px; overflow: hidden;">
+                    <a href="{% url 'blog_detail' post.id %}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
+                    </a>
+                  </div>
+                </div>
+                {% endif %}
+                </div>
+            </div>
+        {% endfor %}
       </div>
+
+      <nav aria-label="Blog page navigation">
+        <ul class="pagination justify-content-center">
+          {% if blog_page.has_previous %}
+            <li class="page-item">
+              <a href="?page=1" class="gold page-link">First</a>
+            </li>
+            <li class="page-item">
+              <a href="?page={{ blog_page.previous_page_number }}" class="gold page-link">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>   
+          {% endif %}
+          {% for page_num in blog_page.paginator.page_range %}
+            <li class="page-item {% if blog_page.number == page_num %}active{% endif %}">
+                <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
+            </li>
+          {% endfor %}
+          {% if blog_page.has_next %}
+          <li class="page-item">
+            <a href="?page=1" class="gold page-link">Last</a>
+          </li>
+          <li class="page-item">
+            <a href="?page={{ blog_page.next_page_number }}" class="gold page-link">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>   
+        {% endif %}
+        </ul>
+      </nav>
 {% endblock %}
