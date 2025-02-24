@@ -34,22 +34,24 @@
           </div>
       </div>
 
-      <div class="row">
-        {% for post in blog_posts %}
-          <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
-              <img src="{{ post.image_url }}" class="card-img-top" alt="{{ post.title }}">
-              <div class="card-body">
-                <h5 class="card-title">{{ post.title }}</h5>
-                <p class="card-text">{{ post.content|slice:":100" }}...</p>
-                <a href="{% url 'view_blog' post.id %}" class="btn btn-primary">Read more</a>
-              </div>
-            </div>
-          </div>
-        {% empty %}
-          <p>No blog posts available.</p>
-        {% endfor %}
+      {% for post in blog_page %}
+        <div class="col">
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.content|truncatewords:30 }}</p>
+        </div>
+      {% endfor %}
+  
+      <div class="pagination">
+          {% if blog_page.has_previous %}
+              <a href="?page=1">First</a>
+              <a href="?page={{ blog_page.previous_page_number }}">Previous</a>
+          {% endif %}
+      
+          <span>Page {{ blog_page.number }} of {{ blog_page.paginator.num_pages }}</span>
+      
+          {% if blog_page.has_next %}
+              <a href="?page={{ blog_page.next_page_number }}">Next</a>
+              <a href="?page={{ blog_page.paginator.num_pages }}">Last</a>
+          {% endif %}
       </div>
-    </div>
-  </div>
 {% endblock %}

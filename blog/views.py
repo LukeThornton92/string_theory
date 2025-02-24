@@ -3,13 +3,27 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import BlogPostForm
 from. models import BlogPost
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 
+
 def all_blog_posts(request):
-    """A view to return the blog page"""
+    """A view to return the blog page, using pagination to show 3 blogs per page"""
+    # Show 3 posts per page, defaults to page 1.
+    default_page = 1
+    page = request.GET.get('page', default_page)
     blog_posts = BlogPost.objects.all().order_by('-created_at')
-    return render(request, 'blog/blog.html', {'blog_posts': blog_posts})
+    paginator = Paginator(blog_posts, 3)  # 3 posts per page
+
+    try:
+        blog_page = paginator.page(page)
+    except PageNotAnInteger:
+        blog_page = paginator.page(default_page)  # If page is not an integer, show the first page
+    except EmptyPage:
+        blog_page = paginator.page(paginator.num_pages)  # If page is out of range, show last page
+
+    return render(request, 'blog/blog.html', {'blog_page': blog_page})
 
 def blog_detail(request, id):
     """A view to display a single blog post."""

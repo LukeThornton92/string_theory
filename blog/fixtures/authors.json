@@ -1,0 +1,35 @@
+[
+  {
+    "pk": 1,
+    "model": "blog.author",
+    "fields": {
+      "name": "Alice Johnson",
+      "bio": "Alice is a passionate writer with a love for technology and travel. She shares her experiences and insights through her blogs.",
+      "image_url": "",
+      "image": null,
+      "created_at": "2025-02-23T10:00:00Z"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "blog.author",
+    "fields": {
+      "name": "Bob Smith",
+      "bio": "Bob writes about personal growth, motivation, and self-improvement. He believes in the power of positive thinking and hard work.",
+      "image_url": "",
+      "image": null,
+      "created_at": "2025-02-23T10:05:00Z"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "blog.author",
+    "fields": {
+      "name": "Charlie Brown",
+      "bio": "Charlie is a tech enthusiast who writes about the latest trends in technology, gadgets, and the digital world.",
+      "image_url": "",
+      "image": null,
+      "created_at": "2025-02-23T10:10:00Z"
+    }
+  }
+]

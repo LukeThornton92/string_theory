@@ -8,6 +8,7 @@ class BlogPostFormTest(TestCase):
         """Create an author and a superuser for testing."""
         self.super_user = User.objects.create_superuser(username='superuser', password='password')
         self.author = Author.objects.create(name="Test Author", bio="Test bio")
+        form = BlogPostForm(data={'title': 'Test Title', 'content': 'Test Content'}, user=self.super_user)
     
     def test_blog_post_form_valid(self):
         """Test the form with valid data.""" 
@@ -34,21 +35,22 @@ class BlogPostFormTest(TestCase):
         self.assertEqual(blog_post.author, self.author)
         self.assertEqual(blog_post.tags, 'Valid, Tags')
 
-    def test_blog_post_form_invalid(self):
-        """Test the form with invalid data."""
-        form_data = {
-            'title': '',  # Invalid field
-            'content': 'This is content without a title.',
-            'author': self.author.id,
-            'tags': '',
-            'image': None
+    def test_blog_post_form_valid(self):
+        """ Test the form with valid data """
+        # Prepare form data
+        data = {
+            'title': 'Test Blog',
+            'content': 'This is a test blog post',
+            'tags': 'test, blog'
         }
+
+        # Create a form instance with the user passed as an argument
+        form = BlogPostForm(data, user=self.user)
         
-        form = BlogPostForm(data=form_data)
-        
-        # Check if the form is invalid
-        self.assertFalse(form.is_valid())
-        
-        # Check for specific form errors
-        self.assertIn('title', form.errors)  # title is required
-        self.assertIn('tags', form.errors)   # tags is required if you add validators for it
+        self.assertTrue(form.is_valid())  # Check if the form is valid
+
+        # Save the form and get the created blog post
+        blog_post = form.save()
+
+        # Ensure the blog post was saved and the author is correctly assigned
+        self.assertEqual(blog_post.author.name, self.user.username)

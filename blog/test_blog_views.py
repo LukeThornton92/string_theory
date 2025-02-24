@@ -20,6 +20,14 @@ class BlogViewsTest(TestCase):
     def test_blog_add_view_superuser(self):
         """ Test to see if Blog create page renders for logged-in superuser """
         self.client.login(username='superuser', password='password')
+
+        data = {
+            'title': 'Test Blog',
+            'content': 'This is a test blog post',
+            'author': self.super_user.id,
+            'tags': 'test, blog',
+        }
+
         url = reverse('add_blog')
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
@@ -33,17 +41,22 @@ class BlogViewsTest(TestCase):
         """ Test adding a blog post via POST request """
         self.client.login(username='superuser', password='password')
         url = reverse('add_blog')
-        response = self.client.post(url, {
+
+        data = {
             'title': 'Test Blog',
             'content': 'This is a test blog post',
             'author': self.super_user.id,
-            'tags': 'test, blog'
-        }, follow=True)
+            'tags': 'test, blog',
+        }
 
+        # Send POST request
+        url = reverse('add_blog')
+        response = self.client.post(url, data, follow=True)
+
+        # Check the status code is 200 (successful page load after redirect)
         self.assertEqual(response.status_code, 200)
-        response = self.client.get(url)
+
         messages = list(get_messages(response.wsgi_request))
-        print("Messages:", [str(m) for m in messages])
         self.assertEqual(str(messages[0]), "Blog successfully added!")
         
     '''def test_blog_edit_view(self):
