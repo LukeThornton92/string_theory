@@ -79,13 +79,13 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdownMenuLink3">
                             <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories&description=amplifier">Amplifiers</a></li>
-                            <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories&description=pedal">Pendals</a></li>
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories&description=pedal">Pedals</a></li>
                             <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories">All</a></li>
                         </ul>
                     </li>
                     <li><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
-                    <li><a class="nav-link" href="#">Contact Us</a></li>
-                    <li><a class="nav-link" href="#">About Us</a></li>
+                    <li><a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a></li>
+                    <li><a class="nav-link" href="{% url 'about_us' %}">About Us</a></li>
                     {% if request.user.is_authenticated %} 
                         <a href="{% url 'account_logout' %}" class="nav-link">Log Out</a>
                             {% if request.user.is_superuser %}
