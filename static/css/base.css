@@ -8,6 +8,9 @@ body {
   font-family: "Lato", Arial, Helvetica;
   position: relative;
   color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .title {
@@ -182,6 +185,63 @@ a:-webkit-any-link {
   color: #1f1f1f;
 }
 
+/* -------------------------------- Footer */
+footer {
+  margin-top: auto;
+}
+
+.icon-red {
+  color: #bc0500;
+}
+
+.icon-orange {
+  color: #f18e02;
+}
+
+/* Desktop Footer hidden below 767px */
+.desktop-footer {
+  display: block;
+}
+
+/* Mobile Footer shown below 767px */
+.mobile-footer {
+  display: none;
+}
+
+@media (max-width: 766px) {
+  .desktop-footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: block;
+  }
+}
+/* -------------------------------- Blog */
+
+.badge {
+  border: 2px solid #a67c00;
+  border-radius: 20px; /* Adjust as needed */
+  padding: 0.5em 1em; /* Ensure proper spacing */
+  margin: 5px;
+}
+
+.custom-pagination .page-link {
+  background-color: rgba(88, 88, 88, 0.2) !important; /* Gray background */
+  color: #1f1f1f !important; /* Dark text */
+  border-radius: 0 !important; /* No rounded corners */
+  border: none;
+  margin: 6px;
+}
+
+.custom-pagination .page-item.active .page-link {
+  background-color: #1f1f1f !important;
+  color: #a67c00 !important;
+}
+
+.custom-pagination .page-link:hover {
+  background-color: rgba(88, 88, 88, 0.5) !important;
+  color: #a67c00 !important;
+}
 /* -------------------------------- Toasts */
 
 .message-container {
@@ -383,9 +443,12 @@ a:-webkit-any-link {
   .accordion-mobile {
     display: none;
   }
-}
-body {
-  padding-top: 56px;
+  body {
+    padding-top: 56px;
+  }
+  .mobile-header {
+    display: none;
+  }
 }
 
 /* Desktop Styles (992px and up) */
@@ -403,6 +466,9 @@ body {
     font-size: 3rem; /* Larger font on desktop */
   }
   .accordion-mobile {
+    display: none;
+  }
+  .mobile-header {
     display: none;
   }
 }
@@ -535,7 +601,7 @@ body {
   height: 1px;
   width: 55%;
   position: relative;
-  margin: 30px auto;
+  margin: 5px auto;
   background: #bc0500;
 }
 .center-diamond:before {

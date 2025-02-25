@@ -66,11 +66,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 text-muted">
+        <div class="col text-muted">
           Tags:
           {% for tag in post.tags.all %}
-            <a href="{% url 'blog_list_by_tag' tag.id %}" class="badge bg-primary text-white text-decoration-none">
-              {{ tag.name }}
+            <a href="{% url 'blog_list_by_tag' tag.id %}" class="badge text-muted text-decoration-none">
+              #{{ tag.name }}
             </a>
           {% endfor %}
         </div>
@@ -79,14 +79,16 @@
     {% endfor %}
 
     <nav aria-label="Blog page navigation">
-      <ul class="pagination justify-content-center mt-4">
+      <ul class="pagination justify-content-center mt-4 custom-pagination">
         {% if blog_page.has_previous %}
           <li class="page-item">
-            <a href="?page=1" class="gold page-link">First</a>
+            <a href="?page=1" class="gold page-link">
+              <i class="fas fa-angle-double-left"></i>
+            </a>
           </li>
           <li class="page-item">
             <a href="?page={{ blog_page.previous_page_number }}" class="gold page-link">
-              <span aria-hidden="true">&laquo;</span>
+              <span aria-hidden="true"><i class="fas fa-angle-left"></i></span>
             </a>
           </li>   
         {% endif %}
@@ -103,11 +105,13 @@
         {% endfor %}
         {% if blog_page.has_next %}
           <li class="page-item">
-            <a href="?page={{ blog_page.paginator.num_pages }}" class="gold page-link">Last</a>
+            <a href="?page={{ blog_page.paginator.num_pages }}" class="gold page-link">
+              <i class="fas fa-angle-double-right"></i>
+            </a>
           </li>
           <li class="page-item">
             <a href="?page={{ blog_page.next_page_number }}" class="gold page-link">
-              <span aria-hidden="true">&raquo;</span>
+              <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
             </a>
           </li>   
         {% endif %}
@@ -115,3 +119,28 @@
     </nav>
   </div>
 {% endblock %}
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center custom-pagination">
+      {% if blog_page.has_previous %}
+          <li class="page-item">
+              <a class="page-link" href="?page=1">First</a>
+          </li>
+          <li class="page-item">
+              <a class="page-link" href="?page={{ blog_page.previous_page_number }}">Previous</a>
+          </li>
+      {% endif %}
+
+      <li class="page-item active">
+          <span class="page-link">{{ blog_page.number }} of {{ blog_page.paginator.num_pages }}</span>
+      </li>
+
+      {% if blog_page.has_next %}
+          <li class="page-item">
+              <a class="page-link" href="?page={{ blog_page.next_page_number }}">Next</a>
+          </li>
+          <li class="page-item">
+              <a class="page-link" href="?page={{ blog_page.paginator.num_pages }}">Last</a>
+          </li>
+      {% endif %}
+  </ul>
+</nav>
