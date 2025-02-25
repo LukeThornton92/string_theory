@@ -3,105 +3,105 @@
     "model": "blog.tag",
     "pk": 1,
     "fields": {
-      "name": "Fender"
+      "name": "fender"
     }
   },
   {
     "model": "blog.tag",
     "pk": 2,
     "fields": {
-      "name": "Cleaning"
+      "name": "cleaning"
     }
   },
   {
     "model": "blog.tag",
     "pk": 3,
     "fields": {
-      "name": "Guitar Maintenance"
+      "name": "guitar Maintenance"
     }
   },
   {
     "model": "blog.tag",
     "pk": 4,
     "fields": {
-      "name": "Beginner"
+      "name": "beginner"
     }
   },
   {
     "model": "blog.tag",
     "pk": 5,
     "fields": {
-      "name": "Guitar Guide"
+      "name": "guitar Guide"
     }
   },
   {
     "model": "blog.tag",
     "pk": 6,
     "fields": {
-      "name": "Rock"
+      "name": "rock"
     }
   },
   {
     "model": "blog.tag",
     "pk": 7,
     "fields": {
-      "name": "Les Paul"
+      "name": "les Paul"
     }
   },
   {
     "model": "blog.tag",
     "pk": 8,
     "fields": {
-      "name": "SG"
+      "name": "sg"
     }
   },
   {
     "model": "blog.tag",
     "pk": 9,
     "fields": {
-      "name": "Telecaster"
+      "name": "telecaster"
     }
   },
   {
     "model": "blog.tag",
     "pk": 10,
     "fields": {
-      "name": "Guitar Setup"
+      "name": "guitar Setup"
     }
   },
   {
     "model": "blog.tag",
     "pk": 11,
     "fields": {
-      "name": "Guitar Types"
+      "name": "guitar Types"
     }
   },
   {
     "model": "blog.tag",
     "pk": 12,
     "fields": {
-      "name": "Hollow Body"
+      "name": "hollow Body"
     }
   },
   {
     "model": "blog.tag",
     "pk": 13,
     "fields": {
-      "name": "Picks"
+      "name": "picks"
     }
   },
   {
     "model": "blog.tag",
     "pk": 14,
     "fields": {
-      "name": "Guitar Accessories"
+      "name": "guitar Accessories"
     }
   },
   {
     "model": "blog.tag",
     "pk": 15,
     "fields": {
-      "name": "Gibson"
+      "name": "gibson"
     }
   }
 ]

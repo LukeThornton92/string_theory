@@ -26,9 +26,9 @@ def all_blog_posts(request):
 
     return render(request, 'blog/blog.html', {'blog_page': blog_page, 'tags': tags})
 
-def blog_detail(request, id):
+def blog_detail(request, blog_id):
     """A view to display a single blog post."""
-    post = get_object_or_404(BlogPost, id=id)
+    post = get_object_or_404(BlogPost, id=blog_id)
     return render(request, 'blog/blog_detail.html', {'post': post})
 
 @login_required
@@ -75,3 +75,44 @@ def blog_list_by_tag(request, tag_id):
         'blog_page': blog_page,
         'tag': tag
     })
+
+@login_required
+def delete_blog(request, blog_id):
+    """ Deletes a Blog from the blog page """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners and authors are allowed to do that!')
+        return redirect(reverse('home'))
+    
+    blog = get_object_or_404(BlogPost, pk = blog_id)
+    blog.delete()
+    messages.success(request, 'Blog deleted!')
+    return redirect(reverse('blog'))
+
+@login_required
+def edit_blog(request, blog_id):
+    """ Edit a Blog from the blog page """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners and authors are allowed to do that!')
+        return redirect(reverse('home'))
+
+    blog = get_object_or_404(BlogPost, pk = blog_id)
+
+    if request.method == 'POST':
+        form = BlogPostForm(request.POST, request.FILES, instance = blog)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully edited blog!')
+            return redirect(reverse('product_detail', args = [blog.id]))
+        else:
+            messages.error(request, 'Failed to edit product, please ensure for is valid')
+    else:
+        form = BlogPostForm(instance = blog)
+        messages.info(request, f'You are editing {blog.title} originally written by {blog.author}')
+
+    template = 'blog/edit_blog.html'
+    context = {
+        'form' : form,
+        'blog' : blog,
+    }
+
+    return render(request, template, context)

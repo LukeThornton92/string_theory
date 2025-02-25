@@ -6,6 +6,16 @@
     <h2>{{ post.title }}</h2>
     <p><strong>By {{ post.author.name }}</strong></p>
     <p>{{ post.content }}</p>
+    {% if request.user.is_superuser %}
+    <div class="row">
+        <div class="col">
+            <small class="ml-3">
+                <a href="{% url 'edit_blog' post.id %}">Edit</a>
+                <a href="{% url 'delete_blog' post.id %}" class="text-danger">Delete</a>
+            </small>
+        </div>
+    </div>
+    {% endif %}
     {% if post.image %}
         <img src="{{ post.image.url }}" alt="{{ post.title }}">
     {% endif %}

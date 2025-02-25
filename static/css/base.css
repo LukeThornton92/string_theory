@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -58,8 +59,8 @@ body {
 }
 
 .btn-black {
-  background: black;
-  color: white;
+  background: #1f1f1f;
+  color: #a67c00;
 }
 
 .shop-now-button:hover,
@@ -473,6 +474,25 @@ footer {
   }
 }
 
+/* For small screens, reduce the font size and padding of pagination items */
+@media (max-width: 576px) {
+  .pagination {
+    font-size: 0.8rem; /* Smaller font size */
+    margin: 0 auto;
+  }
+  .pagination .page-item {
+    margin-right: 3px; /* Reduce space between page items */
+  }
+  .pagination .page-link {
+    padding: 0.25rem 0.5rem; /* Smaller padding for links */
+    white-space: nowrap;
+  }
+  /* Prevent the pagination from overflowing horizontally */
+  .pagination-wrapper {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
 /* -------------------------------- Search Bar */
 
 .button {

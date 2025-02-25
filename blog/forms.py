@@ -43,19 +43,34 @@ class BlogPostForm(forms.ModelForm):
         self.fields['title'].widget.attrs['autofocus'] = True
 
     def clean_tag_string(self):
-        '''Tags to be entered seperated with commas'''
+        '''Tags to be entered separated with commas'''
         tag_string = self.cleaned_data.get('tag_string')
         if not tag_string:
             raise forms.ValidationError("Please enter at least one tag.")
-            
-        # Split by comma and strip whitespace
-        tag_list = [tag.strip() for tag in tag_string.split(',')]
         
+        # Split by comma, strip whitespace, and capitalize the first letter of each tag.
+        tag_list = [tag.strip().title() for tag in tag_string.split(',')]
+
         # Remove empty tags
         tag_list = [tag for tag in tag_list if tag]
         
         if not tag_list:
             raise forms.ValidationError("Please enter at least one non-empty tag.")
+        
+        # Avoid duplicates in the list itself
+        unique_tag_list = []
+        for tag_name in tag_list:
+
+            # Check if tag already exists in the database (ignore case)
+            tag, created = Tag.objects.get_or_create(name=tag_name)
+            
+            if created:
+                # If the tag was created, ensure it's capitalized before saving
+                tag.name = tag_name.title()  # Capitalize the name
+                tag.save()
+            
+            # Add the tag to the list to be returned (even if it already exists)
+            unique_tag_list.append(tag_name)
             
         return tag_list
 
