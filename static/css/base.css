@@ -31,7 +31,7 @@ body {
 .hero {
   height: 70vh;
   background: url("/media/desktophero.webp") center/cover no-repeat;
-  position: relative; /* Needed for absolute positioning of the text */
+  position: relative;
   max-height: 100%;
 }
 .btn-black {
