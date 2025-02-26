@@ -11,25 +11,81 @@
 {% endblock %} 
 
 {% block content %}
-  <img src="/media/desktophero.png" alt="Pink Fender Telecaster with gear" class="hero">
-  <div class="container h-100" >
-    <div class="row">
-      <div class="col-7 col-md-6 my-auto ">
-        <h1 class="display-4 logo-font text-black">
-          The new collections are here
-        </h1>
-        <div class="my-5">
-          <h4>
-            <a
-              href="{% url 'products'%}"
-              class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"
-              >Shop Now</a
-            >
-          </h4>
-          
-        </div>
-      </div>
+  <div class="container-fluid p-0">
+    <div class="hero d-flex align-items-center justify-content-center text-white">
+      <h1 class="hero-section">Hero Section</h1>
     </div>
   </div>
-  <!--<div><hr class="center-diamond"></div>-->
+
+  <div class="container my-4">
+  <hr class="center-diamond">
+  <div class="row text-center">
+      <div class="col-6 col-md-3">
+          <img src="/media/bluetele.jpg" class="img-fluid" alt="">
+          <p>Text 1</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="/media/bluetele.jpg" class="img-fluid" alt="">
+          <p>Text 2</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="/media/bluetele.jpg" class="img-fluid" alt="">
+          <p>Text 3</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="/media/bluetele.jpg" class="img-fluid" alt="">
+          <p>Text 4</p>
+      </div>
+  </div>
+  <hr class="center-diamond">
+  <div class="row justify-content-center text-center mt-4">
+      <div class="col-5 col-md-2 mx-4">
+          <img src="/media/bluetele.jpg" class="img-fluid" alt="">
+          <p>Text 5</p>
+      </div>
+      <div class="col-5 col-md-2 mx-4">
+          <img src="/media/bluetele.jpg" class="img-fluid" alt="">
+          <p>Text 6</p>
+      </div>
+      <div class="col-5 col-md-2 mx-4">
+          <img src="/media/bluetele.jpg" class="img-fluid" alt="">
+          <p>Text 7</p>
+      </div>
+      <div class="col-5 col-md-2 mx-4">
+          <img src="/media/bluetele.jpg" class="img-fluid" alt="">
+          <p>Text 8</p>
+      </div>
+  </div>
+  <hr class="center-diamond">
+  <div class="row text-center mt-4">
+      <div class="col-md-6">
+          <img src="/media/bluetele.jpg" class="img-fluid" alt="">
+          <p>Text 9</p>
+      </div>
+      <div class="col-md-6">
+          <img src="/media/bluetele.jpg" class="img-fluid" alt="">
+          <p>Text 10</p>
+      </div>
+  </div>
+
+  <div class="row text-center mt-4">
+      <div class="col-6 col-md-3">
+          <img src="/media/bluetele.jpg" class="img-fluid square-img" alt="">
+          <p>Text 11</p>
+      </div>
+      <div class="col-6 col-md-3">
+          <img src="/media/bluetele.jpg" class="img-fluid square-img" alt="">
+          <p>Text 12</p>
+      </div>
+      <div class="col-6 col-md-3">
+          <img src="/media/bluetele.jpg" class="img-fluid square-img" alt="">
+          <p>Text 13</p>
+      </div>
+      <div class="col-6 col-md-3">
+          <img src="/media/bluetele.jpg" class="img-fluid square-img" alt="">
+          <p>Text 14</p>
+      </div>
+  </div>
+  </div>
+
 {% endblock %}

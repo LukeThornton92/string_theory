@@ -29,12 +29,8 @@ body {
 }
 
 .hero {
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  height: 70vh;
+  background: url("/media/desktophero.png") center/cover no-repeat;
 }
 
 .hero img {
