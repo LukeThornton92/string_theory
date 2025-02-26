@@ -30,7 +30,7 @@ body {
 
 .hero {
   height: 70vh;
-  background: url("/media/desktophero.png") center/cover no-repeat;
+  background: url("/media/desktophero.webp") center/cover no-repeat;
   position: relative; /* Needed for absolute positioning of the text */
   max-height: 100%;
 }
@@ -362,6 +362,9 @@ footer {
   .homepage-font {
     font-size: 1rem;
   }
+  .hero {
+    background: url("/media/mobilehero.webp") center/cover no-repeat;
+  }
 }
 
 /* Mobile Styles (up to 767px) */
@@ -399,6 +402,9 @@ footer {
     left: 0;
     width: 100vw;
     z-index: 1000;
+  }
+  .hero {
+    background: url("/media/mobilehero.png") center/cover no-repeat;
   }
 }
 
