@@ -404,7 +404,7 @@ footer {
     z-index: 1000;
   }
   .hero {
-    background: url("/media/mobilehero.png") center/cover no-repeat;
+    background: url("/media/mobilehero.webp") center/cover no-repeat;
   }
 }
 

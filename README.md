@@ -1,25 +1,23 @@
-# _Nature heals Cosmetics and Essential Oils_
+# _String Theory_
 
-Nature Heals is an online store that allows users to buy
+String Theory is an online guitar store.
 
-This is an example project not built for real credit card transactions. To test the functionalilty use the below number
+This is an example project not built for real credit card transactions. To test the functionality use the below number
 
 ```
 Test card number: 4242 4242 4242 4242
-Expiry date: 04 / 24
+Expiry date: 04 / 26
 CVC :242
 Zip code: 42424
 ```
 
-![Overview](./docs/features/nature_heals_responsive_site.JPG)
+![Overview]()
 
-Link to the page: [Nature Heals](https://nature-heals-89c8f732e59d.herokuapp.com/)
+Link to the page: [String Theory]()
 
 # Project Overview
 
-Nature heals cosmetics and essential oils is devoted to improving people's health and state of wellbeing through nature. They strongly believe in its healing power and their aim is to use it for the benefit of others. Therefore their products are made of natural ingredients and range from creams to syrups and essential oils which are enriched with the extracts from herbs, flowers and fruits.
-All of the ingredients are selected carefully to combat a variety of problems such as inflammation, immunity, stress, concentration, sleep or skin problems.
-Their high quality products can be used not only to help with the existing problems but as a prevention of a variety of diseases.
+- INPUT INFO HERE
 
 # Table of Content
 
@@ -36,7 +34,7 @@ Their high quality products can be used not only to help with the existing probl
   - [User’s activity management (admin only)](#users-activity-management-admin-only)
 - [Design](#design)
   - [Design choices](#design-choices)
-  - [Color Scheme](#color-scheme)
+  - [Colour Scheme](#colour-scheme)
   - [Typography](#typography)
   - [Imagery](#imagery)
 - [Database Scheme & User Journey](#database-scheme-&-user-journey)
@@ -78,11 +76,11 @@ Their high quality products can be used not only to help with the existing probl
 
 ### Target user
 
-- People seeking natural remedies to their problems
-- People who want to improve their health
-- People who want to use cosmetics based on natural ingredients
+- The target audience for this site will be people looking to purchase a high-end guitar from one of the 2 majour brands in the space, they will be looking to either purchase products for themselves or as a gift.
 
-### Navigation
+- The target audience will also be someone looking to read up on the latest news and tips surrounding either music or the products.
+
+### Viewing and Navigation
 
 1. I want it to be easy to register, login and logout
 2. I want it to be easy to access my profile
@@ -143,28 +141,118 @@ Their high quality products can be used not only to help with the existing probl
 45. I want the user to be notified when the payment details, they provide, are not correct
 46. Prevent errors with payment (e.g. prevent placing order but stopping payment, or charging the customer twice)
 
+# Research
+
+## https://www.kennysmusic.co.uk/
+
+A chain of music stores across Scotland, offering numerous different instruments and accessories.
+
+### Like:
+
+- The brand logos are displayed in the navbar drop downs.
+- Navbar drop down also greys out page
+- Items in shop let you see if it's in stock
+
+### Dislike:
+
+- Very busy site, a lot of different parts of the page moving and trying to get your attention.
+- Large drop downs that block information
+- Nearly everything has a hover animation, entire page can change when rolling mouse over site
+
+## https://www.gibson.com/en-GB
+
+A high end guitar brand that make and sell guitars and guitar accessories.
+
+### Like:
+
+- Muted colours
+- Simple design
+- Item viewing pleasant experience
+- Smart navbar
+
+### Dislike:
+
+- Homepage really long, trying to display too much
+- No back to top button
+
+## https://www.fender.com/en-GB/start
+
+A high end guitar brand that make and sell guitars and guitar accessories.
+
+### Like:
+
+- Very professional styling
+- Hero image helps keep first impressions good, rotates after a few seconds showcasing guitars
+- Search bar always at top, visible at all sizes. Dropdowns rotate into
+
+### Dislike:
+
+- No back to top button on long pages
+
+## https://www.gear4music.com/
+
+An online music store offering all kinds of instruments and accessories.
+
+### Like:
+
+- Shop has a nice tile format
+- Give exact stock quantities when browsing store
+- Offers numerous pictures
+- Gives Key features for quick browsing
+
+### Dislike:
+
+- Very busy site
+- Drop downs in Navbar are huge, each one offering up to and over 100 options
+- Long specifications
+
+## https://www.peachguitars.com/
+
+Website for a small guitar shop.
+
+### Like:
+
+- Dark tones, helps info and images pop
+- Nice colour scheme
+- Displays brand logos, helps people find know products
+- Allows to search by brand, giving a short synopsis on the company.
+
+### Dislike:
+
+- Has a header fixed to top of page with brands and reviews, looks unprofessional.
+- Has a banner that rotates every couple of seconds, can't see all information shown quick enough.
+- Search bar expands removing all buttons
+
+After researching other sites I have made a few notes on what to aim for with my site; I need to ensure the home page isn't overflowing with products, as I feel it gives off an unprofessional feel. The user is being pulled from one thing to the next, especially when animations such as rotating banners or carousels are involved.
+
+After doing my research, I realised that I wanted something much more modern, using more minimalistic ideas. When viewing sites such as Asos and Boohoo (2 large online fashion retailers), I quickly found something closer to what I was imagining, with large hero images advertising the latest product with minimal text, letting the product sell itself. Simple navigation bars that span the screen and muted colours keep the attention on the product; these will be where I draw my inspiration from moving forward.
+
 # Design
 
 ## Design choices
 
 The site will be visited by people who are looking for products made of natural ingredients which could help with their health or skin problems. Therefore, the design elements evoke the feeling of nature and purity as well as solution to their problems.
 
-## Color Scheme
+## Colour Scheme
 
-The main colors of the website are different shades of green and white. Ash grey green is used for card-outline and to make certain containers stand out. Dartmouth green is used for header, footer and buttons. Pakistan green is used for the banner in order to make it stand out.
+![Color Scheme](/media/README/colourpalette.png)
 
-![Color Scheme](./docs/color_scheme.JPG)
+My inspiration for the colour scheme was taken from the very products themselves. I took numerous hex values from classic Fender and Gibson guitars, played around with brightness and tones and came to the pallete below.
+
+I chose a simple off white background for my site, I think a light pale background gives a much more proffesional feel.
+
+![Contrast](/media/README/contrast.png)
+
+The black both contrasts well with the off white background but it is also taken from the classic black les paul, along with the gold highlights being from that same guitar, with the golden details such as pickups.
+
+The red and orange are taken from the Fender telecasters in rim of the original "sunburst" colour way from the late 50's.
 
 ## Typography
 
-Google Fonts website was used to import the fonts chosen for this website. Lato was used as a general font for the website. Handlee was used for headers and for the quote. San seriff was added in case browser doesn't support the other two fonts.
+My inspiration for the logo font was the actualy both of Fender and Gibson logos, both fonts iconic and timeless. I was looking for something artistic and retro like Fender, but bold and legible like Gibson, I finally settled on
+[Lobster](https://fonts.google.com/specimen/Lobster?preview.text=Welcome%20to%20String%20Theory%20&query=Lobster).
 
-![Font Handlee](./docs/handlee.JPG)
-![Font Lato](./docs/lato.JPG)
-
-## Imagery
-
-The product images in this project were generated by text to image tool from [Runway](https://runwayml.com/), and the rest of the images was taken from [AdobeStock ](https://stock.adobe.com/uk/) and [Pexels](https://www.pexels.com/)
+Keeping with google fonts I was able to quickly identify the font I wanted to use for the main body of text, unfortentley having picked it and thinking I found a real gem I realised it was the same font used in the Project 'Boutique Ado'. I selected [Lato](https://fonts.google.com/specimen/Lato?preview.text=Welcome%20to%20String%20Theory%20&query=lato) as its professional and easy to read.
 
 # Database Scheme & User Journey
 
@@ -178,11 +266,9 @@ The product images in this project were generated by text to image tool from [Ru
 
 # Wireframes
 
-<details>
-<summary>Home page</summary>
-<br>
+Home page
 
-![Home page](./docs/wireframes/wireframes_home_page.JPG)
+![Home page]()
 
 </details>
 
@@ -190,7 +276,7 @@ The product images in this project were generated by text to image tool from [Ru
 <summary>Products page</summary>
 <br>
 
-![Products page](./docs/wireframes/wireframes_products_page.JPG)
+![Products page]()
 
 </details>
 
@@ -198,7 +284,7 @@ The product images in this project were generated by text to image tool from [Ru
 <summary>Product details page</summary>
 <br>
 
-![Product details page](./docs/wireframes/wireframes_product_detail.JPG)
+![Product details page]()
 
 </details>
 
@@ -206,7 +292,7 @@ The product images in this project were generated by text to image tool from [Ru
 <summary>Bag</summary>
 <br>
 
-![Bag](./docs/wireframes/wireframes_bag.JPG)
+![Bag]()
 
 </details>
 
@@ -214,7 +300,7 @@ The product images in this project were generated by text to image tool from [Ru
 <summary>Checkout</summary>
 <br>
 
-![Checkout](./docs/wireframes/wireframes_checkout.JPG)
+![Checkout]()
 
 </details>
 
@@ -222,23 +308,15 @@ The product images in this project were generated by text to image tool from [Ru
 <summary>My profile</summary>
 <br>
 
-![My profile](./docs/wireframes/my_profile.JPG)
+![My profile]()
 
 </details>
 
 <details>
-<summary>Wishlist</summary>
+<summary>Blog</summary>
 <br>
 
-![Wishlist](./docs/wireframes/wireframes_my_wishlist.JPG)
-
-</details>
-
-<details>
-<summary>Add product</summary>
-<br>
-
-![Add product](./docs/wireframes/wireframes_add_product.JPG)
+![Wishlist]()
 
 </details>
 
@@ -246,7 +324,7 @@ The product images in this project were generated by text to image tool from [Ru
 <summary>Contact</summary>
 <br>
 
-![Contact](./docs/wireframes/wireframes_contact.JPG)
+![Contact]()
 
 </details>
 
@@ -254,103 +332,66 @@ The product images in this project were generated by text to image tool from [Ru
 
 ## Header
 
-- Repeats on all the pages
-- Positioned on the top of the page
-- Logo is positioned on the left
-- Search bar allows the user to locate certain products easily
-- Account, Wishlist and bag options are on the right for the user to be quickly directed to the pages of interes
-- Main nav enables user to filter the products as well as narrow the search down by category
-- Relates to following user stories: 1,4,6,7
+- INPUT INFO HERE
 
-![Header desktop ](./docs/features/banner_header.JPG)
-![Header mobile ](./docs/features/banner_header_small.JPG)
+![Header desktop ]()
+![Header mobile ]()
 
 ## Footer
 
-- Repeats on all the pages
-- Positioned on the bottom of the page
-- Contains logo, subcategory links, address and opening hours
-- Relates to following user stories: 6
+- INPUT INFO HERE
 
-![Footer desktop ](./docs/features/footer.JPG)
-![Footer mobile ](./docs/features/footer_small.JPG)
+![Footer desktop ]()
+![Footer mobile ]()
 
 ## Register page
 
 ### Registration Form
 
-- Form is positioned in the middle of the screen
-- Opens when user clicks Register link in the Login page or Log in link in navigation menu
-- Form contains 4 input fields - username, email address, password and repeat password
-- Each input field has a label with information required for that field
-- A form with empty fields will not be submitted and a message prompting the user to fill the field will appear
-- Register button performs the registration, data flow to database and directs users to log in page
-- The message will appear when registration is successfull
-- Log in link is positioned at the top for quick navigation and directs the user to Log in page
-- A verification email is sent to the user when
-- Relates to following user stories: 1,4,6
+- INPUT INFO HERE
 
-![ Register](./docs/features/register.JPG)
+![ Register]()
 
 ## Log in/ Log out page
 
 ### Log in Form
 
-- Form is positioned in the middle of the screen
-- Opens when user clicks Login link in the Register page or clicks on Log In in navigation menu
-- Form contains 2 input fields - username and password
-- Each input field has a label with information required for that field
-- After log in the user is directed to the products page
-- A form with empty fields will not be submitted and a message prompting the user to fill the field will appear
-- Information icon on the right side of the password field shows the password requirements when hovered over (see register section for more information)
-- Register link is positioned at the bottom for quick navigation and directs the user to the user to Registered page
-- Relates to following user stories: 1,4,6
+- INPUT INFO HERE
 
-![Login](./docs/features/login.JPG)
+![Login]()
 
 ### Log out
 
-- Opens when user clicks Login link in the Log out option in the Accounts dropdonw
-- Logs the user out when they confirm they click on log out button
-- Home button will direct the user to the index page
+- INPUT INFO HERE
 
-![Logout ](./docs/features/logout.JPG)
+![Logout ]()
 
 ## Home page
 
-![Index page desktop ](./docs/features/index_page_desktop.JPG)
-![Index page mobile ](./docs/features/index-page-mobile.JPG)
+![Index page desktop ]()
+![Index page mobile ]()
 
 ### Hero image
 
-- Atracts site visitor's attention
-- Indications that this website is for cosmetics and oils with herbal and natural ingredients
-- Shop now button promts the user to browse the products
-- Takes up about 1/3 of the sreensize to allow content hinting
+- INPUT INFO HERE
 
-### Popular products sections
+### Products
 
-- Shows 4 randomly selected featured products
-- View all products button prompts the user to browse more products
-- Relates to following user stories: 6
+- INPUT INFO HERE
 
-![Popular products  ](./docs/features/popular_products.JPG)
-![Popular products  ](./docs/features/popular_products_mobile.JPG)
+![Popular products  ]()
+![Popular products  ]()
 
-### Our promise section and quote section
+### Blog
 
-- Outlines the principles of the company
-- Icons were added for easier comprehension
-- Quote reinforces the importance of nature in healing process
+- INPUT INFO HERE
 
-![Our promise ](./docs/features/our%20promise.JPG)
-![Quote ](./docs/features/quote.JPG)
+![Our promise ]()
+![Quote ]()
 
 ### Categories section
 
-- List of link which direct the user to All products page with selection of the product per category
-- Images aid the intuitive navigation
-- Relates to following user stories: 8, 9,11
+- INPUT INFO HERE
 
 ![Categories ](./docs/features/help_with.JPG)
 
@@ -521,9 +562,11 @@ The product images in this project were generated by text to image tool from [Ru
 
 ## Future implementations
 
-- Add star rating
-- Allow users to buy product from the main page
-- Enable adding products to the shopping bag from all products page
+With more time and experience I would like to implement the following:
+
+- [CKEditor](https://ckeditor.com/) is a rich text editor for web applications that provides a WYSIWYG interface for creating and formatting content which can be integrated into Django, using this for the blogs would have realised my vision for how I wanted the blog to be viewed after entry, with spacing and images being placed in a classic blog format.
+- Allowing a quantity of products to be selected before adding to the bag, currently a customer would need to view the bag to increase the quantity, though not breaking the customer experience as the site is dedicated to large single ticket items I feel it looks unproffesional.
+- The horizontal rule that I generated with the help of [CodePen](https://codepen.io/szpakoli/pen/zYKqoJ), I modified it into a near perfect replica of what I generated in my Figma file, but at somepoint during the build process the diamond was flattened and after numerous attempts to fix I decided to leave.
 
 # Technologies Used
 
@@ -534,52 +577,33 @@ The product images in this project were generated by text to image tool from [Ru
 - Javascript
 - Python
 
-## Frameworks, libraries and programs used
+## Frameworks, libraries, Online tools and Programs used
 
-- [Django](https://www.djangoproject.com/) - was used to was used for templating and simplifying the website build
-- [AWS3](https://aws.amazon.com/) -
-- [Stripe](https://stripe.com/gb) -
-- [GitHub](https://github.com/vero-nika-2828/yasmin-jas-photography) - To save and store files and code for the website in a secure location
-- [Gitpod](https://gitpod.io/workspaces) - A cloud based IDE used for version control, development of the code to build the website and to commit and push to GithHb
-- [Heroku](https://dashboard.heroku.com/) - was used as the deployment platform for this project
-- [SQLAlchemy](https://pypi.org/project/SQLAlchemy/) - database abstraction library, used to interact with PostgreSQL.
-- [Elephant SQL](https://www.elephantsql.com/) - back end database used for storage of data
-- [Bootstrap5](https://getbootstrap.com/) - used for responsivness and styling of the website
-- [jQuery](https://jquery.com/) -used to simplify JavaScript code
-- [Google Fonts](https://fonts.google.com/) - For the typography on the website
-- [Font Awesome](https://fontawesome.com/) - For the iconography on the website
-- [Favicon](https://favicon.io/) was used for this websites favicon.
-- [Balsamiq](https://balsamiq.com/) - To create wireframes
-- [Edrawmax](https://www.edrawmax.com/) - To create database schema
-- Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling
-- [Tiny PNG](https://tinypng.com/) - To compress the pictures
-- [Am I Responsive](https://ui.dev/amiresponsive) - To show the website image on a range of devices
+- [Django](https://www.djangoproject.com/) - Django is a high-level Python web framework that enables rapid development of secure and scalable web applications.
+- [AWS3](https://aws.amazon.com/)
+- [Stripe](https://stripe.com/gb)
+- [GitHub](https://github.com/vero-nika-2828/yasmin-jas-photography) - To save and store my files in a public repository.
+- [VScode](https://code.visualstudio.com/) - My choice of IDE.
+- [Heroku](https://dashboard.heroku.com/) - The deployment platform for this project.
+- [SQLite](https://www.sqlite.org/) - The default SQL backend database engine for Django.
+- [Bootstrap5](https://getbootstrap.com/) - used for responsiveness and styling of the website.
+- [jQuery](https://jquery.com/) -used to simplify JavaScript code.
+- [Google Fonts](https://fonts.google.com/) - For the typography on the website.
+- [Font Awesome](https://fontawesome.com/) - For the iconography on the website.
+- [Figma](https://www.figma.com/) - Used to create my initial designs.
+- [drawSQL](https://drawsql.app/) - To create database schema.
+- Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+- Apple preview - To manipulate images and reduce file sizes.
+- [FreeConvert](https://www.freeconvert.com/webp-converter/download) - converted the numerous image files types to WebP
+- [Am I Responsive](https://ui.dev/amiresponsive) - To show the website image on a range of devices.
 
 # Testing
 
-Find the full testing documented in [TESTING.md](TESTING.md)
+Find the full testing documented in [TESTING.md](TESTING.md).
 
 # Deployment & local development
 
-Please refer to [DEPLOYMENT.md](DEPLOYMENT.md) file for:
-
-- Deployment
-
-  - Install the project requirements
-  - Set up Heroku
-  - Create an external database on ElephantSQL.com
-  - Connect the external database to GitPod
-  - Fixtures
-  - Deploy to Heroku
-  - Generate SECRET_KEY
-  - Set DEBUG to be True
-  - Set up Amazon Web Services
-  - Connect Django to S3
-  - Set up Stripe
-
-- Local Deployment
-  - How to Fork
-  - How to clone
+Please refer to [DEPLOYMENT.md](DEPLOYMENT.md) if you wish to deploy a copy of the site for yourself.
 
 # Credits
 
@@ -589,32 +613,18 @@ Please refer to [DEPLOYMENT.md](DEPLOYMENT.md) file for:
 
 ### Images
 
-- All productImages were taken from [Runway AI](https://runwayml.com/) the rest of the images were taken from Adobe Stock and Pexels
+- All Blog images were free downloads from [Pexels](https://www.pexels.com/)
 
-### Pexels
-
-- [Cold and flu link photo by Andrea Piacquadio](https://www.pexels.com/photo/a-sick-girl-wiping-her-nose-with-tissue-3765115/)
-- [Pain relief link photo by Kindel Media](https://www.pexels.com/photo/close-up-photo-of-a-man-having-a-neck-pain-7298867/)
-- [Stress relief link photo by Julia Avamotive](https://www.pexels.com/photo/woman-holding-a-smiley-balloon-1236678/)
-- [Breathing link photo by Kelvin Valerio](https://www.pexels.com/photo/man-wearing-black-cap-with-eyes-closed-under-cloudy-sky-810775/)
-- [Oily skin link photo Linda Prebreza](https://www.pexels.com/photo/woman-applying-lotion-on-hand-286951/)
-- [Dry skin link photo by Yassin Doukhane](https://www.pexels.com/photo/person-holding-water-in-cupped-hands-2570439/)
-- [Quote background photo Peter Fazekas](https://www.pexels.com/photo/green-leaf-plant-1089462//)
-
-### AdobeStock (licensed)
-
-- [A set of female hand logos (one image selected, adjusted and used for favicon and logo) by branding66](https://stock.adobe.com/uk/Library/urn:aaid:sc:EU:eb1640da-e779-4eca-9d28-588ce999703e?asset_id=487033788)
-- [Essential oils with botles and herbs on white (used for background) by maramorosz](https://stock.adobe.com/uk/Library/urn:aaid:sc:EU:eb1640da-e779-4eca-9d28-588ce999703e?asset_id=217792105)
+- All product images were taken from the [Fender](https://www.fender.com/) product website and [Gibson](https://www.gibson.com/) product website.
 
 ### Content
 
-- Product details were genereated by [ChatGPT](https://chat.openai.com/)
+- Product details and blogs were generated by [ChatGPT](https://chat.openai.com/) via the fixtures file.
 
-# Aknowledgement
+# Acknowledgement
 
 I would like to thank to following people who helped me along the way in completing this project:
 
-- My Code Institute mentor, Mitko Bachvarov, for his valuable advice and comprehensive guidance
-- My tutor for being so patient with me and being there for me every time I had any questions or problems
-- John, Roman and Sarah from Tutor support for helping me with some issues I came across in my project
-- My family and friends for giving me moral support and for taking time to test the final version of the project
+- My Code Institute mentor, Richard Wells, for his valuable advice and helping me work to industry standard.
+- My tutor for pushing me to go the extra mile.
+- My fiance Jessica for supporting me through the many long nights of debugging.
