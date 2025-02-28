@@ -1,6 +1,11 @@
-# _String Theory_
+# **String Theory**
 
-String Theory is an online guitar store.
+String Theory is a premium online guitar store.
+
+To view the site as a super user as if you were the shop owner, use the following details (please don't delete user):
+
+Email - CodeInstitute@google.com
+Password - CodeInstitute2025
 
 This is an example project not built for real credit card transactions. To test the functionality use the below number
 
@@ -13,133 +18,113 @@ Zip code: 42424
 
 ![Overview]()
 
-Link to the page: [String Theory]()
+Link to the page: [String Theory](https://string-theory-60d2d98dc791.herokuapp.com/)
 
-# Project Overview
+## Project Overview
 
-- INPUT INFO HERE
+- I built this site as a dedicated guitar shop focused on showcasing a selection of Fender and Gibson electric guitars. Users can easily browse and compare different models with a simple, streamlined filtering system. The site includes a responsive design for all screen sizes, an intuitive search bar, and dedicated sections for a blog and customer testimonials. The ‘About Us’ page is a static HTML file, while the blog and testimonials have their own Django apps. This project follows a test-driven development approach, ensuring reliability and scalability.
 
-# Table of Content
+## Table of Contents:
 
-- [Project Overview](#project-overview)
-- [Project objectives](#project-objectives)
-  - [User Goals](#user-goals)
-  - [Site Owner Goals](#site-owner-goals)
-- [User Experience](#user-experience)
-  - [Target user](#target-user)
-  - [Navigation ](#navigation)
-  - [Product viewing, searching and selecting](#product-viewing-searching-and-selecting)
-  - [Selecting, Purchasing products and checkout](#selecting-purchasing-products-and-checkout)
-  - [Product management (admin only)](#product-management-admin-only)
-  - [User’s activity management (admin only)](#users-activity-management-admin-only)
-- [Design](#design)
-  - [Design choices](#design-choices)
-  - [Colour Scheme](#colour-scheme)
-  - [Typography](#typography)
-  - [Imagery](#imagery)
-- [Database Scheme & User Journey](#database-scheme-&-user-journey)
-  - [User Journey](#user-journey)
-  - [Database Scheme](#database-scheme)
-- [Wireframes](#wireframes)
-- [Features](#features)
-  - [Header](#header)
-  - [Footer](#footer)
-  - [Register page](#register-page)
-  - [Log in/ Log out page](#log-in-log-out-page)
-  - [Home page](#home-page)
-  - [All products page](#all-products-page)
-  - [Product detail page](#product-detail-page)
-  - [Profile page](#profile-page)
-  - [Wishlist page](#wishlist-page)
-  - [Card](#card)
-  - [Bag](#bag)
-  - [Checkout](#checkout)
-  - [Checkout success](#checkout-success)
-  - [Message section](#messagesection)
-  - [Add product (admin only)](<#add-product-(admin-only)>)
-  - [Edit product (admin only)](<#edit-product-(admin-only)>)
-- [Technologies Used](#technologies-used)
-  - [Languages Used](#languages-used)
-  - [Frameworks, libraries and programs used](#frameworks,-libraries-and-programs-used)
-- [Testing](#testing)
-- [Deployment & local development](#Deployment-&-local-development)
-  - [Deployment](#deployment)
-  - [Local Development](#local-development)
-    - [How to Fork](#how-to-fork)
-    - [How to Clone](#how-to-clone)
-- [Credits](#credits)
-- [Aknowledgement](#aknowledgement)
+1. [**String Theory**](#string-theory)
+2. [**Planning stage**](#planning-stage)
+   - [_Target Audiences_](#target-audiences)
+   - [_User Stories_](#user-stories)
+   - [_Site Aims_](#site-aims)
+   - [_How Will This Be Achieved_](#how-will-this-be-achieved)
+   - [_Research_](#research)
+   - [_Inspiration_](#inspiration)
+   - [_Wireframes_](#wireframes)
+   - [_Colour Scheme And Theme_](#colour-scheme-and-theme)
+   - [_Typography_](#typography)
+3. [**Back End**](#back_end)
+   - [_models.py_](#models.py)
+   - [_routes.py_](#routes.py)
+4. [**Front End**](#front_end)
+   - [_Design_](#design)
+   - [_Nav Bar_](#nav_bar)
+   - [_Sign Up and Login_](#sign_up_and_login)
+   - [_New Date Idea_](#new_date_idea)
+   - [_Pick A Date_](#pick_a_date)
+   - [_View All_](#view_all)
+   - [_Add partner_](#add_partner)
+   - [_Delete User_](#delete_user)
+   - [_Tab Icon_](#tab_icon)
+   - [_404_](#404)
+5. [**Testing**](#testing)
+   - [_Validator Testing_](#validator-testing)
+6. [**Future Enhancements**](#future-enhancements)
+7. [**Credits**](#credits)
+   - [_Honourable Mentions_](#honourable-mentions)
+   - [_General Reference_](#general-refrence)
+   - [_Content_](#content)
+   - [_Media_](#media)
 
-# Project objectives
+# Planning stage
 
-## User Goals
-
-### Target user
+### Target User
 
 - The target audience for this site will be people looking to purchase a high-end guitar from one of the 2 majour brands in the space, they will be looking to either purchase products for themselves or as a gift.
 
 - The target audience will also be someone looking to read up on the latest news and tips surrounding either music or the products.
 
-### Viewing and Navigation
+### User Stories
 
-1. I want it to be easy to register, login and logout
-2. I want it to be easy to access my profile
-3. I want it to be easy to access my Wishlist
-4. I want to be notified when I click on something and the action is successful
-5. I want to be notified when I select something
-6. I want to be able to navigate site easily and that links and buttons to work
-7. I want to access some specific products easily
+#### 1. Viewing And Navigation
 
-### Product viewing, searching and selecting
+- I want it to be easy and intuitive to register, login and logout.
+- I want it to be easy and intuitive to access my profile.
+- I want it to be easy and intuitive to access my bag/cart.
+- I want to be notified when I click on something that performs an action (i.e adding to cart) and the action is successful.
+- I want to be notified when I click on something and the action is _not_ successful.
+- I want to be able to navigate the site easily.
+- I want to access all portions of the site from the homepage.
+- I want to not use the browsers back button.
 
-8. I want to see all available products
-9. I want to be able to quickly access a specific product (categories, Wishlist)
-10. I want to be able to search product directly
-11. I want to be able to sort product based on price, category name or size
-12. I want be able to find out more about the product
-13. I want to see what other people think about the product
-14. I want to see what the product consists of
-15. I want to be able to write my opinion about the product
-16. I want to be able to edit my review
-17. I want to be able to delete review
-18. I want to be able to add items to my wishlist
-19. I want to be able to delete items from my wishlisth
+#### 2. Product Viewing, Searching And Selecting
 
-### Selecting, Purchasing products and checkout
+- I want to see all available products on a single page.
+- I want to be able to quickly and easily access any information for a product I find.
+- I want to be able to search for a product both directly by name or buy a character trait such as colour or material.
+- I want to be able to sort product based on price, rating, name or category.
+- I want to see a rating for the product.
+- I want to see all details that would interet me when purchasing a guitar or accessory.
+- I want other products to be suggested to me based on the product I am currently viewing.
+- I want to be able to add items to my bag/cart.
+- I want to be able to delete items from my bag/cart.
+- I want an estimated shipping date.
 
-20. I want to be able to see what products I have selected for payment
-21. I want to be able to see the total payment amount of selected products easily at any time
-22. I want to be able to add or remove items from my shopping bag easily
-23. I want to see the summary of the total payment amount for items I have selected
-24. I want confirmation whether my requests on the website were completed
-25. I want to see if there are any discounts
-26. I want to see my previous purchases
-27. I want to be able to save my delivery information
-28. I want to be able to save products so I can buy them later
-29. I want to be able to see my products before I confirm the payment
-30. I want the payment to be secure
-31. I want confirmation whether my purchase has been successful
-32. I want to be able to buy products even when I am not registered
+#### 3. Selecting, Purchasing Products And Checkout
 
-### Product management (admin only)
+- I want to be able to see what products I have selected both in my card and when checking out.
+- I want to be able to see the individual cost of the items in my bag/cart.
+- I want to be able to see the total cost of my bag/cart.
+- I want a notification informing me if a item has been added to my bag/cart.
+- I want a notification informing me if a item has been removed from bag/cart.
+- I want a notification informing me if a item quantity has been changed in my bag/cart.
+- I want to see my previous purchases.
+- I want to be able to save my delivery information.
+- I want to be able to see a preview of my products before I confirm the payment.
+- I want the payment to be safe and secure.
+- I want email confirmation my purchase has been successful.
+- I want to be able to buy products even when I am not registered.
 
-33. I want to be able to add products on the website itself.
-34. I want to be able to edit products on the website itself.
-35. I want to be able to delete products on the website itself.
+#### 4. Product management (admin only)
 
-### User’s activity management (admin only)
+- I want to be able to add products on the website and database, including all information and images.
+- I want to be able to edit products on the website and database.
+- I want to be able to delete products on the website and database.
 
-36. I want users to register and create their account.
-37. I want to be able to view, edit or delete user’s comments.
-38. I want only logged in users to be able to add the comment
-39. I want to receive a warning if when I unintentionally click delete button.
-40. I want only logged in users to be able to user their Wishlist
-41. I want users to have pleasant experience on my site and make it easy for them to purchase product.
-42. I want users to be able to access my site on variety of devices
-43. I want users to be able to access my site on variety of browsers
-44. I want users to provide they delivery address before they complete the purchase
-45. I want the user to be notified when the payment details, they provide, are not correct
-46. Prevent errors with payment (e.g. prevent placing order but stopping payment, or charging the customer twice)
+#### 5. User’s activity management (admin only)
+
+- I want users to register and create their account.
+- I want users to have pleasant experience on my site and make it easy for them to purchase product.
+- I want users to be able to access my site on variety of devices of all sizes.
+- I want users to be able to access my site on variety of browsers.
+- I want non logged in users not to gain access to any aspects of the site that invloves a login.
+- I want non logged in users to be given the option to make an account after a purchase.
+- I want the user to be notified when the payment details they provided are not correct.
+- I want the payment method to be setup correctly to stop an order being placed without payment or payment being provided without an order being placed.
 
 # Research
 
@@ -208,7 +193,7 @@ An online music store offering all kinds of instruments and accessories.
 
 ## https://www.peachguitars.com/
 
-Website for a small guitar shop.
+A Website for a small guitar shop.
 
 ### Like:
 
@@ -222,10 +207,11 @@ Website for a small guitar shop.
 - Has a header fixed to top of page with brands and reviews, looks unprofessional.
 - Has a banner that rotates every couple of seconds, can't see all information shown quick enough.
 - Search bar expands removing all buttons
+- Hover effect on all images, meaning the site actively changes as you move your curson.
 
-After researching other sites I have made a few notes on what to aim for with my site; I need to ensure the home page isn't overflowing with products, as I feel it gives off an unprofessional feel. The user is being pulled from one thing to the next, especially when animations such as rotating banners or carousels are involved.
+After reviewing competing websites, I was confident that I could create something with a more modern and professional feel. Initially, my vision for my site was heavily inspired by e-commerce platforms that I use regularly, so I decided to review sites outside of the music equipment space. When viewing sites such as Asos and Boohoo (2 large online fashion retailers), I quickly found something closer to what I was imagining, with large hero images advertising the latest product with minimal text, letting the product sell itself. Simple navigation bars that span the screen and muted colours keep the attention on the product; these will be where I draw my inspiration from moving forward.
 
-After doing my research, I realised that I wanted something much more modern, using more minimalistic ideas. When viewing sites such as Asos and Boohoo (2 large online fashion retailers), I quickly found something closer to what I was imagining, with large hero images advertising the latest product with minimal text, letting the product sell itself. Simple navigation bars that span the screen and muted colours keep the attention on the product; these will be where I draw my inspiration from moving forward.
+In conclusion to my research, I realised that I wanted something much more modern, using more minimalistic ideas and principles. A keen focus on the use of white space and having a limited colour palette with legible typography, ensuring functional navigation design and bold alignment to draw attention to the products being sold.
 
 # Design
 
@@ -239,7 +225,7 @@ The site will be visited by people who are looking for products made of natural 
 
 My inspiration for the colour scheme was taken from the very products themselves. I took numerous hex values from classic Fender and Gibson guitars, played around with brightness and tones and came to the pallete below.
 
-I chose a simple off white background for my site, I think a light pale background gives a much more proffesional feel.
+I chose a simple off white background for my site, I think a light pale background gives a much more proffesional feel which I noted early on in my research.
 
 ![Contrast](/media/README/contrast.png)
 
@@ -254,45 +240,102 @@ My inspiration for the logo font was the actualy both of Fender and Gibson logos
 
 Keeping with google fonts I was able to quickly identify the font I wanted to use for the main body of text, unfortentley having picked it and thinking I found a real gem I realised it was the same font used in the Project 'Boutique Ado'. I selected [Lato](https://fonts.google.com/specimen/Lato?preview.text=Welcome%20to%20String%20Theory%20&query=lato) as its professional and easy to read.
 
-# Database Scheme & User Journey
+# Database Schema
 
-## User Journey
+## Database Schema
 
-![Database Scheme ](./docs/features/user_journey.JPG)
-
-## Database Scheme
-
-![Database Scheme ](./docs/database.JPG)
+![Database Schema ]()
 
 # Wireframes
 
-Home page
+To organize my thoughts and prevent scope creep, I created a wire frame for this project. Below are the links to each of the mobile, tablet and desktop versions of the site.
 
-![Home page]()
+## Mobile
+
+<details>
+<summary>Overview</summary>
+<br>
+
+![Overview](./media/README/Mobile_Wireframes/Project4.png)
 
 </details>
 
 <details>
-<summary>Products page</summary>
+<summary>Home Page</summary>
 <br>
 
-![Products page]()
+![Home Page](./media/README/Mobile_Wireframes/Home_Page.jpg)
 
 </details>
 
 <details>
-<summary>Product details page</summary>
+<summary>Menu</summary>
 <br>
 
-![Product details page]()
+![Menu](./media/README/Mobile_Wireframes/Menu.jpg)
 
 </details>
 
 <details>
-<summary>Bag</summary>
+<summary>Menu Expanded</summary>
 <br>
 
-![Bag]()
+![Menu](./media/README/Mobile_Wireframes/Menu_Expand.jpg)
+
+</details>
+
+<details>
+<summary>Search View</summary>
+<br>
+
+![Search View](./media/README/Mobile_Wireframes/Search_view.jpg)
+
+</details>
+
+<details>
+<summary>Search Recent</summary>
+<br>
+
+![Search Recent](./media/README/Mobile_Wireframes/Search_recent.jpg)
+
+</details>
+<details>
+<summary>All Products</summary>
+<br>
+
+![All Products](./media/README/Mobile_Wireframes/Category_Grid_View.jpg)
+
+</details>
+
+<details>
+<summary>Product Detail</summary>
+<br>
+
+![Product Detail](./media/README/Mobile_Wireframes/Product_Detail.jpg)
+
+</details>
+
+<details>
+<summary>Product Full Screen</summary>
+<br>
+
+![Product Full Screen](./media/README/Mobile_Wireframes/Full_screen.jpg)
+
+</details>
+
+<details>
+<summary>Cart</summary>
+<br>
+
+![Cart](./media/README/Mobile_Wireframes/Cart.jpg)
+
+</details>
+
+<details>
+<summary>Empty Cart</summary>
+<br>
+
+![Empty Cart](./media/README/Mobile_Wireframes/Cart_Empty.jpg)
 
 </details>
 
@@ -300,15 +343,33 @@ Home page
 <summary>Checkout</summary>
 <br>
 
-![Checkout]()
+![Checkout](./media/README/Mobile_Wireframes/Checkout.jpg)
 
 </details>
 
 <details>
-<summary>My profile</summary>
+<summary>Place Order</summary>
 <br>
 
-![My profile]()
+![Place Order](./media/README/Mobile_Wireframes/Place_Order.jpg)
+
+</details>
+
+<details>
+<summary>About Us</summary>
+<br>
+
+![About Us](./media/README/Mobile_Wireframes/About_Us.jpg)
+
+</details>
+
+</details>
+
+<details>
+<summary>Contact Us</summary>
+<br>
+
+![Contact Us](./media/README/Mobile_Wireframes/Contact_us.jpg)
 
 </details>
 
@@ -316,17 +377,220 @@ Home page
 <summary>Blog</summary>
 <br>
 
-![Wishlist]()
+![Blog](./media/README/Mobile_Wireframes/Blog_Grid_View.jpg)
 
 </details>
 
 <details>
-<summary>Contact</summary>
+<summary>Blog Detail</summary>
 <br>
 
-![Contact]()
+![Blog Detail](./media/README/Mobile_Wireframes/Blog_Post.jpg)
 
 </details>
+
+## Tablet
+
+<details>
+<summary>Overview</summary>
+<br>
+
+![Overview](./media/README/Ipad_Wireframes/Project4.png)
+
+</details>
+
+</details>
+
+<details>
+<summary>Home Page</summary>
+<br>
+
+![Home Page](./media/README/Ipad_Wireframes/Home%20Page.png)
+
+</details>
+
+<details>
+<summary>Menu</summary>
+<br>
+
+![Menu](./media/README/Ipad_Wireframes/Menu.png)
+
+</details>
+
+<details>
+<summary>Menu Expanded</summary>
+<br>
+
+![Menu](./media/README/Ipad_Wireframes/Menu%20extended.png)
+
+</details>
+
+<details>
+<summary>Search View</summary>
+<br>
+
+![Search View](./media/README/Ipad_Wireframes/Search.png)
+
+</details>
+
+<details>
+<summary>Search Results</summary>
+<br>
+
+![Search Results](./media/README/Ipad_Wireframes/Search_Results.png)
+
+</details>
+<details>
+<summary>All Products</summary>
+<br>
+
+![All Products](./media/README/Ipad_Wireframes/View_All_Items.png)
+
+</details>
+
+<details>
+<summary>Product Detail</summary>
+<br>
+
+![Product Detail](./media/README/Ipad_Wireframes/Product_Detail.png)
+
+</details>
+
+<details>
+<summary>Product Full Screen</summary>
+<br>
+
+![Product Full Screen](./media/README/Ipad_Wireframes/Full%20screen%20image.jpg)
+
+</details>
+
+<details>
+<summary>Cart</summary>
+<br>
+
+![Cart](./media/README/Ipad_Wireframes/Populated_Cart.png)
+
+</details>
+
+<details>
+<summary>Empty Cart</summary>
+<br>
+
+![Empty Cart](./media/README/Ipad_Wireframes/Empty_Cart.png)
+
+</details>
+
+<details>
+<summary>Checkout</summary>
+<br>
+
+![Checkout](./media/README/Ipad_Wireframes/Checkout.png)
+
+</details>
+
+<details>
+<summary>About Us</summary>
+<br>
+
+![About Us](./media/README/Ipad_Wireframes/Our_Story.png)
+
+</details>
+
+</details>
+
+<details>
+<summary>Contact Us</summary>
+<br>
+
+![Contact Us](./media/README/Ipad_Wireframes/Contact_Us.png)
+
+</details>
+
+<details>
+<summary>Blog</summary>
+<br>
+
+![Blog](./media/README/Ipad_Wireframes/Blog_Grid_View.png)
+
+</details>
+
+<details>
+<summary>Blog Detail</summary>
+<br>
+
+![Blog Detail](./media/README/Ipad_Wireframes/Blog.png)
+
+</details>
+
+## Desktop
+
+<details>
+<summary>Overview</summary>
+<br>
+
+![Overview](./media/README/Desktop_Wireframes/Project4.png)
+
+</details>
+
+<details>
+<summary>Home Page</summary>
+<br>
+
+![Home Page](./media/README/Desktop_Wireframes/Home%20Page.png)
+
+</details>
+
+<details>
+<summary>All Products</summary>
+<br>
+
+![All Products](./media/README/Desktop_Wireframes/All_Products.png)
+
+</details>
+
+<details>
+<summary>Product Details</summary>
+<br>
+
+![Products Details](./media/README/Desktop_Wireframes/Product_Detail.png)
+
+</details>
+
+<details>
+<summary>Checkout</summary>
+<br>
+
+![Checkout](./media/README/Desktop_Wireframes/Checkout.png)
+
+</details>
+
+<details>
+<summary>Search</summary>
+<br>
+
+![Search](./media/README/Desktop_Wireframes/Search.png)
+
+</details>
+
+</details>
+
+<details>
+<summary>Blog</summary>
+<br>
+
+![Blog](./media/README/Desktop_Wireframes/Blog_Grid.png)
+
+</details>
+
+<details>
+<summary>Blog Detail</summary>
+<br>
+
+![Blog Detail](./media/README/Desktop_Wireframes/Blog_detail.png)
+
+</details>
+
+Moving into this project I decided to invest a large amount of time into my wireframes, using Figma
 
 # Features
 
@@ -334,15 +598,15 @@ Home page
 
 - INPUT INFO HERE
 
-![Header desktop ]()
-![Header mobile ]()
+![]()
+![]()
 
 ## Footer
 
 - INPUT INFO HERE
 
-![Footer desktop ]()
-![Footer mobile ]()
+![]()
+![]()
 
 ## Register page
 
@@ -350,7 +614,7 @@ Home page
 
 - INPUT INFO HERE
 
-![ Register]()
+![]()
 
 ## Log in/ Log out page
 
@@ -358,18 +622,18 @@ Home page
 
 - INPUT INFO HERE
 
-![Login]()
+![]()
 
 ### Log out
 
 - INPUT INFO HERE
 
-![Logout ]()
+![]()
 
 ## Home page
 
-![Index page desktop ]()
-![Index page mobile ]()
+![]()
+![]()
 
 ### Hero image
 
@@ -379,193 +643,111 @@ Home page
 
 - INPUT INFO HERE
 
-![Popular products  ]()
-![Popular products  ]()
+![]()
 
 ### Blog
 
 - INPUT INFO HERE
 
-![Our promise ]()
-![Quote ]()
+![]()
 
 ### Categories section
 
 - INPUT INFO HERE
 
-![Categories ](./docs/features/help_with.JPG)
+![]()
 
 ## All products page
 
 ### Card
 
-- Contains product image, name, size, category tag and price information
-- View product button takes the user to the product detail page
-- Has a light green shadow
-- When hovered over the shadow turns to dark green
-- On mobile devices only 1 card is displayed and up to 4 cards displayed on widers screens
-- Heart icon indicates to the logged in user which products they have selected in their wishlist
-- Clicking the empty heart icon enables user to add the product to the wishlist
-- Clicking the full heart icon enables user to delete the product from the wihslist
-- Relates to following user stories: 3, 8, 9
+- INPUT INFO HERE
 
-![Card](./docs/features/card.JPG)
-![Card in wishlist](./docs/features/card_fullheart.JPG)
+![]()
 
 ## Product detail page
 
 ### Product detail section
 
-- On the left tha page contains product image on the left and the healing benefits list under it
-- On the right the page contains the product name, category tag, product desciption, product price and the quantity box
+- INPUT INFO HERE
 
-![Product details](./docs/features/product_detail.JPG)
+![]()
 
-- Quantity box enables to increase or decrease the product amount
-- Add to bag button next to the quatity box adds the product to the bag
+- INPUT INFO HERE
 
-![Increase or Decrease product](./docs/features/increase_decrease_product.JPG)
+![]()
 
-- Continue shopping button allows the user to return to the all products page
-- Edit and Delete button placed under the continue shopping button to allow the admin to edit or delete the product
-- Edit button directs admin to the Edit form
-- Delete button triggers a modal window where admin can confirm that they want to go ahead with the deletion
+- INPUT INFO HERE
 
-![Edit, Delete, Continue buttons](./docs/features/product_detail_admin_view.JPG)
+![]()
 
-- The user can red more about the product in More about product section
-- Accordion dropdown keeps the information organised and tide and when the dropdown is clicked it will show more information
+- INPUT INFO HERE
 
-![More about](./docs/features/more_about_product.JPG)
+![]()
 
-- Relates to following user stories: 10, 12, 14, 34, 35, 37, 38, 39
-
-### Customer review section
-
-- The list of customer reviews is positioned on the left
-- When there are no reviews, a text prompting user to add their reviews is shown
-- Edit (pen icon) and delete (cross) are displayed below the comment to the author of the comment only
-- Edit button triggers a modal window where the user can edit their review
-- Only the admin or the author can delete the review
-- Delete button triggers a confirmation modal window where the user can confirm the deletion of the review
-- Only the author or the admin can delete the review
-- A section with text area where user can write their review is positioned on the right
-- Add review button adds the review to the database and the review gets displayed on the right
-- Relates to following user stories: 13, 15, 16, ,17
-
-![Review](./docs/features/product_review.JPG)
-![ Edit Review modal ](./docs/features/edit_review.JPG)
-![Delete Review modal ](./docs/features/delele_review_modal.JPG)
+- INPUT INFO HERE
 
 ## Profile page
 
-- Contains the customer contact information form on the left
-- The customer can update their shipping information by typing new details and clicking the update information button
-- Contains order history on the right
-- When the user click on the order number they will be taken to the page with the order details
-- Relates to following user stories: 26, 27, 36
+- INPUT INFO HERE
 
-![My profile page ](./docs/features/my_profile_page.JPG)
-![Order complete ](./docs/features/order_complete.JPG)
-
-## Wishlist page
-
-- Contiais cards with shortlisted products
-- Can be accesed directly from the top navbar
-
-### Card
-
-- Contains product image, name, size, category tag and price information
-- View product button takes the user to the product detail page
-- Has a light green shadow
-- When hovered over the shadow turns to dark green
-- On mobile devices only 1 card is displayed and up to 4 cards displayed on widers screens
-- Heart icon indicates to the logged in user which products they have selected in their wishlist
-- Clicking the empty heart icon enables user to add the product to the wishlist
-- Clicking the full heart icon enables user to delete the product from the wihslist
-- Relates to following user stories: 3, 9, 18, 19, 28, 36, 40
+![]()
+![]()
 
 ## Bag
 
-- Contains a list of products selected for the purchase
-- Product image, name, price per unit, quanity box, total price are displayed on the right and under one under for smaller screens
-- Product amount can be increased or decreased by clicking on + or - button respectively
-- Summary box is displayed on the right for larger screen with total net, vat and gross payment shows the total amount for the selected products at all times
-- Total amount summary is displayed at the bottom of the list and just above secure payment button for the user to know their amount they are going to pay before they move to the payment
-- The total amount under the bag icon in nav menu updates each time the product is added, or removed and is visible on any page
-- Relates to following user stories: 20, 21, 22, 23, 41
+- INPUT INFO HERE
 
-![Bag ](./docs/features/bag_items.JPG)
-![Bag emoty](./docs/features/you_bag_empty.JPG)
+![Bag ]()
+![Bag emoty]()
 
 ## Checkout
 
-- Contains the list of products selected for purchase on the right
-- Contains the shipping information form on the left
-- The user can save the billing information by clicking save billing information button
-- Payment section is displayed under the shipping form
-- The card details need to be entered in payment section
-- When incorrect details are entered the user is notified
-- The text under the Pay now button reiterates to the user the total amount which will be deducted from the users account
-- When the pay now button is clicked the loading screen appears and the user is not able to click anything else
-- On smaller devices the content boxed get stack on top of each other
-- Relates to following user stories: 20, 30, 32, 36, 41, 44, 45, 46
+- INPUT INFO HERE
 
-![Checkout  ](./docs/features/checkout.JPG)
-![Incorrect bank details  ](./docs/features/incomplete_card_number.JPG)
+![Checkout  ]()
+![Incorrect bank details  ]()
 
 ## Checkout success
 
-- Is received when the purchase is completed successfully
-- Contains Thank you message on the top and the information where the email will be sent to
-- Contains the order number and list of products
-- Relates to following user stories: 24
+- INPUT INFO HERE
 
-![Checkout success](./docs/features/checkout_success.JPG)
+![Checkout success]()
 
 ## Message section
 
-- Notifies the user everytime they complete the acction and is displayed under shopping bag
-- Success message notfies them about actions that were completed successfully
-- Error message notifies them about the actions which couldn't be completed
-- Info message notifies them about additional requirements
-- Relates to following user stories: 4, 24
+- INPUT INFO HERE
 
-![Log in successful message](./docs/features//message_log_in.JPG)
-![Add to basket message](./docs/features/message_add_to_basket.JPG)
-![Add to wishlist message](./docs/features/message_added%20to%20wishlist.JPG)
-![Order completed message](./docs/features/message_order_completed.JPG)
-![Logout message](./docs/features/mmssage_logout.JPG)
+![Log in successful message]()
+![Add to basket message]()
+![Add to wishlist message]()
+![Order completed message]()
+![Logout message]()
 
 ## Add product (admin only)
 
-- Displays a form where the admin can add a new product
-- There is a section to upload the image
-- When 'Add product' button is clicked the user is directed to the product detail page and the they can view the details they have entered
-- Relates to following user stories: 33
+- INPUT INFO HERE
 
-![Add product](./docs/features/add_product1.JPG)
-![Add product](./docs/features/add_product2.JPG)
+![Add product]()
+![Add product]()
 
 ## Edit product (admin only)
 
-- Opens when the admin clicks on Edit Product button on the Product Detail page
-- Displays a form where the admin can edit product
-- There is a section to upload the image
-- When 'Ediy product' button is clicked the user is directed to the product detail page and the they can review the changes
-- Relates to following user stories: 33
+- INPUT INFO HERE
 
-![Edit product](./docs/features/edit1.JPG)
-![Edit product](./docs/features/edit2.JPG)
-![Edit product](./docs/features/edit3.JPG)
-![Edit product](./docs/features/edit4.JPG)
+![Edit product]()
+![Edit product]()
+![Edit product]()
+![Edit product]()
 
 ## Future implementations
 
 With more time and experience I would like to implement the following:
 
 - [CKEditor](https://ckeditor.com/) is a rich text editor for web applications that provides a WYSIWYG interface for creating and formatting content which can be integrated into Django, using this for the blogs would have realised my vision for how I wanted the blog to be viewed after entry, with spacing and images being placed in a classic blog format.
+
 - Allowing a quantity of products to be selected before adding to the bag, currently a customer would need to view the bag to increase the quantity, though not breaking the customer experience as the site is dedicated to large single ticket items I feel it looks unproffesional.
+
 - The horizontal rule that I generated with the help of [CodePen](https://codepen.io/szpakoli/pen/zYKqoJ), I modified it into a near perfect replica of what I generated in my Figma file, but at somepoint during the build process the diamond was flattened and after numerous attempts to fix I decided to leave.
 
 # Technologies Used
