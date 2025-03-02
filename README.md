@@ -72,59 +72,59 @@ Link to the page: [String Theory](https://string-theory-60d2d98dc791.herokuapp.c
 
 #### 1. Viewing And Navigation
 
-- I want it to be easy and intuitive to register, login and logout.
-- I want it to be easy and intuitive to access my profile.
-- I want it to be easy and intuitive to access my bag/cart.
-- I want to be notified when I click on something that performs an action (i.e adding to cart) and the action is successful.
-- I want to be notified when I click on something and the action is _not_ successful.
-- I want to be able to navigate the site easily.
-- I want to access all portions of the site from the homepage.
-- I want to not use the browsers back button.
+1. I want it to be easy and intuitive to register, login and logout.
+2. I want it to be easy and intuitive to access my profile.
+3. I want it to be easy and intuitive to access my bag/cart.
+4. I want to be notified when I click on something that performs an action (i.e adding to cart) and the action is successful.
+5. I want to be notified when I click on something and the action is _not_ successful.
+6. I want to be able to navigate the site easily.
+7. I want to access all portions of the site from the homepage.
+8. I want to not use the browsers back button.
 
 #### 2. Product Viewing, Searching And Selecting
 
-- I want to see all available products on a single page.
-- I want to be able to quickly and easily access any information for a product I find.
-- I want to be able to search for a product both directly by name or buy a character trait such as colour or material.
-- I want to be able to sort product based on price, rating, name or category.
-- I want to see a rating for the product.
-- I want to see all details that would interet me when purchasing a guitar or accessory.
-- I want other products to be suggested to me based on the product I am currently viewing.
-- I want to be able to add items to my bag/cart.
-- I want to be able to delete items from my bag/cart.
-- I want an estimated shipping date.
+1. I want to see all available products on a single page.
+2. I want to be able to quickly and easily access any information for a product I find.
+3. I want to be able to search for a product both directly by name or buy a character trait such as colour or material.
+4. I want to be able to sort product based on price, rating, name or category.
+5. I want to see a rating for the product.
+6. I want to see all details that would interet me when purchasing a guitar or accessory.
+7. I want other products to be suggested to me based on the product I am currently viewing.
+8. I want to be able to add items to my bag/cart.
+9. I want to be able to delete items from my bag/cart.
+10. I want an estimated shipping date.
 
 #### 3. Selecting, Purchasing Products And Checkout
 
-- I want to be able to see what products I have selected both in my card and when checking out.
-- I want to be able to see the individual cost of the items in my bag/cart.
-- I want to be able to see the total cost of my bag/cart.
-- I want a notification informing me if a item has been added to my bag/cart.
-- I want a notification informing me if a item has been removed from bag/cart.
-- I want a notification informing me if a item quantity has been changed in my bag/cart.
-- I want to see my previous purchases.
-- I want to be able to save my delivery information.
-- I want to be able to see a preview of my products before I confirm the payment.
-- I want the payment to be safe and secure.
-- I want email confirmation my purchase has been successful.
-- I want to be able to buy products even when I am not registered.
+1. I want to be able to see what products I have selected both in my card and when checking out.
+2. I want to be able to see the individual cost of the items in my bag/cart.
+3. I want to be able to see the total cost of my bag/cart.
+4. I want a notification informing me if a item has been added to my bag/cart.
+5. I want a notification informing me if a item has been removed from bag/cart.
+6. I want a notification informing me if a item quantity has been changed in my bag/cart.
+7. I want to see my previous purchases.
+8. I want to be able to save my delivery information.
+9. I want to be able to see a preview of my products before I confirm the payment.
+10. I want the payment to be safe and secure.
+11. I want email confirmation my purchase has been successful.
+12. I want to be able to buy products even when I am not registered.
 
 #### 4. Product management (admin only)
 
-- I want to be able to add products on the website and database, including all information and images.
-- I want to be able to edit products on the website and database.
-- I want to be able to delete products on the website and database.
+1. I want to be able to add products on the website and database, including all information and images.
+2. I want to be able to edit products on the website and database.
+3. I want to be able to delete products on the website and database.
 
 #### 5. User’s activity management (admin only)
 
-- I want users to register and create their account.
-- I want users to have pleasant experience on my site and make it easy for them to purchase product.
-- I want users to be able to access my site on variety of devices of all sizes.
-- I want users to be able to access my site on variety of browsers.
-- I want non logged in users not to gain access to any aspects of the site that invloves a login.
-- I want non logged in users to be given the option to make an account after a purchase.
-- I want the user to be notified when the payment details they provided are not correct.
-- I want the payment method to be setup correctly to stop an order being placed without payment or payment being provided without an order being placed.
+1. I want users to register and create their account.
+2. I want users to have pleasant experience on my site and make it easy for them to purchase product.
+3. I want users to be able to access my site on variety of devices of all sizes.
+4. I want users to be able to access my site on variety of browsers.
+5. I want non logged in users not to gain access to any aspects of the site that invloves a login.
+6. I want non logged in users to be given the option to make an account after a purchase.
+7. I want the user to be notified when the payment details they provided are not correct.
+8. I want the payment method to be setup correctly to stop an order being placed without payment or payment being provided without an order being placed.
 
 # Research
 
@@ -598,15 +598,200 @@ Moving into this project I decided to invest a large amount of time into my wire
 
 - INPUT INFO HERE
 
-![]()
-![]()
+### Desktop Header
+
+<details>
+<summary>Desktop Header</summary>
+<br>
+
+![Desktop Header](./media/README/features/header/desktopheader.png)
+
+</details>
+
+<details>
+<summary>Desktop Header Dropdown</summary>
+<br>
+
+![Desktop Header Dropdown](./media/README/features/header/desktopdropdown.png)
+
+</details>
+
+<summary>Desktop Navbar Dropdown</summary>
+<br>
+
+![Destop Navbar Dropdown](./media/README/features/header/myaccount.png)
+
+</details>
+
+</details>
+
+<details>
+<summary>Search</summary>
+<br>
+
+![Search](./media/README/features/header/search.png)
+
+</details>
+
+<details>
+<summary>Search Bar Expanded</summary>
+<br>
+
+![Search Bar Expanded](./media/README/features/header/searchexpanded.png)
+
+</details>
+
+<details>
+<summary>Gold Hover</summary>
+<br>
+
+![Gold Hover](./media/README/features/header/goldhover.png)
+
+</details>
+
+<details>
+<summary>My Account Dropdown</summary>
+<br>
+
+![My Account Dropdown](./media/README/features/header/myaccount.png)
+
+</details>
+
+### Mobile Header
+
+<details>
+<summary>Mobile Header</summary>
+<br>
+
+![Mobile Header](./media/README/features/header/mobileheader.png)
+
+</details>
+
+<details>
+<summary>Mobile Dropdown</summary>
+<br>
+
+![Mobile Dropdown](./media/README/features/header/mobiledropdown.png)
+
+</details>
+
+<details>
+<summary>Mobile Dropdown Extended</summary>
+<br>
+
+![Mobile Dropdown Extended](./media/README/features/header/mobiledropdownextended.png)
+
+</details>
 
 ## Footer
 
+<details>
+<summary>Desktop Footer</summary>
+<br>
+
+![Desktop Footer](./media/README/features/footer/desktopfooter.png)
+
+</details>
+
+<details>
+<summary>Mobile Footer</summary>
+<br>
+
+![Mobile Footer](./media/README/features/footer/mobilefooter.png)
+
+</details>
+
+## Home Page
+
+### Hero Image
+
 - INPUT INFO HERE
 
-![]()
-![]()
+<details>
+<summary>Desktop Hero Image</summary>
+<br>
+
+![Desktop Hero Image](./media/README/features/homepage/desktophero.png)
+
+</details>
+
+<details>
+<summary>Mobile Hero Image</summary>
+<br>
+
+![Mobile Hero Image](./media/README/features/homepage/mobilehero.png)
+
+</details>
+
+### Brands and Collections
+
+<details>
+<summary>Desktop Brands</summary>
+<br>
+
+![Desktop Brands](./media/README/features/homepage/desktopbrands.png)
+
+</details>
+
+<details>
+<summary>Mobile Brands</summary>
+<br>
+
+![Mobile Brands](./media/README/features/homepage/mobilebrands.png)
+
+</details>
+
+<details>
+<summary>Desktop Collections</summary>
+<br>
+
+![Desktop Collections](./media/README/features/homepage/desktopcollections.png)
+
+</details>
+
+<details>
+<summary>Mobile Brands</summary>
+<br>
+
+![Mobile Collections](./media/README/features/homepage/mobilecollections.png)
+
+</details>
+
+### New Arrivals
+
+<details>
+<summary>Desktop Hero Image</summary>
+<br>
+
+![Desktop Hero Image](./media/README/features/homepage/desktophero.png)
+
+</details>
+
+<details>
+<summary>Mobile Hero Image</summary>
+<br>
+
+![Mobile Hero Image](./media/README/features/homepage/mobilehero.png)
+
+</details>
+
+### Follow Us
+
+<details>
+<summary>Desktop Follow Us</summary>
+<br>
+
+![Desktop Follow Us](./media/README/features/homepage/desktopfollowus.png)
+
+</details>
+
+<details>
+<summary>Mobile Follow Us</summary>
+<br>
+
+![Mobile Follow Us](./media/README/features/homepage/mobilefollowus.png)
+
+</details>
 
 ## Register page
 
@@ -614,44 +799,129 @@ Moving into this project I decided to invest a large amount of time into my wire
 
 - INPUT INFO HERE
 
-![]()
+<details>
+<summary>Sign Up</summary>
+<br>
 
-## Log in/ Log out page
+![Sign Up](./media/README/features/registration-login-logout/signup.png)
 
-### Log in Form
+</details>
+
+## Sign In/ Sign out page
+
+### Sign in Form
+
+- INPUT INFO HERE
+
+<details>
+<summary>Sign In</summary>
+<br>
+
+![Sign In](./media/README/features/registration-login-logout/signin.png)
+
+</details>
+
+### Sign out
+
+- INPUT INFO HERE
+
+<details>
+<summary>Sign Out</summary>
+<br>
+
+![Sign Out](./media/README/features/registration-login-logout/signout.png)
+
+</details>
+
+## Products
+
+- INPUT INFO HERE
+
+### All Products
+
+- INPUT INFO HERE
+
+<details>
+<summary>All Products</summary>
+<br>
+
+![All Products](./media/README/features/products/allproducts.png)
+
+</details>
+
+- INPUT INFO HERE
+
+<details>
+<summary>All Products Title</summary>
+<br>
+
+![All Products Title](./media/README/features/products/allproductstitle.png)
+
+</details>
+
+- INPUT INFO HERE
+
+<details>
+<summary>All Products Order</summary>
+<br>
+
+![All Products Order](./media/README/features/products/order.png)
+
+</details>
+
+### Product Description
+
+- INPUT INFO HERE
+
+<details>
+<summary>Desktop Product Description</summary>
+<br>
+
+![Desktop Product Description](./media/README/features/products/desktopproductdescription.png)
+
+</details>
+
+<details>
+<summary>Mobile Product Description</summary>
+<br>
+
+![Mobile Product Description](./media/README/features/products/mobileproductdescription.png)
+
+</details>
+
+<details>
+<summary>Details Accordion</summary>
+<br>
+
+![Details Accordion](./media/README/features/products/detailsaccordion.png)
+
+</details>
+
+### You May Also Like
+
+### Add product (admin only)
+
+- INPUT INFO HERE
+
+### Edit product (admin only)
+
+- INPUT INFO HERE
+
+## Blog
 
 - INPUT INFO HERE
 
 ![]()
 
-### Log out
+### Add Blog (Admin Only)
 
 - INPUT INFO HERE
 
-![]()
-
-## Home page
-
-![]()
-![]()
-
-### Hero image
+### Edit Blog (Admin Only)
 
 - INPUT INFO HERE
 
-### Products
-
-- INPUT INFO HERE
-
-![]()
-
-### Blog
-
-- INPUT INFO HERE
-
-![]()
-
-### Categories section
+## Contact Us and About Us
 
 - INPUT INFO HERE
 
@@ -665,28 +935,6 @@ Moving into this project I decided to invest a large amount of time into my wire
 
 ![]()
 
-## Product detail page
-
-### Product detail section
-
-- INPUT INFO HERE
-
-![]()
-
-- INPUT INFO HERE
-
-![]()
-
-- INPUT INFO HERE
-
-![]()
-
-- INPUT INFO HERE
-
-![]()
-
-- INPUT INFO HERE
-
 ## Profile page
 
 - INPUT INFO HERE
@@ -698,47 +946,17 @@ Moving into this project I decided to invest a large amount of time into my wire
 
 - INPUT INFO HERE
 
-![Bag ]()
-![Bag emoty]()
-
 ## Checkout
 
 - INPUT INFO HERE
-
-![Checkout  ]()
-![Incorrect bank details  ]()
 
 ## Checkout success
 
 - INPUT INFO HERE
 
-![Checkout success]()
-
 ## Message section
 
 - INPUT INFO HERE
-
-![Log in successful message]()
-![Add to basket message]()
-![Add to wishlist message]()
-![Order completed message]()
-![Logout message]()
-
-## Add product (admin only)
-
-- INPUT INFO HERE
-
-![Add product]()
-![Add product]()
-
-## Edit product (admin only)
-
-- INPUT INFO HERE
-
-![Edit product]()
-![Edit product]()
-![Edit product]()
-![Edit product]()
 
 ## Future implementations
 

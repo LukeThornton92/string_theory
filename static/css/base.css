@@ -609,6 +609,10 @@ footer {
   display: block;
 }
 
+.navbar-toggler {
+  z-index: 10;
+}
+
 /* -------------------------------- page divider */
 
 .center-diamond {
