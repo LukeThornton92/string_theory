@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .title {
@@ -166,6 +167,10 @@ a:-webkit-any-link {
   font-size: 28px;
 }
 
+.collection {
+  height: 100%;
+  object-fit: cover;
+}
 /* -------------------------------- Footer */
 footer {
   margin-top: auto;
@@ -608,7 +613,7 @@ footer {
 
 .center-diamond {
   border: 0;
-  height: 1px;
+  height: 3px;
   width: 55%;
   position: relative;
   margin: 5px auto;
