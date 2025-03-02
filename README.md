@@ -616,6 +616,7 @@ Moving into this project I decided to invest a large amount of time into my wire
 
 </details>
 
+<details>
 <summary>Desktop Navbar Dropdown</summary>
 <br>
 
@@ -793,7 +794,7 @@ Moving into this project I decided to invest a large amount of time into my wire
 
 </details>
 
-## Register page
+## Registration page
 
 ### Registration Form
 
@@ -899,13 +900,40 @@ Moving into this project I decided to invest a large amount of time into my wire
 
 ### You May Also Like
 
+- INPUT INFO HERE
+
+<details>
+<summary>You May Also Like</summary>
+<br>
+
+![You May Also Like](./media/README/features/products/youmayalsolike.png)
+
+</details>
+
 ### Add product (admin only)
 
 - INPUT INFO HERE
 
+<details>
+<summary>Add Product</summary>
+<br>
+
+![Add Product](./media/README/features/products/addproduct.png)
+
+</details>
+
 ### Edit product (admin only)
 
 - INPUT INFO HERE
+
+<details>
+<summary>Edit Product</summary>
+<br>
+
+![Edit Product](./media/README/features/products/editproduct.png)
+![Edit Product Image](./media/README/features/products/editproductimage.png)
+
+</details>
 
 ## Blog
 
