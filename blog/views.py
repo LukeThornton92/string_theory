@@ -104,7 +104,7 @@ def edit_blog(request, blog_id):
             messages.success(request, 'Successfully edited blog!')
             return redirect(reverse('product_detail', args = [blog.id]))
         else:
-            messages.error(request, 'Failed to edit product, please ensure for is valid')
+            messages.error(request, 'Failed to edit product, please ensure form is valid')
     else:
         form = BlogPostForm(instance = blog)
         messages.info(request, f'You are editing {blog.title} originally written by {blog.author}')

@@ -98,7 +98,7 @@ I built this site as a dedicated guitar shop focused on showcasing a selection o
 
 #### 3. Selecting, Purchasing Products And Checkout
 
-1. I want to be able to see what products I have selected both in my card and when checking out.
+1. I want to be able to see what products I have selected both in my cart and when checking out.
 2. I want to be able to see the individual cost of the items in my bag/cart.
 3. I want to be able to see the total cost of my bag/cart.
 4. I want a notification informing me if a item has been added to my bag/cart.
@@ -610,10 +610,10 @@ Below are the features of the completed site.
 
 My first focus on this site was securing a robust header, its on every template and is arguably the most important part of any site. I wanted to ensure I covered all aspects of my user stories that are related to navigation and page visibility.
 
-In the images below I prove that I have successfully covered the following user stories:
+In the images and comments below I prove that I have successfully covered the following user stories:
 <br>
 
-### 1.1 / 1.2 / 1.3 / 1.6 / 1.7 / 1.8 / 2.3
+**_1.1 / 1.2 / 1.3 / 1.6 / 1.7 / 1.8 / 2.3_**
 
 ### Desktop Header
 
@@ -838,10 +838,10 @@ The follow us was actually directly inspired by the Figma template, the idea of 
 
 All access to the registration and profiles is done through the "My account" icon in the navbar.
 
-In the images below I prove that I have successfully covered the following user stories:
+In the images and comments below I prove that I have successfully covered the following user stories:
 <br>
 
-### 5.1
+**_5.1_**
 
 ### Sign Up
 
@@ -879,10 +879,10 @@ The registration page is a simple form to get the users email, username and pass
 
 The products pages are a real highlight of the site, all images and item cards are fully responsive with full filtering.
 
-In the images below I prove that I have successfully covered the following user stories:
+In the images and comments below I prove that I have successfully covered the following user stories:
 <br>
 
-### 2.1 / 2.2 / 2.3 / 2.4 / 2.5 / 2.6 / 2.7 / 2.8 / 5.2
+**_2.1 / 2.2 / 2.3 / 2.4 / 2.5 / 2.6 / 2.7 / 2.8 / 2.10 / 5.2 / 4.1 / 4.2 / 4.3_**
 
 ### All Products
 
@@ -1116,6 +1116,17 @@ The page uses pagination from Bootstrap to help manage the blogs, with buttons i
 
 </details>
 
+### Blog Detail
+
+<details>
+<summary>Pagination</summary>
+
+![Pagination](./media/README/features/blog/blog.png)
+
+When viewing the individual blog you will have the header at the top followed by your image, the example shown shows the image on a medium sized screen but its fully responsive down to mobile.
+
+</details>
+
 ### Tags
 
 <details>
@@ -1176,36 +1187,164 @@ Although these are small touches I feel they help with realism as they would be 
 
 ## Messages And Alerts
 
-The page has numerous triggers for alerts to appear to display important information to the user,
+In the images and comments below I prove that I have successfully covered the following user stories:
+<br>
 
-### Card
+**_1.4 / 1.5 / 3.4 / 3.5 / 3.6 / 5.7_**
 
-- INPUT INFO HERE
+The site has numerous triggers for alerts to appear to display important information to the user, with 4 colour coded types, Error, Info, Success and Warning with each being triggered in the case of certain events. These triggers are dotted throughout my python code with individual messages, often in python "if" statements alerting the user what exactly failed.
 
-![]()
+The triggers are called using Django toasts, which I have 4 templates for each slightly different to account for classes and texts.
+
+1. A example of a Warning message:
+
+```
+if not stripe_public_key:
+    messages.warning(request, 'Stripe public key is missing. \
+        Did you forget to set it in your environment?')
+```
+
+2. A example of a Error message, Info message and Success message in 1 if statement:
+
+```
+if request.method == 'POST':
+    form = BlogPostForm(request.POST, request.FILES, instance = blog)
+    if form.is_valid():
+        form.save()
+        messages.success(request, 'Successfully edited blog!')
+        return redirect(reverse('product_detail', args = [blog.id]))
+    else:
+        messages.error(request, 'Failed to edit product, please ensure form is valid')
+else:
+    form = BlogPostForm(instance = blog)
+    messages.info(request, f'You are editing {blog.title} originally written by {blog.author}')
+```
+
+![Message](./media/README/features/toasts/error.png)
+![Message](./media/README/features/toasts/info.png)
+![Message](./media/README/features/toasts/success.png)
+
+These alerts are a layer of protection, not only do they inform the user that the action they have just performed either was successful or not, but the message that I have included in the python that is bespoke to the action they have tried to perform will either tell the user how to fix it themselves or can be used to inform a developer for debugging.
 
 ## Profile page
 
-- INPUT INFO HERE
+In the images and comments below I prove that I have successfully covered the following user stories:
+<br>
 
-![]()
-![]()
+**_3.7 / 3.8_**
+
+Its key for any e-commerce site to have the ability to log in and save data for later use, A user will often return back to a site simply to review previous orders either for returns or to track a delivery.
+
+### Blank Profile Page
+
+<details>
+<summary>Blank Profile Page</summary>
+
+![Blank Profile Page](./media/README/features/profile/blankprofile.png)
+
+The profile page is split into 2, this example shows a blank form for a new user so the default delivery information is not populated and the order history shows no orders.
+
+</details>
+
+### Populated Profile Page
+
+<details>
+<summary>Populated Profile Page</summary>
+
+![Populated Profile Page](./media/README/features/profile/populatedprofile.png)
+
+As you can see from this example, the page is now populated (this information was not entered on this screen). You will also see a previous order, this order is clickable and will show the following:
+
+![Populated Profile Page](./media/README/features/profile/pastorder.png)
+
+note the info message telling the user they are review a previous order.
+
+</details>
+
+<details>
+<summary>Mobile Profile Page</summary>
+
+![Blank Profile Page](./media/README/features/profile/blankprofile.png)
+
+When viewed on mobile the page layout swaps to have the profile info on top with order history below.
+
+</details>
+<br>
+Not shown in the above example is the scrollable container for previous orders, when too many orders are generated to fit the container it will not spill over the container.
 
 ## Bag
 
-- INPUT INFO HERE
+In the images and comments below I prove that I have successfully covered the following user stories:
+<br>
+
+**_2.9 / 3.1 /3.2 / 3.3 / 3.6 / 3.9_**
+
+<details>
+<summary>Empty Bag</summary>
+
+![Empty Bag](./media/README/features/bag-and-checkout/emptybag.png)
+
+</details>
+
+<details>
+<summary>Added To Bag Message</summary>
+
+![Added To Bag Message](./media/README/features/bag-and-checkout/addedtobag.png)
+
+When adding a product to the bag you will get a modified toast message, showing the small image of the item added with a quantity, total price, a message telling you if you have spent enough for free delivery and if not how much more you need to spend and a button to go to the checkout page.
+
+You will also see the blue bag icon with value showing an item is in it.
+
+</details>
+
+<details>
+<summary>Full Bag</summary>
+
+![Full Bag](./media/README/features/bag-and-checkout/fullbag.png)
+
+In this image you see a product in the bag, I chose this product on purpose as it does not meet the threshold for free delivery, thus triggering the message in red alerting the user that if they spend £30 more they will get free delivery.
+
+The populated bag shows the image in a large image, with the title, SKU and price. The user is able to change the quantity or remove it entirely. The subtotal will also change with the quantity:
+
+![Subtotal](./media/README/features/bag-and-checkout/quantity.png)
+
+</details>
+
+<details>
+<summary>Mobile Bag</summary>
+
+![Mobile Bag](./media/README/features/bag-and-checkout/mobilebag.png)
+
+When viewing the bag on a mobile the layout changes, the grandtotal moves to the top along with the back button. The products selected are stacked on top of each other, with the checkout button sticking to the bottom of the screen, following you as you scroll down the page so you don't need to go to the very bottom of the page to checkout.
+
+</details>
 
 ## Checkout
 
-- INPUT INFO HERE
+In the images and comments below I prove that I have successfully covered the following user stories:
+<br>
 
-## Checkout success
+**_3.1 / 3.2 / 3.3 / 3.6 / 3.8 / 3.9 / 3.10 / 3.11 / 3.12 / 5.6_**
 
-- INPUT INFO HERE
+<details>
+<summary>Checkout</summary>
 
-## Message section
+![Checkout](./media/README/features/bag-and-checkout/populatedcheckout.png)
 
-- INPUT INFO HERE
+When you checkout you will see delivery and payment info on the left and your bag on the right, checking the "Save this delivery" box will save all the delivery information entered (which you can view in the profile page).
+
+</details>
+
+<details>
+<summary>Checkout Success</summary>
+
+![Checkout Success](./media/README/features/bag-and-checkout/checkoutsuccess.png)
+
+After paying you will get a thankyou message with all the details of your order, including a unique order number.
+
+</details>
+
+## Finished Database Schema
 
 ## Future implementations
 
@@ -1216,6 +1355,10 @@ With more time and experience I would like to implement the following:
 - Allowing a quantity of products to be selected before adding to the bag, currently a customer would need to view the bag to increase the quantity, though not breaking the customer experience as the site is dedicated to large single ticket items I feel it looks unprofessional.
 
 - The horizontal rule that I generated with the help of [CodePen](https://codepen.io/szpakoli/pen/zYKqoJ), I modified it into a near perfect replica of what I generated in my Figma file, but at some point during the build process the diamond was flattened and after numerous attempts to fix I decided to leave.
+
+- Estimated shipping date is in the product detail, having now reviewed my site for the purpose of this readme am I now seeing it should also live in the bag/checkout/checkout success.
+
+- Would add an if statement in the checkout success to see if user is logged in, if so removing the message asking you to make an account.
 
 # Technologies Used
 
