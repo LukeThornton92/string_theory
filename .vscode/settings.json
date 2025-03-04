@@ -13,10 +13,11 @@
     "**/CVS": true
   },
   "files.autoSave": "off",
-  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.colorTheme": "Tokyo Night",
   "terminal.integrated.gpuAcceleration": "canvas",
   "cSpell.words": [
     "Allauth",
+    "Asos",
     "blanksearch",
     "csrfmiddlewaretoken",
     "cust",

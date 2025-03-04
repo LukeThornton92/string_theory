@@ -20,6 +20,8 @@ Zip code: 42424
 
 Link to the page: [String Theory](https://string-theory-60d2d98dc791.herokuapp.com/)
 
+Due to the quantity of images and the size, please use the drop downs to see images and comments.
+
 ## Project Overview
 
 I built this site as a dedicated guitar shop focused on showcasing a selection of Fender and Gibson electric guitars. Users can easily browse and compare different models with a simple, streamlined filtering system. The site includes a responsive design for all screen sizes, an intuitive search bar, and dedicated sections for a blog, about us page and a contact us page.
@@ -55,7 +57,7 @@ I built this site as a dedicated guitar shop focused on showcasing a selection o
    - [_Validator Testing_](#validator-testing)
 6. [**Future Enhancements**](#future-enhancements)
 7. [**Credits**](#credits)
-   - [_Honourable Mentions_](#honourable-mentions)
+   - [_Honorable Mentions_](#honourable-mentions)
    - [_General Reference_](#general-refrence)
    - [_Content_](#content)
    - [_Media_](#media)
@@ -64,7 +66,7 @@ I built this site as a dedicated guitar shop focused on showcasing a selection o
 
 ### Target User
 
-- The target audience for this site will be people looking to purchase a high-end guitar from one of the 2 majour brands in the space, they will be looking to either purchase products for themselves or as a gift.
+- The target audience for this site will be people looking to purchase a high-end guitar from one of the 2 major brands in the space, they will be looking to either purchase products for themselves or as a gift.
 
 - The target audience will also be someone looking to read up on the latest news and tips surrounding either music or the products.
 
@@ -121,7 +123,7 @@ I built this site as a dedicated guitar shop focused on showcasing a selection o
 2. I want users to have pleasant experience on my site and make it easy for them to purchase product. x
 3. I want users to be able to access my site on variety of devices of all sizes.
 4. I want users to be able to access my site on variety of browsers.
-5. I want non logged in users not to gain access to any aspects of the site that invloves a login.
+5. I want non logged in users not to gain access to any aspects of the site that involves a login.
 6. I want non logged in users to be given the option to make an account after a purchase.
 7. I want the user to be notified when the payment details they provided are not correct.
 8. I want the payment method to be setup correctly to stop an order being placed without payment or payment being provided without an order being placed.
@@ -207,7 +209,7 @@ A Website for a small guitar shop.
 - Has a header fixed to top of page with brands and reviews, looks unprofessional.
 - Has a banner that rotates every couple of seconds, can't see all information shown quick enough.
 - Search bar expands removing all buttons
-- Hover effect on all images, meaning the site actively changes as you move your curson.
+- Hover effect on all images, meaning the site actively changes as you move your cursor.
 
 After reviewing competing websites, I was confident that I could create something with a more modern and professional feel. Initially, my vision for my site was heavily inspired by e-commerce platforms that I use regularly, so I decided to review sites outside of the music equipment space. When viewing sites such as Asos and Boohoo (2 large online fashion retailers), I quickly found something closer to what I was imagining, with large hero images advertising the latest product with minimal text, letting the product sell itself. Simple navigation bars that span the screen and muted colours keep the attention on the product; these will be where I draw my inspiration from moving forward.
 
@@ -217,7 +219,7 @@ In conclusion to my research, I realised that I wanted something much more moder
 
 ## Design choices
 
-The site will be visited by people who are looking for a high end Fender or Gibson guitar, therefore I wanted the site to reflect the high end proffesional nature, while still being a creative site fitting for the music industry.
+The site will be visited by people who are looking for a high end Fender or Gibson guitar, therefore I wanted the site to reflect the high end professional nature, while still being a creative site fitting for the music industry.
 
 ## Colour Scheme
 
@@ -225,7 +227,7 @@ The site will be visited by people who are looking for a high end Fender or Gibs
 
 My inspiration for the colour scheme was taken from the very products themselves. I took numerous hex values from classic Fender and Gibson guitars, played around with brightness and tones and came to the pallete below.
 
-I chose a simple off white background for my site, I think a light pale background gives a much more proffesional feel which I noted early on in my research.
+I chose a simple off white background for my site, I think a light pale background gives a much more professional feel which I noted early on in my research.
 
 ![Contrast](/media/README/contrast.png)
 
@@ -235,10 +237,10 @@ The red and orange are taken from the Fender telecasters in rim of the original 
 
 ## Typography
 
-My inspiration for the logo font was the actualy both of Fender and Gibson logos, both fonts iconic and timeless. I was looking for something artistic and retro like Fender, but bold and legible like Gibson, I finally settled on
+My inspiration for the logo font was the actually both of Fender and Gibson logos, both fonts iconic and timeless. I was looking for something artistic and retro like Fender, but bold and legible like Gibson, I finally settled on
 [Lobster](https://fonts.google.com/specimen/Lobster?preview.text=Welcome%20to%20String%20Theory%20&query=Lobster).
 
-Keeping with google fonts I was able to quickly identify the font I wanted to use for the main body of text, unfortentley having picked it and thinking I found a real gem I realised it was the same font used in the Project 'Boutique Ado'. I selected [Lato](https://fonts.google.com/specimen/Lato?preview.text=Welcome%20to%20String%20Theory%20&query=lato) as its professional and easy to read.
+Keeping with google fonts I was able to quickly identify the font I wanted to use for the main body of text, unfortunately having picked it and thinking I found a real gem I realised it was the same font used in the Project 'Boutique Ado'. I selected [Lato](https://fonts.google.com/specimen/Lato?preview.text=Welcome%20to%20String%20Theory%20&query=lato) as its professional and easy to read.
 
 # Database Schema
 
@@ -246,7 +248,7 @@ Keeping with google fonts I was able to quickly identify the font I wanted to us
 
 ![Database Schema ](./media/README/plannedatabaseschema.png)
 
-In my initial database schema I decided to split the guitars from accessories, giving them both a unique database as they would share few details about them. I had a wishlist and reviews that I want to implement allowing a user to save opinions and store desired products that would be accessible from the account section. A key thing I wanted to implement was a "create_at" and "updated_at", having worked in Logistics for over 10 years I knew that kind of visability can help with stock and revision control, having Django automatically log date changes would be able to give staff a better understanding of the history of the product.
+In my initial database schema I decided to split the guitars from accessories, giving them both a unique database as they would share few details about them. I had a wishlist and reviews that I want to implement allowing a user to save opinions and store desired products that would be accessible from the account section. A key thing I wanted to implement was a "create_at" and "updated_at", having worked in Logistics for over 10 years I knew that kind of visibility can help with stock and revision control, having Django automatically log date changes would be able to give staff a better understanding of the history of the product.
 
 # Wireframes
 
@@ -606,7 +608,7 @@ Below are the features of the completed site.
 
 ## Header
 
-My first focus on this site was securing a robust header, its on every template and is arguably the most important part of any site. I wanted to ensure I covered all aspects of my user stories that are related to navigation and page visability.
+My first focus on this site was securing a robust header, its on every template and is arguably the most important part of any site. I wanted to ensure I covered all aspects of my user stories that are related to navigation and page visibility.
 
 In the images below I prove that I have successfully covered the following user stories:
 <br>
@@ -631,7 +633,7 @@ The desktop header has a large logo in the top left, all pages on the site inclu
 
 ![Desktop Header Dropdown](./media/README/features/header/desktopdropdown.png)
 
-Dropdowns that allow you to further filter the option to filter by price, rating, category along with filtering the guitar types by brands, when running your cursor over the options you will see the background changing colour getting slitghly lighter and whiter.
+Dropdowns that allow you to further filter the option to filter by price, rating, category along with filtering the guitar types by brands, when running your cursor over the options you will see the background changing colour getting slightly lighter and whiter.
 
 </details>
 
@@ -639,7 +641,7 @@ Dropdowns that allow you to further filter the option to filter by price, rating
 <summary>My Account, Search and Cart</summary>
 <br>
 
-![Destop Navbar Dropdown](./media/README/features/header/myaccount.png)
+![Desktop Navbar Dropdown](./media/README/features/header/myaccount.png)
 
 A search icon, account icon, and cart icon that are clear and visible. When clicking the "My Account" icon, you get a drop-down; if you are a superuser (as shown), you will see "Product Management" allowing shop owners to add new items, "My Profile" to see your saved details and "Log Out", if you are new to the site or just visiting you will see "Login" and "Register". The cart will also give a live value for all items within, as well as changing colour to help highlight the fact it has a value.
 
@@ -703,7 +705,7 @@ When clicking onto one of the options you will get the filters much like the des
 
 ## Footer
 
-Similiar to the Header, the Footer is a key part of the template used for all pages, having seen many sites they often have many different links for all aspects of the site. For the purpose of this site I decided to keep it as minimal as possible without it looking totally empty.
+Similar to the Header, the Footer is a key part of the template used for all pages, having seen many sites they often have many different links for all aspects of the site. For the purpose of this site I decided to keep it as minimal as possible without it looking totally empty.
 
 <details>
 <summary>Desktop Footer</summary>
@@ -711,7 +713,7 @@ Similiar to the Header, the Footer is a key part of the template used for all pa
 
 ![Desktop Footer](./media/README/features/footer/desktopfooter.png)
 
-Using Bootstraps grid system I was able to easily create this footer, knowing I want 3 columns at the top for basic information with 3 columns below (of which the center is empty) for external and internal links, finally a column spanning the full width with copyright info. This works well on all desktop sizes and keep is looking proffesional while not taking up too much vertical space.
+Using Bootstraps grid system I was able to easily create this footer, knowing I want 3 columns at the top for basic information with 3 columns below (of which the center is empty) for external and internal links, finally a column spanning the full width with copyright info. This works well on all desktop sizes and keep is looking professional while not taking up too much vertical space.
 
 </details>
 
@@ -721,19 +723,19 @@ Using Bootstraps grid system I was able to easily create this footer, knowing I 
 
 ![Mobile Footer](./media/README/features/footer/mobilefooter.png)
 
-The mobile footer keeps the social media icons at the top seperated in 3 columns, with the basic info centered ontop of itself with the internal links at the bottom.
+The mobile footer keeps the social media icons at the top separated in 3 columns, with the basic info centered on top of itself with the internal links at the bottom.
 
 </details>
 
 ## Home Page
 
-The home page is the first thing you see, it needs to be inviting while also providing information conveying what the site does. I opted for a large hero image showcasing guitars, with no information on the hero image I didnt want it to be so large that it would take up the entire screen, I wanted the user to see that there was more information and to scroll down.
+The home page is the first thing you see, it needs to be inviting while also providing information conveying what the site does. I opted for a large hero image showcasing guitars, with no information on the hero image I didn't want it to be so large that it would take up the entire screen, I wanted the user to see that there was more information and to scroll down.
 
 I'm very happy with how my homepage came out in comparison to the wireframes I produced, I was able to get every aspect in place while having it fully responsive in the same way planned. Using page dividers I was able to frame aspects of the page, helping pull peoples attention to each themed section.
 
 ### Hero Image
 
-The hero images were actually taken from my Figma file, I put alot of effort in creating a mask that allowed the image to be translent at the edges, I like it so much I decided it would be perfect for the real site.
+The hero images were actually taken from my Figma file, I put a lot of effort in creating a mask that allowed the image to be translucent at the edges, I like it so much I decided it would be perfect for the real site.
 
 <details>
 <summary>Desktop Hero Image</summary>
@@ -753,7 +755,7 @@ The hero images were actually taken from my Figma file, I put alot of effort in 
 
 ### New Arrivals
 
-The new arrivals is something noted in my research, if this site was to be taken live this section could easily change filtering products by anything the store owners wanted, at the moment the guitars selected are static but they could change upon a refresh selecting a random quantity from a certain desired fileter. I decided to highlight a small selection of guitars to show that its possible to showcase potentially the 4 best options of any one area, this could change depending on trends or time of year.
+The new arrivals is something noted in my research, if this site was to be taken live this section could easily change filtering products by anything the store owners wanted, at the moment the guitars selected are static but they could change upon a refresh selecting a random quantity from a certain desired filter. I decided to highlight a small selection of guitars to show that its possible to showcase potentially the 4 best options of any one area, this could change depending on trends or time of year.
 
 This is fully responsive and will always show 4 products with a "explore more" link below.
 
@@ -775,7 +777,7 @@ This is fully responsive and will always show 4 products with a "explore more" l
 
 ### Brands and Collections
 
-The brands highlight the 4 brands of guitar that we sell, Squier and Epiphone being sister brands to Fender and Gibson, often seen as a starter or introduction into the larger brand and as a whole the guitar playing hobby. I tilted all the brands to be at the same angle as gibsn to give it a uniform look and ordered the main brans to be the first thing you read/see. From a user point of view I am able to click on each logo which will take me to the "All Products Page" pre filtered for that brand.
+The brands highlight the 4 brands of guitar that we sell, Squier and Epiphone being sister brands to Fender and Gibson, often seen as a starter or introduction into the larger brand and as a whole the guitar playing hobby. I tilted all the brands to be at the same angle as Gibson to give it a uniform look and ordered the main brans to be the first thing you read/see. From a user point of view I am able to click on each logo which will take me to the "All Products Page" pre filtered for that brand.
 
 <details>
 <summary>Desktop Brands</summary>
@@ -814,7 +816,7 @@ The collections at the moment are just a filler, when building the page in Figma
 
 ### Follow Us
 
-The follow us was actually directly inspired by the Figma template, the idea of having the personal instagram profiles of the individuals in the team that run the store and site. Admitedly this wouldnt work on a larger site as the team would be too large but I feel for a smaller team or local shop it adds a nice personal touch. Each image currently links to the instagram homepage but in a real world scenario it would link to there personal sites.
+The follow us was actually directly inspired by the Figma template, the idea of having the personal instagram profiles of the individuals in the team that run the store and site. Admittedly this wouldn't work on a larger site as the team would be too large but I feel for a smaller team or local shop it adds a nice personal touch. Each image currently links to the instagram homepage but in a real world scenario it would link to there personal sites.
 
 <details>
 <summary>Desktop Follow Us</summary>
@@ -875,7 +877,7 @@ The registration page is a simple form to get the users email, username and pass
 
 ## Products
 
-The products pages are a real highlight of the site, all images and item cards are fully responisve with full filtering.
+The products pages are a real highlight of the site, all images and item cards are fully responsive with full filtering.
 
 In the images below I prove that I have successfully covered the following user stories:
 <br>
@@ -900,7 +902,7 @@ The all products page shows all available products for sale without any filterin
 
 ![All Products Title](./media/README/features/products/allproductstitle.png)
 
-When filtering a product I wanted to ensure that the user has the ability to review exactly what they are seeing, So if you are filtering you will see a new title appear stating what brand you are viewing and what type of guitar, if you happen to be viewing all guitars of one variaty the brand will disappear. You also get a quantity of products found next to a link back to the all products page.
+When filtering a product I wanted to ensure that the user has the ability to review exactly what they are seeing, So if you are filtering you will see a new title appear stating what brand you are viewing and what type of guitar, if you happen to be viewing all guitars of one variety the brand will disappear. You also get a quantity of products found next to a link back to the all products page.
 
 </details>
 
@@ -916,7 +918,7 @@ You are able to change the order of the parts view using the dropdown on the rig
 
 ### Product Description
 
-After clicking the image to go into the product description you will be given all the relevant infomation for that product.
+After clicking the image to go into the product description you will be given all the relevant information for that product.
 
 <details>
 <summary>Desktop Product Description</summary>
@@ -944,7 +946,7 @@ On mobile the image is around 80% of the entire screen area, with the large add 
 
 ![Details Accordion](./media/README/features/products/detailsaccordion.png)
 
-On both the desktop and mobile views of the page I have included a Bootstrap accordion for important shipping, returns and support information. Having it initailly hidden helps hide the information that isnt necersarily important to the purchase of the product right away, if the information is needed its clear and visable when requested.
+On both the desktop and mobile views of the page I have included a Bootstrap accordion for important shipping, returns and support information. Having it initially hidden helps hide the information that isn't necessarily important to the purchase of the product right away, if the information is needed its clear and visible when requested.
 
 The estimated shipping date was created using some custom python:
 
@@ -970,7 +972,7 @@ This was the first time using datetime and timedelta for a function, but it adds
 
 ![You May Also Like](./media/README/features/products/youmayalsolike.png)
 
-Having a section of the page dedicated to showing the user different options based on what they are currently looking at is a big part of online retail, probably done best by companies like Amazon, I wanted to implement something similar which involved some additional Python and Javescript.
+Having a section of the page dedicated to showing the user different options based on what they are currently looking at is a big part of online retail, probably done best by companies like Amazon, I wanted to implement something similar which involved some additional Python and Javascript.
 
 ```
 def product_detail(request, product_id):
@@ -1030,17 +1032,23 @@ window.addEventListener("DOMContentLoaded", adjustRecommendedProducts);
 window.addEventListener("resize", adjustRecommendedProducts);
 ```
 
-Using the JS above I was able to modify the number of products shown at any one time, now when viewing on mobile you will only see 1, but this will increase to 4 with break points inbetween to show 2 and 3 on larger screens.
+Using the JS above I was able to modify the number of products shown at any one time, now when viewing on mobile you will only see 1, but this will increase to 4 with break points between to show 2 and 3 on larger screens.
 
 </details>
 
 ### Add product (admin only)
+
+The ability to add a product is key in every stores site, I wanted to make sure this process was quick and easy while also being strictly for admin and shop personnel.
+
+To access the product management screen you will need to be signed in to a verified account, this can be done by the admin screen on Django. Once signed in you simply click onto my account and the drop down will give you access.
 
 <details>
 <summary>Add Product</summary>
 <br>
 
 ![Add Product](./media/README/features/products/addproduct.png)
+
+The form shows you mandatory fields, along with a message informing you if you have missed any making it impossible to log the product without key information. An image selector is set at the bottom allowing a user to upload a file from their computer.
 
 </details>
 
@@ -1063,29 +1071,112 @@ When logged in to an account with permissions you are given the option to edit a
 ![Edit Product](./media/README/features/products/editproduct.png)
 ![Edit Product Image](./media/README/features/products/editproductimage.png)
 
+If you are to click on either of the buttons shown above you will be brought to the product management screen, this is an identical form to the "Add Product" screen but this time all the information is pre populated, you can also see in the image I have left a message alerting the user to the fact they are now modifying a live product.
+
+</details>
+
+### Delete product (admin only)
+
+<details>
+<summary>Delete Product</summary>
+
+![Delete Product]()
+
+Alongside the Edit button you see a Delete button.
+
 </details>
 
 ## Blog
 
-- INPUT INFO HERE
+A simple blog to help give the site a more lively feel.
 
-![]()
+### All Blogs Page
+
+My original plan for the blog page was to use static files within a template to showcase example blog posts. However, once I began building the site, I decided to make the blog dynamic so that I could easily add and remove posts, as well as filter them by specific keywords. To achieve this, I created a new model for my database and ultimately structured it into three separate tables:
+
+- Author – This allows me to upload a fixtures file to prepopulate guest writers or freelancers while also storing admin users as authors if they contribute.
+- BlogPost – This model handles the actual blog content, including the title, featured image, body text, and date added.
+- Tags – This model stores and associates tags with each blog post, allowing for keyword-based filtering and improved search functionality.
+
+<details>
+<summary>All Blogs Page</summary>
+
+![All Blogs Page](./media/README/features/blog/allblogs.png)
+
+When you click on the blog page you are show 3 blogs in 3 separate rows, with a title, the first 30 words of the actual blog, the author, date added and tags on the left with a preview image on the right.
+
+</details>
+
+<details>
+<summary>Pagination</summary>
+
+![Pagination](./media/README/features/blog/pagination.png)
+
+The page uses pagination from Bootstrap to help manage the blogs, with buttons in keeping with the theme at the base of the page, you are given controls to go through each page or to skip right to the end entirely. The page you are currently on is highlighted and you have visibility of the next page, beyond that I have had to include an ellipsis (...) as the buttons would be too large causing issues on smaller screens.
+
+</details>
+
+### Tags
+
+<details>
+<summary>Tags</summary>
+
+![Tags](./media/README/features/blog/tags.png)
+
+Each blog has a restriction requiring at least one tag (if more than one is added then a comma is needed, the forms.py will see this and break up the tags), this tag is then stripped and checked in the forms.py to stop duplicates getting into the database. Each of these tags is then shown on the all blogs page, if the user clicks on the tag it will then filter all blogs by that tag, so a user can find all blogs on particular subject.
+
+If a Tag needs to be deleted, at the moment it can only be done from the Django admin. Given that all blog additions and edits needs to be done by a superuser I can't see this being a massive issue but would like to modify this in the future to find a way of making this smoother all from the site.
+
+</details>
 
 ### Add Blog (Admin Only)
 
-- INPUT INFO HERE
+<details>
+<summary>Add Blog</summary>
+
+![Add Blog](./media/README/features/blog/addblog.png)
+
+When logged in as a superuser, you will see a similar format to the "Add Product Page" when pressing the button available at the top of the blog page, the blog entry page allows a title, content block, image and tags to be added.
+
+</details>
 
 ### Edit Blog (Admin Only)
 
-- INPUT INFO HERE
+<details>
+<summary>Edit Blog</summary>
 
-## Contact Us and About Us
+![Edit Blog](./media/README/features/blog/editblog.png)
 
-- INPUT INFO HERE
+All content is pre populated so small changes can be easily made such as typos.
 
-![]()
+</details>
 
-## All products page
+### Delete Blog (Admin Only)
+
+<details>
+<summary>Delete Blog</summary>
+
+![Delete Blog](./media/README/features/blog/delete.png)
+
+To delete a blog I have decided to keep the option off of the main page, you will have to click into the individual blog.
+
+</details>
+
+## Contact Us And About Us
+
+The contact and about us pages are the static pages that offer useful information and just some background for the site.
+
+Within the contact us page I added some interesting buttons to contact the team, first we have the "Chat with us" button, this will ask permission to open the default mail app on your computer or phone, with a pre populated email address.
+
+The text us button will ask to open your messenger/sms capability, just below that you will see the WhatsApp button, this will attempt to open WhatsApp on both mobile and desktop.
+
+Although these are small touches I feel they help with realism as they would be something you would see in a real world example, they were also fun and interesting to learn and implement.
+
+![Message](./media/README/messages.png)
+
+## Messages And Alerts
+
+The page has numerous triggers for alerts to appear to display important information to the user,
 
 ### Card
 
@@ -1122,9 +1213,9 @@ With more time and experience I would like to implement the following:
 
 - [CKEditor](https://ckeditor.com/) is a rich text editor for web applications that provides a WYSIWYG interface for creating and formatting content which can be integrated into Django, using this for the blogs would have realised my vision for how I wanted the blog to be viewed after entry, with spacing and images being placed in a classic blog format.
 
-- Allowing a quantity of products to be selected before adding to the bag, currently a customer would need to view the bag to increase the quantity, though not breaking the customer experience as the site is dedicated to large single ticket items I feel it looks unproffesional.
+- Allowing a quantity of products to be selected before adding to the bag, currently a customer would need to view the bag to increase the quantity, though not breaking the customer experience as the site is dedicated to large single ticket items I feel it looks unprofessional.
 
-- The horizontal rule that I generated with the help of [CodePen](https://codepen.io/szpakoli/pen/zYKqoJ), I modified it into a near perfect replica of what I generated in my Figma file, but at somepoint during the build process the diamond was flattened and after numerous attempts to fix I decided to leave.
+- The horizontal rule that I generated with the help of [CodePen](https://codepen.io/szpakoli/pen/zYKqoJ), I modified it into a near perfect replica of what I generated in my Figma file, but at some point during the build process the diamond was flattened and after numerous attempts to fix I decided to leave.
 
 # Technologies Used
 
