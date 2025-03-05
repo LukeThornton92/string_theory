@@ -30,37 +30,34 @@ I built this site as a dedicated guitar shop focused on showcasing a selection o
 
 1. [**String Theory**](#string-theory)
 2. [**Planning stage**](#planning-stage)
-   - [_Target Audiences_](#target-audiences)
+   - [_Target User_](#target-user)
    - [_User Stories_](#user-stories)
-   - [_Site Aims_](#site-aims)
-   - [_How Will This Be Achieved_](#how-will-this-be-achieved)
    - [_Research_](#research)
-   - [_Inspiration_](#inspiration)
-   - [_Wireframes_](#wireframes)
-   - [_Colour Scheme And Theme_](#colour-scheme-and-theme)
+3. [**Design**](#design)
+   - [_Design Choices_](#design-choices)
+   - [_Colour Scheme_](#colour-scheme)
    - [_Typography_](#typography)
-3. [**Back End**](#back_end)
-   - [_models.py_](#models.py)
-   - [_routes.py_](#routes.py)
-4. [**Front End**](#front_end)
-   - [_Design_](#design)
-   - [_Nav Bar_](#nav_bar)
-   - [_Sign Up and Login_](#sign_up_and_login)
-   - [_New Date Idea_](#new_date_idea)
-   - [_Pick A Date_](#pick_a_date)
-   - [_View All_](#view_all)
-   - [_Add partner_](#add_partner)
-   - [_Delete User_](#delete_user)
-   - [_Tab Icon_](#tab_icon)
-   - [_404_](#404)
-5. [**Testing**](#testing)
+   - [_Database Schema_](#database-schema)
+   - [_Wireframes_](#wireframes)
+4. [**Features**](#features)
+   - [_Header_](#header)
+   - [_Footer_](#footer)
+   - [_Home Page_](#home-page)
+   - [_Registration And Profile Access_](#registration-and-profile-access)
+   - [_Products_](#products)
+   - [_Blog_](#blog)
+   - [_Contact Us And About Us_](#contact-us-and-about-us)
+   - [_Messages And Alerts_](#messages-and-alerts)
+   - [_Profile Page_](#profile-page)
+   - [_Bag_](#bag)
+   - [_Checkout_](#checkout)
+5. [**Finished Database Schema**](#finished-database-schema)
+6. [**Future Implementations**](#future-implementations)
+7. [**Technologies Used**](#technologies-used)
+8. [**Testing**](#testing)
    - [_Validator Testing_](#validator-testing)
-6. [**Future Enhancements**](#future-enhancements)
-7. [**Credits**](#credits)
-   - [_Honorable Mentions_](#honourable-mentions)
-   - [_General Reference_](#general-refrence)
-   - [_Content_](#content)
-   - [_Media_](#media)
+9. [**Deployment And Local Development**](#deployment-and-local-development)
+10. [**Credits**](#credits)
 
 # Planning stage
 
@@ -74,25 +71,25 @@ I built this site as a dedicated guitar shop focused on showcasing a selection o
 
 #### 1. Viewing And Navigation
 
-1. I want it to be easy and intuitive to register, login and logout. x
-2. I want it to be easy and intuitive to access my profile. x
-3. I want it to be easy and intuitive to access my bag/cart. x
+1. I want it to be easy and intuitive to register, login and logout.
+2. I want it to be easy and intuitive to access my profile.
+3. I want it to be easy and intuitive to access my bag/cart.
 4. I want to be notified when I click on something that performs an action (i.e adding to cart) and the action is successful.
 5. I want to be notified when I click on something and the action is _not_ successful.
-6. I want to be able to navigate the site easily. x
-7. I want to access all portions of the site from the homepage. x
-8. I want to not use the browsers back button. x
+6. I want to be able to navigate the site easily.
+7. I want to access all portions of the site from the homepage.
+8. I want to not use the browsers back button.
 
 #### 2. Product Viewing, Searching And Selecting
 
-1. I want to see all available products on a single page. x
-2. I want to be able to quickly and easily access any information for a product I find. x
-3. I want to be able to search for a product both directly by name or buy a character trait such as colour or material. x x
-4. I want to be able to sort product based on price, rating, name or category. x
-5. I want to see a rating for the product. x
-6. I want to see all details that would be crucial when purchasing a guitar or accessory. x
-7. I want other products to be suggested to me based on the product I am currently viewing. x
-8. I want to be able to add items to my bag/cart. x
+1. I want to see all available products on a single page.
+2. I want to be able to quickly and easily access any information for a product I find.
+3. I want to be able to search for a product both directly by name or buy a character trait such as colour or material.
+4. I want to be able to sort product based on price, rating, name or category.
+5. I want to see a rating for the product.
+6. I want to see all details that would be crucial when purchasing a guitar or accessory.
+7. I want other products to be suggested to me based on the product I am currently viewing.
+8. I want to be able to add items to my bag/cart.
 9. I want to be able to delete items from my bag/cart.
 10. I want an estimated shipping date.
 
@@ -111,13 +108,13 @@ I built this site as a dedicated guitar shop focused on showcasing a selection o
 11. I want email confirmation my purchase has been successful.
 12. I want to be able to buy products even when I am not registered.
 
-#### 4. Product management (admin only)
+#### 4. Product Management (admin only)
 
 1. I want to be able to add products on the website and database, including all information and images.
 2. I want to be able to edit products on the website and database.
 3. I want to be able to delete products on the website and database.
 
-#### 5. User’s activity management (admin only)
+#### 5. User’s Activity Management (admin only)
 
 1. I want users to register and create their account. x
 2. I want users to have pleasant experience on my site and make it easy for them to purchase product. x
@@ -128,83 +125,83 @@ I built this site as a dedicated guitar shop focused on showcasing a selection o
 7. I want the user to be notified when the payment details they provided are not correct.
 8. I want the payment method to be setup correctly to stop an order being placed without payment or payment being provided without an order being placed.
 
-# Research
+## Research
 
-## https://www.kennysmusic.co.uk/
+### https://www.kennysmusic.co.uk/
 
 A chain of music stores across Scotland, offering numerous different instruments and accessories.
 
-### Like:
+#### Like:
 
 - The brand logos are displayed in the navbar drop downs.
 - Navbar drop down also greys out page
 - Items in shop let you see if it's in stock
 
-### Dislike:
+#### Dislike:
 
 - Very busy site, a lot of different parts of the page moving and trying to get your attention.
 - Large drop downs that block information
 - Nearly everything has a hover animation, entire page can change when rolling mouse over site
 
-## https://www.gibson.com/en-GB
+### https://www.gibson.com/en-GB
 
 A high end guitar brand that make and sell guitars and guitar accessories.
 
-### Like:
+#### Like:
 
 - Muted colours
 - Simple design
 - Item viewing pleasant experience
 - Smart navbar
 
-### Dislike:
+#### Dislike:
 
 - Homepage really long, trying to display too much
 - No back to top button
 
-## https://www.fender.com/en-GB/start
+### https://www.fender.com/en-GB/start
 
 A high end guitar brand that make and sell guitars and guitar accessories.
 
-### Like:
+#### Like:
 
 - Very professional styling
 - Hero image helps keep first impressions good, rotates after a few seconds showcasing guitars
 - Search bar always at top, visible at all sizes. Dropdowns rotate into
 
-### Dislike:
+#### Dislike:
 
 - No back to top button on long pages
 
-## https://www.gear4music.com/
+### https://www.gear4music.com/
 
 An online music store offering all kinds of instruments and accessories.
 
-### Like:
+#### Like:
 
 - Shop has a nice tile format
 - Give exact stock quantities when browsing store
 - Offers numerous pictures
 - Gives Key features for quick browsing
 
-### Dislike:
+#### Dislike:
 
 - Very busy site
 - Drop downs in Navbar are huge, each one offering up to and over 100 options
 - Long specifications
 
-## https://www.peachguitars.com/
+### https://www.peachguitars.com/
 
 A Website for a small guitar shop.
 
-### Like:
+#### Like:
 
 - Dark tones, helps info and images pop
 - Nice colour scheme
 - Displays brand logos, helps people find know products
 - Allows to search by brand, giving a short synopsis on the company.
 
-### Dislike:
+#### Dislike:
 
 - Has a header fixed to top of page with brands and reviews, looks unprofessional.
 - Has a banner that rotates every couple of seconds, can't see all information shown quick enough.
@@ -217,7 +214,7 @@ In conclusion to my research, I realised that I wanted something much more moder
 
 # Design
 
-## Design choices
+## Design Choices
 
 The site will be visited by people who are looking for a high end Fender or Gibson guitar, therefore I wanted the site to reflect the high end professional nature, while still being a creative site fitting for the music industry.
 
@@ -775,7 +772,7 @@ This is fully responsive and will always show 4 products with a "explore more" l
 
 </details>
 
-### Brands and Collections
+### Brands And Collections
 
 The brands highlight the 4 brands of guitar that we sell, Squier and Epiphone being sister brands to Fender and Gibson, often seen as a starter or introduction into the larger brand and as a whole the guitar playing hobby. I tilted all the brands to be at the same angle as Gibson to give it a uniform look and ordered the main brans to be the first thing you read/see. From a user point of view I am able to click on each logo which will take me to the "All Products Page" pre filtered for that brand.
 
@@ -1036,7 +1033,7 @@ Using the JS above I was able to modify the number of products shown at any one 
 
 </details>
 
-### Add product (admin only)
+### Add Product (admin only)
 
 The ability to add a product is key in every stores site, I wanted to make sure this process was quick and easy while also being strictly for admin and shop personnel.
 
@@ -1052,7 +1049,7 @@ The form shows you mandatory fields, along with a message informing you if you h
 
 </details>
 
-### Edit product (admin only)
+### Edit Product (admin only)
 
 <details>
 <summary>Edit Product Button</summary>
@@ -1075,7 +1072,7 @@ If you are to click on either of the buttons shown above you will be brought to 
 
 </details>
 
-### Delete product (admin only)
+### Delete Product (admin only)
 
 <details>
 <summary>Delete Product</summary>
@@ -1343,10 +1340,15 @@ When you checkout you will see delivery and payment info on the left and your ba
 After paying you will get a thankyou message with all the details of your order, including a unique order number.
 
 </details>
+<br>
 
-## Finished Database Schema
+# Finished Database Schema
 
-## Future implementations
+![Finished Database Schema](./media/README/databaseschemaactual.png)
+
+In the end I had to deviate from my database schema, it was useful in the beginner but as I dove into the actual project and started using the systems I had built it became evident that it needed to change. The blog needing its own database to capture and filter by tags, to enable full CRUD functionality on the blog posts and to store the Author allowing for 3rd party writers to be added.
+
+# Future Implementations
 
 With more time and experience I would like to implement the following:
 
@@ -1369,7 +1371,7 @@ With more time and experience I would like to implement the following:
 - Javascript
 - Python
 
-## Frameworks, libraries, Online tools and Programs used
+## Frameworks, Libraries, Online tools And Programs Used
 
 - [Django](https://www.djangoproject.com/) - Django is a high-level Python web framework that enables rapid development of secure and scalable web applications.
 - [AWS3](https://aws.amazon.com/)
@@ -1388,12 +1390,13 @@ With more time and experience I would like to implement the following:
 - Apple preview - To manipulate images and reduce file sizes.
 - [FreeConvert](https://www.freeconvert.com/webp-converter/download) - converted the numerous image files types to WebP
 - [Am I Responsive](https://ui.dev/amiresponsive) - To show the website image on a range of devices.
+- [ChartDB](https://app.chartdb.io) - Builds a visual version of your database with a simple script.
 
 # Testing
 
 Find the full testing documented in [TESTING.md](TESTING.md).
 
-# Deployment & local development
+# Deployment And Local Development
 
 Please refer to [DEPLOYMENT.md](DEPLOYMENT.md) if you wish to deploy a copy of the site for yourself.
 
