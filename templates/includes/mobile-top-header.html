@@ -88,15 +88,15 @@
                     <li><a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a></li>
                     <li><a class="nav-link" href="{% url 'about_us' %}">About Us</a></li>
                     {% if request.user.is_authenticated %} 
-                        <a href="{% url 'account_logout' %}" class="nav-link">Log Out</a>
+                        <li><a href="{% url 'account_logout' %}" class="nav-link">Log Out</a></li>
                             {% if request.user.is_superuser %}
                                 <li><a class="nav-link" href="{% url 'add_product' %}">Product Management</a></li>
                             {% endif %}
                     {% else %}
-                        <a href="{% url 'account_signup' %}" class="nav-link">Register</a>
+                        <li><a href="{% url 'account_signup' %}" class="nav-link">Register</a></li>
                     {% endif %}
                     
-                </ul>
+                
                     <form action="{% url 'products' %}" method="GET" class="d-flex searchbar-mobile">
                         <input class="form-control mr-1" id="mobilesearchright" type="search" name="q" placeholder="Type to Search...">
                         <button class="btn btn-outline" type="submit"><i class="fas fa-search fa-lg"></i></button>
