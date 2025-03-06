@@ -1420,6 +1420,6 @@ Please refer to [DEPLOYMENT.md](DEPLOYMENT.md) if you wish to deploy a copy of t
 
 I would like to thank to following people who helped me along the way in completing this project:
 
-- My Code Institute mentor, Richard Wells, for his valuable advice and helping me work to industry standard.
+- My Code Institute mentor, Richard Wells, for his valuable advice and helping me work to industry standards.
 - My tutor for pushing me to go the extra mile.
 - My fiance Jessica for supporting me through the many long nights of debugging.
