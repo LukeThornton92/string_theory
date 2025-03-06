@@ -18,7 +18,7 @@ body {
 .title {
   font-family: "Lobster", Arial, Helvetica;
   color: #a67c00 !important;
-  size: 3rem;
+  font-size: 3rem;
   text-decoration: none;
 }
 
@@ -513,10 +513,7 @@ footer {
 
 .button:hover,
 .gold:hover {
-  transition-duration: 0.4s !;
-  -moz-transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
+  transition: all 0.4s ease-in-out;
   color: #a67c00;
 }
 
