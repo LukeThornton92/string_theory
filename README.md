@@ -4,6 +4,7 @@ String Theory is a premium online guitar store.
 
 To view the site as a super user as if you were the shop owner, use the following details (please don't delete user):
 
+Username - CodeInstitute
 Email - CodeInstitute@google.com
 Password - CodeInstitute2025
 

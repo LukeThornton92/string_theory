@@ -272,8 +272,13 @@ Mobile:
 ![Mobile Checkout](./media/README/TESTING/lighthouse/mobilecheckout.png)
 
 </details>
+<br>
 
-The lighthouse testing highlighted a few issues with my site,
+The lighthouse testing highlighted a few issues with my site, the large quantity of images being loaded really slows my site down.
+
+![Diagnostics](./media/README/TESTING/lighthouse/diagnostics.png)
+
+Heroku and AWS being 2 of the key reasons for the performance issues.
 
 ## Manual testing
 
@@ -300,6 +305,12 @@ Full testing was performed on following web browsers:
 - Microsoft Explorer
 - Safari
 
+The site was given to friends and family on numerous devices, on the whole I didn't get any feedback concerning bugs.
+
 ## Known Bugs
 
 - The mobile header uses a Bootstrap Navbar to be responsive, I have accidentally taken the template from the site and changed the order to fit my needs, nesting unordered lists inside of lists. When I went to correct it broke the page, this would be due to a CSS class im sure but I will need to review and resolve.
+
+- Images not always being rendered on site, it doesn't always happen and I had to spend a long time investigating a way around this. I was able to get it working using URL's of the SW3 bucket but that wasn't always repeatable and on one occasion I saw one image (not being displayed) showing as a PNG in dev tools while the actual HTML and SW3 bucket was WebP.
+
+- Not really a bug but the lighthouse highlighted issues with speed and accessibility which I would like to resolve.
