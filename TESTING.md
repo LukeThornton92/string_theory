@@ -20,11 +20,192 @@ This is just a small selection of the testing done, I actually wrote a total of 
 
 I was focused on testing the code I had written, so a large aspect of the code untested is from Django which has already been tested by the developers. I attempted the Webhooks but at this current moment in time I do not have the skill set or time to test those properly.
 
-### CSS Validator (W3C)
+### CSS Validator ([W3C](https://jigsaw.w3.org/css-validator/))
 
-### HTML Validator
+1 error initially found where my font-size on my title class was missing the word "font", after this change none were found on any page.
 
-### Javascript Validator (https://jshint.com/)
+<details>
+<summary>Home Page</summary>
+
+![Home Page](./media/README/TESTING/cssvalidator/homepage.png)
+
+</details>
+
+<details>
+<summary>All Products</summary>
+
+![All Products](./media/README/TESTING/cssvalidator/allproducts.png)
+
+</details>
+
+<details>
+<summary>Product Details</summary>
+
+![Product Details](./media/README/TESTING/cssvalidator/productdetail.png)
+
+</details>
+
+<details>
+<summary>Contact Us</summary>
+
+![Contact Us](./media/README/TESTING/cssvalidator/contact.png)
+
+</details>
+
+<details>
+<summary>About Us</summary>
+
+![About Us](./media/README/TESTING/cssvalidator/about.png)
+
+</details>
+
+<details>
+<summary>Blog</summary>
+
+![Blog](./media/README/TESTING/cssvalidator/blog.png)
+
+</details>
+
+<details>
+<summary>Bag</summary>
+
+![Bag](./media/README/TESTING/cssvalidator/bag.png)
+
+</details>
+
+<details>
+<summary>Profile</summary>
+
+![Profile](./media/README/TESTING/cssvalidator/profile.png)
+
+</details>
+
+<details>
+<summary>Checkout</summary>
+
+![Checkout](./media/README/TESTING/cssvalidator/checkout.png)
+
+</details>
+
+### HTML Validator ([W3C](https://validator.w3.org/))
+
+<details>
+<summary>Home Page</summary>
+
+Running the home page first I found 26 Errors, Duplicate ID's from bootstrap boilerplate which I used as a framework.
+
+![Home Page](./media/README/TESTING/htmlvalidator/)
+
+</details>
+
+<details>
+<summary>All Products</summary>
+
+![All Products](./media/README/TESTING/htmlvalidator/)
+
+</details>
+
+<details>
+<summary>Product Details</summary>
+
+![Product Details](./media/README/TESTING/htmlvalidator/)
+
+</details>
+
+<details>
+<summary>Contact Us</summary>
+
+![Contact Us](./media/README/TESTING/htmlvalidator/)
+
+</details>
+
+<details>
+<summary>About Us</summary>
+
+![About Us](./media/README/TESTING/htmlvalidator/)
+
+</details>
+
+<details>
+<summary>Blog</summary>
+
+![Blog](./media/README/TESTING/htmlvalidator/)
+
+</details>
+
+<details>
+<summary>Bag</summary>
+
+![Bag](./media/README/TESTING/htmlvalidator/)
+
+</details>
+
+<details>
+<summary>Profile</summary>
+
+![Profile](./media/README/TESTING/htmlvalidator/)
+
+</details>
+
+<details>
+<summary>Checkout</summary>
+
+![Checkout](./media/README/TESTING/htmlvalidator/)
+
+</details>
+
+### Javascript Validator ([JShint](https://jshint.com/))
+
+The following shows the results for all the Javascript in my site.
+
+<details>
+<summary>Bag</summary>
+
+![Bag](./media/README/TESTING/JShint/bagjs.png)
+
+</details>
+
+<details>
+<summary>Blog</summary>
+
+![Bag](./media/README/TESTING/JShint/blogimagejs.png)
+
+</details>
+
+<details>
+<summary>Country Field On Profile Form</summary>
+
+![Country Field On Profile Form](./media/README/TESTING/JShint/countryjs.png)
+
+</details>
+
+<details>
+<summary>Search Bar And Product Details Page</summary>
+
+![Search Bar And Product Details Page](./media/README/TESTING/JShint/mainjs.png)
+
+</details>
+
+<details>
+<summary>All Products Sort</summary>
+
+![All Products Sort](./media/README/TESTING/JShint/productsjs.png)
+
+</details>
+
+<details>
+<summary>Stripe</summary>
+
+![Stripe](./media/README/TESTING/JShint/stripe_elementsjs.png)
+
+</details>
+
+<details>
+<summary>Toasts</summary>
+
+![Toasts](./media/README/TESTING/JShint/toastsjs.png)
+
+Only warnings, a large portion of which was due to me copying in HTML as a lot of the JS supplied was in the postloadjs block
 
 ### Lighthouse
 
