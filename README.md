@@ -56,7 +56,6 @@ I built this site as a dedicated guitar shop focused on showcasing a selection o
 6. [**Future Implementations**](#future-implementations)
 7. [**Technologies Used**](#technologies-used)
 8. [**Testing**](#testing)
-   - [_Validator Testing_](#validator-testing)
 9. [**Deployment And Local Development**](#deployment-and-local-development)
 10. [**Credits**](#credits)
 
@@ -1362,6 +1361,8 @@ With more time and experience I would like to implement the following:
 - Estimated shipping date is in the product detail, having now reviewed my site for the purpose of this readme am I now seeing it should also live in the bag/checkout/checkout success.
 
 - Would add an if statement in the checkout success to see if user is logged in, if so removing the message asking you to make an account.
+
+- I will need to go through all aspects of the site to ensure Its fully accessible for screen readers, which will improve my score for each page in lighthouse.
 
 # Technologies Used
 
