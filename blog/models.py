@@ -1,11 +1,13 @@
 from django.db import models
 
+
 class Tag(models.Model):
     """Represents a tag for categorizing blog posts."""
     name = models.CharField(max_length=50, unique=True)
 
     def __str__(self):
         return self.name
+
 
 class Author(models.Model):
     """ Represents an author of a blog post. """
@@ -17,6 +19,7 @@ class Author(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class BlogPost(models.Model):
     """ Represents a blog post. """

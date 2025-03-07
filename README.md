@@ -4,9 +4,11 @@ String Theory is a premium online guitar store.
 
 To view the site as a super user as if you were the shop owner, use the following details (please don't delete user):
 
-Username - CodeInstitute
-Email - CodeInstitute@google.com
-Password - CodeInstitute2025
+**Username** - CodeInstitute
+<br>
+**Email** - CodeInstitute<span>@google.com
+<br>
+**Password** - CodeInstitute2025
 
 This is an example project not built for real credit card transactions. To test the functionality use the below number
 
@@ -17,11 +19,9 @@ CVC :242
 Zip code: 42424
 ```
 
-![Overview]()
+### Link to the page: [String Theory](https://string-theory-60d2d98dc791.herokuapp.com/)
 
-Link to the page: [String Theory](https://string-theory-60d2d98dc791.herokuapp.com/)
-
-Due to the quantity of images and the size, please use the drop downs to see images and comments.
+Due to the size and quantity of images, please use the drop downs to see images and comments.
 
 ## Project Overview
 
@@ -116,8 +116,8 @@ I built this site as a dedicated guitar shop focused on showcasing a selection o
 
 #### 5. User’s Activity Management (admin only)
 
-1. I want users to register and create their account. x
-2. I want users to have pleasant experience on my site and make it easy for them to purchase product. x
+1. I want users to register and create their account.
+2. I want users to have pleasant experience on my site and make it easy for them to purchase product.
 3. I want users to be able to access my site on variety of devices of all sizes.
 4. I want users to be able to access my site on variety of browsers.
 5. I want non logged in users not to gain access to any aspects of the site that involves a login.
@@ -804,7 +804,7 @@ The collections at the moment are just a filler, when building the page in Figma
 </details>
 
 <details>
-<summary>Mobile Brands</summary>
+<summary>Mobile Collections</summary>
 <br>
 
 ![Mobile Collections](./media/README/features/homepage/mobilecollections.png)
@@ -1363,6 +1363,8 @@ With more time and experience I would like to implement the following:
 - Would add an if statement in the checkout success to see if user is logged in, if so removing the message asking you to make an account.
 
 - I will need to go through all aspects of the site to ensure Its fully accessible for screen readers, which will improve my score for each page in lighthouse.
+
+- The clickable field in the blog area is rather large on mobile, this could cause someone to accidentally click into the blog by accident, not a deal breaker but would like to modify this to be slightly smaller in the future.
 
 # Technologies Used
 
